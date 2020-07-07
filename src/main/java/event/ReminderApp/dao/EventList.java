@@ -38,18 +38,28 @@ public class EventList implements EventInterface{
     }
 
     @Override
-    public int updateEvent(Event event) {
-          events.forEach(e -> {
-                    if (event.getStartDate().compareTo(e.getStartDate()) == 0) {
-                        events.set(events.indexOf(e), event);
-                    }
-                });
-        return 1;
+    public int updateEventById(UUID id, Event event) {
+        selectEventById(id).map(e -> {
+            if (e.getId().equals(id)) {
+                int indexOfEvent = events.indexOf(e);
+                events.set(indexOfEvent, new Event(
+                        id,
+                        event.getName(),
+                        event.getStartDate(),
+                        event.getDuration(),
+                        event.getDetails()
+                ));
+                return 1;
+            }
+            return 0;
+        })
+                .orElse(0);
+        return 0;
     }
 
     @Override
-    public Event deleteEvent(Event event) {
-        events.removeIf(e -> e.getStartDate().compareTo(event.getStartDate()) == 0);
-        return null;
+    public int deleteEventById(UUID id) {
+        events.removeIf(e -> e.getId().equals(id));
+        return 1;
     }
 }

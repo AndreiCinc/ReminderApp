@@ -32,11 +32,11 @@ public class EventService {
         return eventList.selectAllEvents();
     }
 
-    public int updateEvent(Event event){
-        return eventList.updateEvent(event);
+    public int updateEvent(UUID id, Event event){
+        return eventList.updateEventById(id, event);
     }
 
-    public Event deleteEvent(Event event) {
-        return eventList.deleteEvent(event);
+    public int deleteEvent(UUID id) {
+        return eventList.deleteEventById(id);
     }
 }

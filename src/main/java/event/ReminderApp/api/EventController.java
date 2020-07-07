@@ -35,14 +35,13 @@ public class EventController {
                 .orElse(null);
     }
 
-    @PutMapping
-    public int updateEvent(@RequestBody Event eventToUpdate) {
-        return eventService.updateEvent(eventToUpdate);
+    @PutMapping("{id}")
+    public void updateEvent(@PathVariable("id") UUID id, @RequestBody Event eventToUpdate) {
+        eventService.updateEvent(id, eventToUpdate);
     }
 
-    @DeleteMapping
-    public Event deleteEvent(@RequestBody Event eventDelete) {
-        return eventService.deleteEvent(eventDelete);
+    @DeleteMapping("{id}")
+    public void deleteEvent(@PathVariable("id") UUID id) {
+         eventService.deleteEvent(id);
     }
-
 }

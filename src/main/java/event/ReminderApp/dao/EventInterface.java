@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
-public interface EventInterface {
+public interface EventInterface<Obtional> {
 
     int insertEvent(UUID id, Event event);
 
@@ -19,8 +19,8 @@ public interface EventInterface {
 
     Optional<Event> selectEventById(UUID id);
 
-    int updateEvent(Event event);
+    int updateEventById(UUID id, Event event);
 
-    Event deleteEvent(Event event);
+    int deleteEventById(UUID id);
 
 }
