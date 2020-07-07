@@ -5,15 +5,19 @@ import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
+import java.util.UUID;
 
 @Repository("postgres")
 public class EventList implements EventInterface{
 
-    private static List<Event> events = new ArrayList<>();
+    private static final List<Event> events = new ArrayList<>();
+
 
     @Override
-    public int insertEvent(Event event) {
+    public int insertEvent(UUID id, Event event) {
         events.add(new Event(
+                id,
                 event.getName(),
                 event.getStartDate(),
                 event.getDuration(),
@@ -24,6 +28,13 @@ public class EventList implements EventInterface{
     @Override
     public List<Event> selectAllEvents() {
         return events;
+    }
+
+    @Override
+    public Optional<Event> selectEventById(UUID id) {
+        return events.stream()
+                .filter(event -> event.getId().equals(id))
+                .findFirst();
     }
 
     @Override
