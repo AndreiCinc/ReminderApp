@@ -13,15 +13,17 @@ public class EventList implements EventInterface{
 
     private static final List<Event> events = new ArrayList<>();
 
-
     @Override
     public int insertEvent(UUID id, Event event) {
         events.add(new Event(
                 id,
                 event.getName(),
                 event.getStartDate(),
-                event.getDuration(),
-                event.getDetails()));
+                event.getStartHour(),
+                event.getEndDate(),
+                event.getEndHour(),
+                event.getDetails())
+        );
         return 0;
     }
 
@@ -46,14 +48,15 @@ public class EventList implements EventInterface{
                         id,
                         event.getName(),
                         event.getStartDate(),
-                        event.getDuration(),
+                        event.getStartHour(),
+                        event.getEndDate(),
+                        event.getEndHour(),
                         event.getDetails()
                 ));
                 return 1;
             }
             return 0;
-        })
-                .orElse(0);
+        });
         return 0;
     }
 

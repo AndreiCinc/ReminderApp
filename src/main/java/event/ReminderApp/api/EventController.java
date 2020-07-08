@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import event.ReminderApp.service.EventService;
 
+import java.text.ParseException;
 import java.util.List;
 import java.util.UUID;
 
@@ -20,7 +21,7 @@ public class EventController {
     }
 
     @PostMapping
-    public void addEvent(@RequestBody Event event) {
+    public void addEvent(@RequestBody Event event)  {
         eventService.addEvent(event);
     }
 
