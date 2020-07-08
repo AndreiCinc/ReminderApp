@@ -4,24 +4,30 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.Date;
 import java.util.UUID;
-import java.util.concurrent.TimeUnit;
 
 public class Event {
     private final UUID id;
     private final String name;
     private final Date startDate;
+    private final Date startHour;
     private final Date endDate;
+    private final Date endHour;
     private final String details;
 
-    public Event(@JsonProperty("id") UUID id, 
+    public Event(@JsonProperty("id") UUID id,
                  @JsonProperty("name") String name,
                  @JsonProperty("startDate") Date startDate,
-                 @JsonProperty("duration") Date endDate,
+                 @JsonProperty("startHour") Date startHour,
+                 @JsonProperty("endDate") Date endDate,
+                 @JsonProperty("endHour") Date endHour,
                  @JsonProperty("details") String details) {
+
         this.id = id;
         this.name = name;
         this.startDate = startDate;
+        this.startHour = startHour;
         this.endDate = endDate;
+        this.endHour = endHour;
         this.details = details;
     }
 
@@ -34,16 +40,19 @@ public class Event {
     public Date getStartDate() {
         return startDate;
     }
-    public Date getDuration() {
+
+    public Date getStartHour() {
+        return startHour;
+    }
+
+    public Date getEndDate() {
         return endDate;
+    }
+    public Date getEndHour() {
+        return endHour;
     }
     public String getDetails() {
         return details;
-    }
-
-    public final long durationEvent() {
-        long differenceMs = Math.abs(startDate.getTime() - endDate.getTime());
-        return TimeUnit.HOURS.convert(differenceMs, TimeUnit.MILLISECONDS);
     }
 
 }
