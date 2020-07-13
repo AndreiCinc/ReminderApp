@@ -1,9 +1,9 @@
 CREATE TABLE event (
     id UUID NOT NULL PRIMARY KEY,
     name VARCHAR(200) NOT NULL,
-    startDate Date NOT NULL,
-    startHour Date NOT NULL,
-    endDate Date NOT NULL,
-    endHour Date NOT NULL,
+    startDate DATE NOT NULL,
+    startHour DATE NOT NULL,
+    endDate DATE NOT NULL,
+    endHour DATE NOT NULL,
     details VARCHAR(300)
 )
