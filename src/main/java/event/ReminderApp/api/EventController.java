@@ -21,7 +21,7 @@ public class EventController {
     }
 
     @PostMapping
-    public void addEvent(@RequestBody Event event)  {
+    public void addEvent(@RequestBody Event event) throws ParseException {
         eventService.addEvent(event);
     }
 
