@@ -16,7 +16,7 @@ public class EventService {
     public final EventList eventList;
 
     @Autowired
-    public EventService(@Qualifier("postgres") EventList eventList) {
+    public EventService(@Qualifier("bam") EventList eventList) {
         this.eventList = eventList;
     }
 

@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
-@Repository("postgres")
+@Repository("bam")
 public class EventList implements EventInterface{
 
     private static final List<Event> events = new ArrayList<>();
