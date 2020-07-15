@@ -11,12 +11,12 @@ import java.util.Optional;
 import java.util.UUID;
 
 @Service
-public class ReminderService {
+public class EventService {
 
     public final EventInterface eventInterface;
 
     @Autowired
-    public ReminderService(@Qualifier("bam") EventInterface eventInterface) {
+    public EventService(@Qualifier("bam") EventInterface eventInterface) {
         this.eventInterface = eventInterface;
     }
 

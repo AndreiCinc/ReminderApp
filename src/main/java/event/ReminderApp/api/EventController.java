@@ -3,7 +3,7 @@ package event.ReminderApp.api;
 import event.ReminderApp.model.Event;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import event.ReminderApp.service.ReminderService;
+import event.ReminderApp.service.EventService;
 
 import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
@@ -12,12 +12,12 @@ import java.util.UUID;
 
 @RequestMapping("event/ReminderApp/api/v1/event")
 @RestController
-public class ReminderController {
+public class EventController {
 
-    public final ReminderService eventService;
+    public final EventService eventService;
     
     @Autowired
-    public ReminderController(ReminderService eventService) {
+    public EventController(EventService eventService) {
         this.eventService = eventService;
     }
 
