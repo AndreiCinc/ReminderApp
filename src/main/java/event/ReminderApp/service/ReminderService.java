@@ -1,7 +1,7 @@
 package event.ReminderApp.service;
 
-import event.ReminderApp.dao.ReminderList;
-import event.ReminderApp.model.Reminder;
+import event.ReminderApp.dao.EventInterface;
+import event.ReminderApp.model.Event;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
@@ -13,30 +13,30 @@ import java.util.UUID;
 @Service
 public class ReminderService {
 
-    public final ReminderList eventList;
+    public final EventInterface eventInterface;
 
     @Autowired
-    public ReminderService(@Qualifier("bam") ReminderList eventList) {
-        this.eventList = eventList;
+    public ReminderService(@Qualifier("bam") EventInterface eventInterface) {
+        this.eventInterface = eventInterface;
     }
 
-    public int addEvent(Reminder event) {
-        return eventList.insertReminder(event);
+    public int addEvent(Event event) {
+        return eventInterface.insertEvent(event);
     }
 
-    public Optional<Reminder> getEventById(UUID id) {
-        return eventList.selectReminderById(id);
+    public Optional<Event> getEventById(UUID id) {
+        return eventInterface.selectEventById(id);
     }
 
-    public List<Reminder> getAllEvents() {
-        return eventList.selectAllReminders();
+    public List<Event> getAllEvents() {
+        return eventInterface.selectAllEvents();
     }
 
-    public int updateEvent(UUID id, Reminder event){
-        return eventList.updateReminderById(id, event);
+    public int updateEvent(UUID id, Event event){
+        return eventInterface.updateEventById(id, event);
     }
 
     public int deleteEvent(UUID id) {
-        return eventList.deleteReminderById(id);
+        return eventInterface.deleteEventById(id);
     }
 }

@@ -6,7 +6,7 @@ import javax.validation.constraints.NotBlank;
 import java.util.Date;
 import java.util.UUID;
 
-public class Reminder {
+public class Event {
     private final UUID id;
     @NotBlank
     private final String name;
@@ -14,11 +14,11 @@ public class Reminder {
     private final Date endDate;
     private final String details;
 
-    public Reminder(@JsonProperty("id") UUID id,
-                    @JsonProperty("name") String name,
-                    @JsonProperty("startDate") Date startDate,
-                    @JsonProperty("endDate") Date endDate,
-                    @JsonProperty("details") String details) {
+    public Event(@JsonProperty("id") UUID id,
+                 @JsonProperty("name") String name,
+                 @JsonProperty("startDate") Date startDate,
+                 @JsonProperty("endDate") Date endDate,
+                 @JsonProperty("details") String details) {
 
         this.id = id;
         this.name = name;
