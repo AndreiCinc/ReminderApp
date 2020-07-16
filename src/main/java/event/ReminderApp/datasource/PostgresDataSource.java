@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class PostgresDataSource {
 
-    @Bean
+  @Bean
     @ConfigurationProperties("app.datasource")
     public HikariDataSource hikariDataSource() {
         return DataSourceBuilder
@@ -17,4 +17,5 @@ public class PostgresDataSource {
                 .type(HikariDataSource.class)
                 .build();
     }
+
 }

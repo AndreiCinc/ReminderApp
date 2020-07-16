@@ -3,7 +3,6 @@ package event.ReminderApp.service;
 import event.ReminderApp.dao.EventInterface;
 import event.ReminderApp.model.Event;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -16,7 +15,7 @@ public class EventService {
     public final EventInterface eventInterface;
 
     @Autowired
-    public EventService(@Qualifier("bam") EventInterface eventInterface) {
+    public EventService(EventInterface eventInterface) {
         this.eventInterface = eventInterface;
     }
 

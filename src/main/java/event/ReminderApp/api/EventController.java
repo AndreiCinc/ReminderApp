@@ -10,8 +10,9 @@ import javax.validation.constraints.NotNull;
 import java.util.List;
 import java.util.UUID;
 
-@RequestMapping("event/ReminderApp/api/v1/event")
+
 @RestController
+@RequestMapping("event/ReminderApp/api/v1/event")
 public class EventController {
 
     public final EventService eventService;
@@ -22,7 +23,7 @@ public class EventController {
     }
 
     @PostMapping
-    public void addEvent(@Valid @NotNull @RequestBody Event event)  {
+    public void addEvent(@RequestBody Event event)  {
         eventService.addEvent(event);
     }
 
@@ -38,7 +39,7 @@ public class EventController {
     }
 
     @PutMapping("{id}")
-    public void updateEvent(@NotNull @PathVariable("id") UUID id, @Valid @NotNull @RequestBody Event eventToUpdate) {
+    public void updateEvent(@PathVariable("id") UUID id, @Valid @NotNull @RequestBody Event eventToUpdate) {
         eventService.updateEvent(id, eventToUpdate);
     }
 

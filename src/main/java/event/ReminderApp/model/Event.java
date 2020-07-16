@@ -1,14 +1,14 @@
 package event.ReminderApp.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import javax.validation.constraints.NotBlank;
+
 import java.util.Date;
 import java.util.UUID;
 
 public class Event {
     private final UUID id;
-    @NotBlank
     private final String name;
     private final Date startDate;
     private final Date endDate;
