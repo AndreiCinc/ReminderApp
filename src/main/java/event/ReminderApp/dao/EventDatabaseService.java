@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
-@Repository
+@Repository("postgres")
 public class EventDatabaseService implements EventInterface {
 
     private final JdbcTemplate jdbcTemplate;
@@ -21,13 +21,18 @@ public class EventDatabaseService implements EventInterface {
     }
 
     @Override
-    public int insertEvent(UUID id, Event Event) {
-        return 0;
-    }
-
-    @Override
-    public int insertEvent(Event Event) {
-
+    public int insertEvent(UUID id, Event event) {
+        final String sql = "" +
+                "INSERT INTO event (id, eventName, startdate, enddate, details) " +
+                "VALUES ( ?, ?, ?, ?, ?)";
+        jdbcTemplate.update(
+                sql,
+                id,
+                event.getName(),
+                event.getStartDate(),
+                event.getEndDate(),
+                event.getDetails()
+        );
         return 0;
     }
 
@@ -63,12 +68,18 @@ public class EventDatabaseService implements EventInterface {
     }
 
     @Override
-    public int updateEventById(UUID id, Event Event) {
+    public int updateEventById(UUID id, Event event) {
+        System.out.println("aici");
+        final String sql = "UPDATE event SET eventName = ?, startdate = ?, enddate = ?, details = ? WHERE id = ?";
+        jdbcTemplate.update(sql, event.getName(), event.getStartDate(), event.getEndDate(), event.getDetails(), id);
         return 0;
     }
 
     @Override
     public int deleteEventById(UUID id) {
-        return 0;
+        final String sql = "DELETE FROM event WHERE id = ?";
+        final Object[] eventId = new Object[]{id};
+        jdbcTemplate.update(sql, eventId);
+        return 5;
     }
 }

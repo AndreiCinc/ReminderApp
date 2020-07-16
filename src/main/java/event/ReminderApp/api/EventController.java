@@ -23,7 +23,7 @@ public class EventController {
     }
 
     @PostMapping
-    public void addEvent(@RequestBody Event event)  {
+    public void addEvent(@RequestBody Event event) {
         eventService.addEvent(event);
     }
 
@@ -34,6 +34,7 @@ public class EventController {
 
     @GetMapping("{id}")
     public Event getEventById(@PathVariable("id") UUID id) {
+
         return eventService.getEventById(id)
                 .orElse(null);
     }
@@ -45,6 +46,7 @@ public class EventController {
 
     @DeleteMapping("{id}")
     public void deleteEvent(@PathVariable("id") UUID id) {
-         eventService.deleteEvent(id);
+        eventService.deleteEvent(id);
     }
+
 }

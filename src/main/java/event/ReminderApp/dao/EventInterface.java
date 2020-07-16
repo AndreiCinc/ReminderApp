@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
-@Repository
+
 public interface EventInterface {
 
     int insertEvent(UUID id, Event Event);
