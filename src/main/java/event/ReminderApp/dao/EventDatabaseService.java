@@ -26,6 +26,12 @@ public class EventDatabaseService implements EventInterface {
     }
 
     @Override
+    public int insertEvent(Event Event) {
+
+        return 0;
+    }
+
+    @Override
     public List<Event> selectAllEvents() {
         final String sql = "SELECT id, eventName, startdate, enddate, details FROM event";
         return jdbcTemplate.query(sql, (resultSet, i )-> {
@@ -40,7 +46,20 @@ public class EventDatabaseService implements EventInterface {
 
     @Override
     public Optional<Event> selectEventById(UUID id) {
-        return Optional.empty();
+        final String sql = "SELECT id, eventName, startdate, enddate, details FROM event WHERE id = ?";
+        Event event = jdbcTemplate.queryForObject(
+                sql,
+                new Object[]{id},
+                ((resultSet, i) -> {
+                    UUID eventId =  UUID.fromString(resultSet.getString("id"));
+                    String eventName = resultSet.getString("eventName");
+                    Date startDate = resultSet.getDate("startdate");
+                    Date endDate = resultSet.getDate("endDate");
+                    String details = resultSet.getString("details");
+                    return new Event( eventId, eventName, startDate, endDate, details);
+                 })
+        );
+        return Optional.ofNullable(event);
     }
 
     @Override
