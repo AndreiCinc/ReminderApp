@@ -69,7 +69,6 @@ public class EventDatabaseService implements EventInterface {
 
     @Override
     public int updateEventById(UUID id, Event event) {
-        System.out.println("aici");
         final String sql = "UPDATE event SET eventName = ?, startdate = ?, enddate = ?, details = ? WHERE id = ?";
         jdbcTemplate.update(sql, event.getName(), event.getStartDate(), event.getEndDate(), event.getDetails(), id);
         return 0;
@@ -78,8 +77,7 @@ public class EventDatabaseService implements EventInterface {
     @Override
     public int deleteEventById(UUID id) {
         final String sql = "DELETE FROM event WHERE id = ?";
-        final Object[] eventId = new Object[]{id};
-        jdbcTemplate.update(sql, eventId);
+        jdbcTemplate.update(sql, id);
         return 5;
     }
 }
