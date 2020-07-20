@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5f1b897c-2125-4a62-9526-cba2e5fd6fdf" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="secondReminderBranch" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1eiTQXoLubHNdPLLyb1mf6pjIFN" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="event.ReminderApp" />
+      <recent name="event.ReminderApp.api" />
+      <recent name="event.ReminderApp.datasource" />
+      <recent name="event.ReminderApp.dao" />
+      <recent name="event.ReminderApp.service" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="event.ReminderApp.model" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Projects\ReminderApp" />
+      <recent name="D:\Projects\ReminderApp\src\main\docker" />
+      <recent name="D:\Projects\\" />
+      <recent name="D:\Projects\ReminderApp\dockerDirectory" />
+      <recent name="D:\Projects\ReminderApp\Docker" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.ReminderAppApplication">
+    <configuration name="ReminderAppApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="event.ReminderApp.ReminderAppApplication" />
+      <module name="ReminderApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="event.ReminderApp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in ReminderApp" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="ReminderApp" />
+      <useClassPathOnly />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EventTest.getIdIfIsBiggerThanUUIDLength" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ReminderApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="event.ReminderApp.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="event.ReminderApp.model" />
+      <option name="MAIN_CLASS_NAME" value="event.ReminderApp.model.EventTest" />
+      <option name="METHOD_NAME" value="getIdIfIsBiggerThanUUIDLength" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EventTest.getIdIfIsEqualWithInput (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ReminderApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="event.ReminderApp.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="event.ReminderApp.model" />
+      <option name="MAIN_CLASS_NAME" value="event.ReminderApp.model.EventTest" />
+      <option name="METHOD_NAME" value="getIdIfIsEqualWithInput(java.lang.String,boolean)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EventTest.getIdIfIsEqualWithInput" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ReminderApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="event.ReminderApp.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="event.ReminderApp.model" />
+      <option name="MAIN_CLASS_NAME" value="event.ReminderApp.model.EventTest" />
+      <option name="METHOD_NAME" value="getIdIfIsEqualWithInput" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EventTest.getIdIfIsSmallerUUIDLength" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ReminderApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="event.ReminderApp.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="event.ReminderApp.model" />
+      <option name="MAIN_CLASS_NAME" value="event.ReminderApp.model.EventTest" />
+      <option name="METHOD_NAME" value="getIdIfIsSmallerUUIDLength" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="event.ReminderApp.service in ReminderApp" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="ReminderApp" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="event.ReminderApp.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="event.ReminderApp.service" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ReminderAppApplication" />
+        <item itemvalue="JUnit.EventTest.getIdIfIsEqualWithInput (1)" />
+        <item itemvalue="JUnit.EventTest.getIdIfIsSmallerUUIDLength" />
+        <item itemvalue="JUnit.EventTest.getIdIfIsBiggerThanUUIDLength" />
+        <item itemvalue="JUnit.EventTest.getIdIfIsEqualWithInput" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5f1b897c-2125-4a62-9526-cba2e5fd6fdf" name="Default Changelist" comment="" />
+      <created>1594803397196</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1594803397196</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="741" y="0" key="#All_in_ReminderApp" timestamp="1595229867049">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="741" y="0" key="#All_in_ReminderApp/0.0.1536.824@0.0.1536.824" timestamp="1595229867049" />
+    <state x="498" y="0" key="#Project_Structure" timestamp="1595229954295">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="498" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1595229954295" />
+    <state x="242" y="170" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1594808665508">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="242" y="170" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1594808665508" />
+    <state x="574" y="119" key="#com.intellij.ide.util.MemberChooser" timestamp="1594888943715">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="119" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1594888943715" />
+    <state x="551" y="307" width="433" height="216" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1594809050384">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="551" y="307" width="433" height="216" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1594809050384" />
+    <state x="450" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1594803981765">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="450" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1594803981765" />
+    <state x="583" y="0" key="#event.ReminderApp.service_in_ReminderApp" timestamp="1595232262312">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="583" y="0" key="#event.ReminderApp.service_in_ReminderApp/0.0.1536.824@0.0.1536.824" timestamp="1595232262312" />
+    <state x="299" y="67" key="DBNavigator.ProjectSettingsDialog" timestamp="1594805152617">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="299" y="67" key="DBNavigator.ProjectSettingsDialog/0.0.1536.824@0.0.1536.824" timestamp="1594805152617" />
+    <state x="722" y="154" key="FileChooserDialogImpl" timestamp="1594932589005">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="722" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1594932589005" />
+    <state width="990" height="175" key="GridCell.Tab.0.bottom" timestamp="1595254046345">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="990" height="175" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1595254046345" />
+    <state width="990" height="175" key="GridCell.Tab.0.center" timestamp="1595254046345">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="990" height="175" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1595254046345" />
+    <state width="990" height="175" key="GridCell.Tab.0.left" timestamp="1595254046344">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="990" height="175" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1595254046344" />
+    <state width="990" height="175" key="GridCell.Tab.0.right" timestamp="1595254046345">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="990" height="175" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1595254046345" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1595241726740">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1595241726740" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1595241726740">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1595241726740" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1595241726740">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1595241726740" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1595241726740">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1595241726740" />
+    <state x="156" y="70" key="Maven.ArtifactSearchDialog" timestamp="1595243980867">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="156" y="70" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1595243980867" />
+    <state x="453" y="0" key="SettingsEditor" timestamp="1595229719738">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="453" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1595229719738" />
+    <state x="924" y="189" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1595232470508">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="924" y="189" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824@0.0.1536.824" timestamp="1595232470508" />
+    <state x="550" y="125" key="git4idea.branch.GitSmartOperationDialog" timestamp="1595235641103">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="550" y="125" key="git4idea.branch.GitSmartOperationDialog/0.0.1536.824@0.0.1536.824" timestamp="1595235641103" />
+    <state x="418" y="77" key="new project wizard" timestamp="1594969435348">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="418" y="77" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1594969435348" />
+    <state x="713" y="191" key="run.anything.popup" timestamp="1594932644755">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="713" y="191" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1594932644755" />
+  </component>
+</project>
