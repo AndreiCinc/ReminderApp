@@ -19,9 +19,7 @@ public class EventList implements EventInterface{
                 id,
                 event.getName(),
                 event.getStartDate(),
-                event.getStartHour(),
                 event.getEndDate(),
-                event.getEndHour(),
                 event.getDetails())
         );
         return 0;
@@ -48,9 +46,7 @@ public class EventList implements EventInterface{
                         id,
                         event.getName(),
                         event.getStartDate(),
-                        event.getStartHour(),
                         event.getEndDate(),
-                        event.getEndHour(),
                         event.getDetails()
                 ));
                 return 1;

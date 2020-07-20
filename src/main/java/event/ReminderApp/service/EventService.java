@@ -1,6 +1,7 @@
 package event.ReminderApp.service;
 
 import event.ReminderApp.dao.EventInterface;
+import event.ReminderApp.dao.EventList;
 import event.ReminderApp.model.Event;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -16,14 +17,10 @@ public class EventService {
     public final EventInterface eventInterface;
 
     @Autowired
-<<<<<<< HEAD
-    public EventService(@Qualifier("bam") EventList eventList) {
-        this.eventList = eventList;
-=======
-    public EventService(@Qualifier("postgres") EventInterface eventInterface) {
+    public EventService(@Qualifier("bam") EventInterface eventInterface) {
         this.eventInterface = eventInterface;
->>>>>>> master
     }
+
 
     public int addEvent(Event event) {
         return eventInterface.insertEvent(event);
