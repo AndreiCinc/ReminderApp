@@ -6,9 +6,10 @@ import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
+
 public interface EventInterface {
 
-    int insertEvent(UUID id, Event event);
+    int insertEvent(UUID id, Event Event);
 
     default int insertEvent(Event event) {
         UUID id = UUID.randomUUID();
@@ -19,7 +20,7 @@ public interface EventInterface {
 
     Optional<Event> selectEventById(UUID id);
 
-    int updateEventById(UUID id, Event event);
+    int updateEventById(UUID id, Event Event);
 
     int deleteEventById(UUID id);
 

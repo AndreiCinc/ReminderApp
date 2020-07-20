@@ -1,6 +1,6 @@
 package event.ReminderApp.service;
 
-import event.ReminderApp.dao.EventList;
+import event.ReminderApp.dao.EventInterface;
 import event.ReminderApp.model.Event;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -13,30 +13,35 @@ import java.util.UUID;
 @Service
 public class EventService {
 
-    public final EventList eventList;
+    public final EventInterface eventInterface;
 
     @Autowired
+<<<<<<< HEAD
     public EventService(@Qualifier("bam") EventList eventList) {
         this.eventList = eventList;
+=======
+    public EventService(@Qualifier("postgres") EventInterface eventInterface) {
+        this.eventInterface = eventInterface;
+>>>>>>> master
     }
 
     public int addEvent(Event event) {
-        return eventList.insertEvent(event);
+        return eventInterface.insertEvent(event);
     }
 
     public Optional<Event> getEventById(UUID id) {
-        return eventList.selectEventById(id);
+        return eventInterface.selectEventById(id);
     }
 
     public List<Event> getAllEvents() {
-        return eventList.selectAllEvents();
+        return eventInterface.selectAllEvents();
     }
 
     public int updateEvent(UUID id, Event event){
-        return eventList.updateEventById(id, event);
+        return eventInterface.updateEventById(id, event);
     }
 
     public int deleteEvent(UUID id) {
-        return eventList.deleteEventById(id);
+        return eventInterface.deleteEventById(id);
     }
 }
