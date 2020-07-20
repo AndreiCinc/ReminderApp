@@ -2,6 +2,6 @@ app:
   datasource:
     jdbc-url: jdbc:postgresql://localhost:5432/reminderapp
     username: postgres
-    password: postgres
+    password: Orisicare123
     pool-size: 30
 
