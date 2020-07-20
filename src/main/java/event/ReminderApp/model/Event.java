@@ -25,6 +25,7 @@ public class Event {
         this.details = details;
     }
 
+
     public UUID getId(){
         return id;
     }
