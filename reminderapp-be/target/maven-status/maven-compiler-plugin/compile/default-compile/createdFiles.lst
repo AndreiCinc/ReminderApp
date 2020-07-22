@@ -1,0 +1,7 @@
+event\ReminderApp\datasource\PostgresDataSource.class
+event\ReminderApp\dao\EventDatabaseService.class
+event\ReminderApp\model\Event.class
+event\ReminderApp\service\EventService.class
+event\ReminderApp\dao\EventInterface.class
+event\ReminderApp\ReminderAppApplication.class
+event\ReminderApp\api\EventController.class

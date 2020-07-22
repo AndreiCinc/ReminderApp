@@ -1,0 +1,207 @@
+Index: src/test/java/event/ReminderApp/dao/EventDatabaseServiceTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/test/java/event/ReminderApp/dao/EventDatabaseServiceTest.java	(date 1595232441942)
++++ src/test/java/event/ReminderApp/dao/EventDatabaseServiceTest.java	(date 1595232441942)
+@@ -0,0 +1,28 @@
++package event.ReminderApp.dao;
++
++import org.junit.jupiter.api.Test;
++
++import static org.junit.jupiter.api.Assertions.*;
++
++class EventDatabaseServiceTest {
++
++    @Test
++    void insertEvent() {
++    }
++
++    @Test
++    void selectAllEvents() {
++    }
++
++    @Test
++    void selectEventById() {
++    }
++
++    @Test
++    void updateEventById() {
++    }
++
++    @Test
++    void deleteEventById() {
++    }
++}
+\ No newline at end of file
+Index: src/test/java/event/ReminderApp/service/EventServiceTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/test/java/event/ReminderApp/service/EventServiceTest.java	(date 1595232442009)
++++ src/test/java/event/ReminderApp/service/EventServiceTest.java	(date 1595232442009)
+@@ -0,0 +1,28 @@
++package event.ReminderApp.service;
++
++import org.junit.jupiter.api.Test;
++
++import static org.junit.jupiter.api.Assertions.*;
++
++class EventServiceTest {
++
++    @Test
++    void addEvent() {
++    }
++
++    @Test
++    void getEventById() {
++    }
++
++    @Test
++    void getAllEvents() {
++    }
++
++    @Test
++    void updateEvent() {
++    }
++
++    @Test
++    void deleteEvent() {
++    }
++}
+\ No newline at end of file
+Index: src/test/java/event/ReminderApp/api/EventControllerTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/test/java/event/ReminderApp/api/EventControllerTest.java	(date 1595232442067)
++++ src/test/java/event/ReminderApp/api/EventControllerTest.java	(date 1595232442067)
+@@ -0,0 +1,28 @@
++package event.ReminderApp.api;
++
++import org.junit.jupiter.api.Test;
++
++import static org.junit.jupiter.api.Assertions.*;
++
++class EventControllerTest {
++
++    @Test
++    void addEvent() {
++    }
++
++    @Test
++    void getAllEvents() {
++    }
++
++    @Test
++    void getEventById() {
++    }
++
++    @Test
++    void updateEvent() {
++    }
++
++    @Test
++    void deleteEvent() {
++    }
++}
+\ No newline at end of file
+Index: src/test/java/event/ReminderApp/datasource/PostgresDataSourceTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/test/java/event/ReminderApp/datasource/PostgresDataSourceTest.java	(date 1595232441975)
++++ src/test/java/event/ReminderApp/datasource/PostgresDataSourceTest.java	(date 1595232441975)
+@@ -0,0 +1,12 @@
++package event.ReminderApp.datasource;
++
++import org.junit.jupiter.api.Test;
++
++import static org.junit.jupiter.api.Assertions.*;
++
++class PostgresDataSourceTest {
++
++    @Test
++    void hikariDataSource() {
++    }
++}
+\ No newline at end of file
+Index: src/main/resources/application.yml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>app:\r\n  datasource:\r\n    jdbc-url: jdbc:postgresql://localhost:5432/reminderapp\r\n    username: postgres\r\n    password: postgres\r\n    pool-size: 30\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main/resources/application.yml	(revision f84e98bbe489b9f907c33589783ffa4fa28764d8)
++++ src/main/resources/application.yml	(date 1595229416592)
+@@ -2,6 +2,6 @@
+   datasource:
+     jdbc-url: jdbc:postgresql://localhost:5432/reminderapp
+     username: postgres
+-    password: postgres
++    password: Orisicare123
+     pool-size: 30
+ 
+Index: src/test/java/event/ReminderApp/ReminderAppApplicationTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/test/java/event/ReminderApp/ReminderAppApplicationTest.java	(date 1595232491692)
++++ src/test/java/event/ReminderApp/ReminderAppApplicationTest.java	(date 1595232491692)
+@@ -0,0 +1,12 @@
++package event.ReminderApp;
++
++import org.junit.jupiter.api.Test;
++
++import static org.junit.jupiter.api.Assertions.*;
++
++class ReminderAppApplicationTest {
++
++    @Test
++    void main() {
++    }
++}
+\ No newline at end of file
+Index: src/test/java/event/ReminderApp/model/EventTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/test/java/event/ReminderApp/model/EventTest.java	(date 1595232442042)
++++ src/test/java/event/ReminderApp/model/EventTest.java	(date 1595232442042)
+@@ -0,0 +1,28 @@
++package event.ReminderApp.model;
++
++import org.junit.jupiter.api.Test;
++
++import static org.junit.jupiter.api.Assertions.*;
++
++class EventTest {
++
++    @Test
++    void getId() {
++    }
++
++    @Test
++    void getName() {
++    }
++
++    @Test
++    void getStartDate() {
++    }
++
++    @Test
++    void getEndDate() {
++    }
++
++    @Test
++    void getDetails() {
++    }
++}
+\ No newline at end of file
