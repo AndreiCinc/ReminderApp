@@ -5,7 +5,7 @@ export default class postRequest extends React.Component {
 		super(props)
 
 		this.state = {
-			url: "9a5fcfc4-25e3-4f49-91dc-b29e699ed1c0",
+			url: this.props,
 			name: "",
     		startDate: "",
 		    endDate: "",
@@ -13,7 +13,7 @@ export default class postRequest extends React.Component {
 		}
 	}
 
-	sendData() {
+	putData() {
 		console.log(this.state)
 		fetch("http://localhost:8080/event/ReminderApp/api/v1/event/" + this.state.url,
 		{
@@ -37,7 +37,7 @@ export default class postRequest extends React.Component {
 	}
 
 	submitHandler = e => {
-		this.sendData()
+		this.putData()
 		e.preventDefault();
 	}
 	

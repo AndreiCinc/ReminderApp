@@ -5,12 +5,11 @@ export default class deleteRequest extends React.Component {
 		super(props)
 
 		this.state = {
-			url: "9a5fcfc4-25e3-4f49-91dc-b29e699ed1c0",
+			url: this.props,
 		}
 	}
 
-	sendData() {
-		console.log(this.state)
+	deleteData() {
 		fetch("http://localhost:8080/event/ReminderApp/api/v1/event/" + this.state.url,
 		{
 			method: 'DELETE',
@@ -20,15 +19,14 @@ export default class deleteRequest extends React.Component {
 		});
 	}
 	submitHandler = e => {
-		console.log('is here');
-		this.sendData()
+		this.deleteData()
 		e.preventDefault();
 	}
 	
 	render() {
  		return(
 			<div>
-				<button type="submit" onClick={this.submitHandler}>Submit</button>
+				<button type="submit" onClick={this.submitHandler}>Delete</button>
 			</div>
 		);
 	}

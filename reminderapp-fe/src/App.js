@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './template/logo.svg';
 import './App.css';
-import PostData from './service/delete.component.js';
+import PostData from './service/put.component.js';
 
 
 function App() {
