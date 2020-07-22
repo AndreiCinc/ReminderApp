@@ -1,0 +1,5 @@
+.inline {
+	overflow: hidden;
+	display: inline-block;
+	vertical-align: middle;
+}
