@@ -22,6 +22,7 @@ public class EventController {
         this.eventService = eventService;
     }
 
+    @CrossOrigin
     @PostMapping
     public void addEvent(@RequestBody Event event) {
         eventService.addEvent(event);
