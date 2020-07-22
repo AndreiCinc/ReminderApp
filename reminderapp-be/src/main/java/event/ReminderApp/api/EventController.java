@@ -40,6 +40,7 @@ public class EventController {
                 .orElse(null);
     }
 
+    @CrossOrigin
     @PutMapping("{id}")
     public void updateEvent(@PathVariable("id") UUID id, @Valid @NotNull @RequestBody Event eventToUpdate) {
         eventService.updateEvent(id, eventToUpdate);
