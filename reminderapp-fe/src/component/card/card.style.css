@@ -1,0 +1,94 @@
+.card {
+	display: grid;
+	grid-template-columns: 20% 10% 15% auto 25%;
+	grid-template-rows: 15% 25% 15% 25% auto;
+	margin-top: 4%;
+	height: 30%;
+	width: 97%;
+	background:  #d9e6f2;
+	color: #000d1a;
+	text-decoration-color: rgb(204, 255, 255);
+	padding: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	
+}
+
+.card .title {
+	grid-column: 1 / 6;
+	grid-row: 0 / 2;
+	font-size: 14px;
+	font-weight: bold;
+	opacity: none;
+	font-family: monospace;
+	text-align: center;
+}
+
+.card .start-date {
+	grid-column: 1 / 6;
+	grid-row: 2 / 3;
+	margin-top: 6px;
+	padding-top: 3px;
+	font-size: 12px;
+	font-family: monospace;
+	text-align: left;
+}
+
+.card .end-date {
+	grid-column: 1 / 6;
+	grid-row: 3 / 4;
+	margin-top: 5px;
+	padding-top: 3px;
+	font-size: 12px;
+	font-family: monospace;
+	text-align: left;
+	opacity: 1;
+}
+.card .details-button {
+	grid-column: 1 / 4;
+	grid-row: 5 / 6;
+  	border: none;
+  	padding: 0px 10px;
+  	text-align: center;
+  	-webkit-border-radius: 5px;
+  	-moz-border-radius: 5px;
+  	-ms-border-radius: 5px;
+  	-o-border-radius: 5px;
+  	font-size: 12px;
+}
+
+.card .update-button {
+	grid-column: 6 / 7;
+	grid-row: 4 / 5;
+	border: none;
+	margin-left: 40%;
+  	height: 28px;
+  	width: 28px;
+	padding: 5px 1px;
+  	text-align: center;
+  	text-decoration: none;
+  	-webkit-border-radius: 5px;
+  	-moz-border-radius: 5px;
+  	-ms-border-radius: 5px;
+  	-o-border-radius: 5px;
+  	font-size: 12px;
+}
+
+.card .delete-button {
+	grid-column: 6 / 7;
+	grid-row: 2 / 3;
+  	border: none;
+  	margin-left: 40%;
+  	height: 28px;
+  	width: 28px;
+  	padding: 5px 1px;
+  	text-align: center;
+  	text-decoration: none;
+  	-webkit-border-radius: 5px;
+  	-moz-border-radius: 5px;
+  	-ms-border-radius: 5px;
+  	-o-border-radius: 5px;
+  	font-size: 12px;
+}

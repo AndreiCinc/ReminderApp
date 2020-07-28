@@ -1,0 +1,66 @@
+.App .Create-event {
+  position: fixed; 
+  flex: column;
+  margin-left: 3%;
+  margin-top: 4%;
+  height: 80%;
+  width: 55%;
+  background: white;
+  opacity: 1;
+  padding: 30px;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+/*@media screen and (max-width: 991px) {
+
+  .App .Create-event {
+    margin-top: 4%;
+    margin-left: 10px;
+    height: 75%;
+    width: 55%;
+  }
+}
+@media screen and (max-width: 767px) {
+
+  .App .Create-event {
+    margin-top: 4%;
+    margin-left: 10px;
+    height: 75%;
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 479px) {
+
+  .App .Create-event {
+    margin-top: 4%;
+    margin-left: 10px;
+    height: 75%;
+    width: 55%;
+  }
+}*/
+
+@media screen and (max-height: 250px) and (max-width: 500px) {
+ 
+  .App .Create-event {
+    margin-top: 0px;
+    margin-left: 0px;
+    height: 78%;
+    width: 55%;
+  }
+}
+@media screen and (max-height: 200px) and (max-width: 300px) {
+
+  .App .Create-event {
+    margin-top: 0px;
+    margin-left: 0px;
+    height: 100%;
+    width: 60%;
+  }
+}
