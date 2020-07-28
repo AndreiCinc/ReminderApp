@@ -2,7 +2,7 @@
 	display: grid;
 	grid-template-columns: 20% 10% 15% auto 25%;
 	grid-template-rows: 15% 25% 15% 25% auto;
-	margin: 0px;
+	margin-top: 4%;
 	height: 30%;
 	width: 97%;
 	background:  #d9e6f2;
@@ -13,6 +13,7 @@
 	-moz-border-radius: 5px;
 	-ms-border-radius: 5px;
 	-o-border-radius: 5px;
+	
 }
 
 .card .title {
