@@ -28,6 +28,7 @@ public class EventController {
         eventService.addEvent(event);
     }
 
+    @CrossOrigin
     @GetMapping
     public List<Event> getAllEvents() {
         return eventService.getAllEvents();
