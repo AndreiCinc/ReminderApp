@@ -17,7 +17,7 @@ public class EventService {
     public final EventInterface eventInterface;
 
     @Autowired
-    public EventService(@Qualifier("bam") EventInterface eventInterface) {
+    public EventService(@Qualifier("postgres") EventInterface eventInterface) {
         this.eventInterface = eventInterface;
     }
 
