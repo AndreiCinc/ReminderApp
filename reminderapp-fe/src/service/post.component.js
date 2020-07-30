@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Service from './CardService.js';
 
 export default class postRequest extends React.Component {
 	constructor(props) {
@@ -12,36 +13,16 @@ export default class postRequest extends React.Component {
 		}
 	}
 
-	postData() {
-		console.log(this.state)
-		fetch("http://localhost:8080/event/ReminderApp/api/v1/event/" ,
-		{
-			method: 'POST',
-			headers: {
-	 		   "Content-Type" : "application/JSON" ,
-	 		},
-	 		dataType: "json",
-			body: JSON.stringify(this.state),
-		})
-		.then(response => response.json())
-		.then(json => {console.log(json)
-		})
-		.catch(err => {
-	         console.log('Type send failed', err);
-		});
-	}
-
 	changeHandler = e => {
 		this.setState({[e.target.name]: e.target.value});
 	}
 
 	submitHandler = e => {
-		this.postData()
+		Service.postData(this.state);
 		e.preventDefault();
 	}
 
 	render() {
- 		
  		const {name, startDate, endDate, details} = this.state;
 		return(
 			<div>

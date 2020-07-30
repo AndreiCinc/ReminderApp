@@ -1,7 +1,7 @@
 
 const CardService = {
 
-	postRvent: function() {
+	postEvent: function(value) {
 		fetch("http://localhost:8080/event/ReminderApp/api/v1/event/" ,
 		{
 			method: 'POST',
@@ -9,7 +9,7 @@ const CardService = {
 	 		   "Content-Type" : "application/JSON" ,
 	 		},
 	 		dataType: "json",
-			body: JSON.stringify(this.state),
+			body: JSON.stringify(value),
 		})
 		.then(response => response.json())
 		.then(json => {console.log(json)
@@ -17,7 +17,7 @@ const CardService = {
 		.catch(err => {
 	         console.log('Type send failed', err);
 		});
-	}
+	},
 
 	getEvents: function(value) {
        return fetch('http://localhost:8080/event/ReminderApp/api/v1/event')

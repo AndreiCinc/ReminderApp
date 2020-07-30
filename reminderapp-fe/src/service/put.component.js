@@ -13,24 +13,8 @@ export default class postRequest extends React.Component {
 		}
 	}
 
-	putData() {
-		console.log(this.state)
-		fetch("http://localhost:8080/event/ReminderApp/api/v1/event/" + this.state.url,
-		{
-			method: 'PUT',
-			headers: {
-	 		   "Content-Type" : "application/JSON" ,
-	 		},
-	 		dataType: "json",
-			body: JSON.stringify(this.state),
-		})
-		.then(response => response.json())
-		.then(json => {console.log(json)
-		})
-		.catch(err => {
-	         console.log('Type send failed', err);
-		});
-	}
+	
+	
 
 	changeHandler = e => {
 		this.setState({[e.target.name]: e.target.value});
