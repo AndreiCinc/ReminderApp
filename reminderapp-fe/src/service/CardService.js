@@ -19,7 +19,7 @@ const CardService = {
 		});
 	},
 
-	getEvents: function(value) {
+	getEvents: function() {
        return fetch('http://localhost:8080/event/ReminderApp/api/v1/event')
 		.then((response) => response.json())
 		.then((response) => {

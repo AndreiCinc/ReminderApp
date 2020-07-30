@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Service from './CardService.js';
+import PostService from './CardService.js';
 
 export default class postRequest extends React.Component {
 	constructor(props) {
@@ -18,7 +18,7 @@ export default class postRequest extends React.Component {
 	}
 
 	submitHandler = e => {
-		Service.postData(this.state);
+		PostService.postEvent(this.state);
 		e.preventDefault();
 	}
 
