@@ -1,13 +1,22 @@
 import React from 'react';
-import logo from './template/logo.svg';
 import './App.css';
-import PostData from './service/put.component.js';
+import List from './component/list/list.component.js';
+import CreateEvent from './component/createEvent/createEvent.component.js';
+import Create from './service/post.component.js';
 
 
 function App() {
   return (
     <div className="App">
-      <PostData/>
+      <div className="Title">
+        <h4>ReminderApp</h4>
+      </div>
+      <div>
+        <Create />
+      </div>
+      <div>
+        <List />
+      </div>
     </div>
   );
 }
