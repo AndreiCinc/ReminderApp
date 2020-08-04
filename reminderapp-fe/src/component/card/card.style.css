@@ -1,10 +1,10 @@
-.card {
+.list .card {
 	display: grid;
 	grid-template-columns: 20% 10% 15% auto 25%;
 	grid-template-rows: 15% 25% 15% 25% auto;
 	margin-top: 4%;
 	height: 30%;
-	width: 97%;
+	width: 100%;
 	background:  #d9e6f2;
 	color: #000d1a;
 	text-decoration-color: rgb(204, 255, 255);
@@ -14,6 +14,37 @@
 	-ms-border-radius: 5px;
 	-o-border-radius: 5px;
 	
+}
+
+.popoverStyle {
+	background:  #d9e6f2;
+	display: space-under;
+	font-family: "Lucida Console", Courier, monospace;
+	width: 280px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	
+}
+.popoverStyle .header {
+	margin: 0px;
+	background:  #CAD1D7;
+	display: space-under;
+	text-align: center;
+	font-size: 15px;
+	padding: 5px;
+	-webkit-border-radius: 5px;
+  
+}
+
+.popoverStyle .body {
+	margin: 5px;
+	background:  #D3E7F7;
+	opacity: 0.7;
+	display: space-under;
+	text-align: left;
+	font-size: 13px;
+	padding: 10px;
 }
 
 .card .title {
