@@ -23,45 +23,7 @@ export default class postRequest extends React.Component {
 	}
 
 	render() {
- 		const {name, startDate, endDate, details} = this.state;
-		return(
-			<div>
-				<form onSubmit={this.submitHandler}>
-					<div>
-						<input 
-							type="text" 
-							name="name" 
-							values={name} 
-							onChange={this.changeHandler}
-						/>
-					</div>
-					<div>
-						<input 
-							type="text" 
-							name="startDate" 
-							values={startDate} 
-							onChange={this.changeHandler} 
-						/>
-					</div>
-					<div>
-						<input 
-							type="text" 
-							name="endDate" 
-							values={endDate}
-							onChange={this.changeHandler} 
-						/>
-					</div>
-					<div>
-						<input
-							type="text" 
-							name="details" 
-							values={details}
-							onChange={this.changeHandler}
-						/>
-					</div>
-					<button type="submit">Submit</button>
-				</form>
-			</div>
-		);
+
+		return(<div></div>)
 	}
-}
+	}

@@ -1,7 +1,8 @@
 
 const CardService = {
 
-	postEvent: function(value) {
+	postEvent(value){
+		console.log(value);
 		fetch("http://localhost:8080/event/ReminderApp/api/v1/event/" ,
 		{
 			method: 'POST',
@@ -19,14 +20,15 @@ const CardService = {
 		});
 	},
 
-	getEvents: function() {
+	getEvents() {
        return fetch('http://localhost:8080/event/ReminderApp/api/v1/event')
 		.then((response) => response.json())
 		.then((response) => {
 			return response;
 		});
     }, 
-    deleteEvent: function(value) {
+    
+    deleteEvent(value) {
         fetch("http://localhost:8080/event/ReminderApp/api/v1/event/" + value,
 		{
 			method: 'DELETE',
