@@ -1,10 +1,24 @@
-import React, { Component, useState} from 'react';
+import React, { Component, useState, useEffect} from 'react';
 import './list.style.css';
 import Card from '../card/card.component.js';
+import CardService from '../../service/CardService.js';
 
 export default function List(props) {
 
-	if (!props.loaded) {
+	const [isLoaded, setLoaded] = useState(true);
+	const [data, setData] = useState([]);
+
+	const getData = async () => {
+		let reminders = await CardService.getEvents();
+		setLoaded(true);
+		setData(reminders);
+			
+	}
+	useEffect(() =>{
+	getData();
+	}, [true])
+
+	if (!isLoaded) {
 		return(
 		<div className="list">
 			<div className="lds-spinner">
@@ -39,8 +53,9 @@ export default function List(props) {
 	return(
 		<div className="list">
 			<Card 
-				object={props.object} 
+				object={data} 
 			/>
 		</div>	
 	);
+	
 }

@@ -47,6 +47,7 @@ public class EventController {
         eventService.updateEvent(id, eventToUpdate);
     }
 
+    @CrossOrigin
     @DeleteMapping("{id}")
     public void deleteEvent(@PathVariable("id") UUID id) {
         eventService.deleteEvent(id);

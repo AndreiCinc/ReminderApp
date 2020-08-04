@@ -1,6 +1,7 @@
 package event.ReminderApp.dao;
 
 import event.ReminderApp.model.Event;
+import org.joda.time.DateTime;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
@@ -42,8 +43,8 @@ public class EventDatabaseService implements EventInterface {
         return jdbcTemplate.query(sql, (resultSet, i )-> {
             UUID eventId =  UUID.fromString(resultSet.getString("id"));
             String eventName = resultSet.getString("eventName");
-            Date startDate = resultSet.getDate("startdate");
-            Date endDate = resultSet.getDate("endDate");
+            Date startDate = new Date(resultSet.getTimestamp("startDate").getTime());
+            Date endDate = new Date(resultSet.getTimestamp("endDate").getTime());
             String details = resultSet.getString("details");
             return new Event(eventId, eventName, startDate, endDate, details);
         });
@@ -58,8 +59,8 @@ public class EventDatabaseService implements EventInterface {
                 ((resultSet, i) -> {
                     UUID eventId =  UUID.fromString(resultSet.getString("id"));
                     String eventName = resultSet.getString("eventName");
-                    Date startDate = resultSet.getDate("startdate");
-                    Date endDate = resultSet.getDate("endDate");
+                    Date startDate = new Date(resultSet.getTimestamp("startDate").getTime());
+                    Date endDate = new Date(resultSet.getTimestamp("endDate").getTime());
                     String details = resultSet.getString("details");
                     return new Event( eventId, eventName, startDate, endDate, details);
                  })

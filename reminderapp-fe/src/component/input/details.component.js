@@ -1,12 +1,20 @@
-import React, { Component } from 'react';
-import './details.style.css';
+import React from 'react';
+import '../createEvent/createEvent.style.css';
 
-export default function details() {
+export default function Details(props) {
 
+	function handleDetails(e) {
+		props.handleDetails(e.target.value);
+	}
 	return (
-		<div class="form-group blue-border inline">
-		  <label for="exampleFormControlTextarea4">Details: </label>
-		  <textarea class="form-control" id="exampleFormControlTextarea4" rows="3"></textarea>
+		<div className="form-group blue-border inline">
+			<label for="exampleFormControlTextarea4">Details: </label>
+		  	<textarea className="form-control" 
+		  		id="exampleFormControlTextarea4" 
+		  		rows="3"
+		  		onChange={(e) => handleDetails(e)}
+		  	>
+		  	</textarea>
 		</div>
 	);
 }

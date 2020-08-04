@@ -1,26 +1,46 @@
-/*import React, { Component } from 'react';
+import 'date-fns';
+import React from 'react';
+import Grid from '@material-ui/core/Grid';
+import DateFnsUtils from '@date-io/date-fns';
+import {
+  MuiPickersUtilsProvider,
+  KeyboardTimePicker,
+  KeyboardDatePicker,
+} from '@material-ui/pickers';
+import Button from '@material-ui/core/Button';
 
-export default function calendar() {
+export default function MaterialUIPickers(props) {
 
-	return (
-		<div class="container">
-		    <div class="row">
-		        <div class='col-sm-6'>
-		            <div class="form-group">
-		                <div class='input-group date' id='datetimepicker1'>
-		                    <input type='text' class="form-control" />
-		                    <span class="input-group-addon">
-		                        <span class="glyphicon glyphicon-calendar"></span>
-		                    </span>
-		                </div>
-		            </div>
-		        </div>
-		        <script type="text/javascript">
-		            (function () {
-		                ('#datetimepicker1').datetimepicker()
-		            });
-		    	</script>
-			</div>
-		</div>
-		);
-}*/
+  const handleDateChange = (date) => {
+    props.handlerDate(date);
+  };
+  return (
+    <MuiPickersUtilsProvider utils={DateFnsUtils}>
+      <Grid container justify="space-around">
+        <KeyboardDatePicker
+        style={{width:'50%'}}
+          margin="normal"
+          id="date-picker-dialog"
+          label="Start Date"
+          format="MM/dd/yyyy"
+          value={props.date}
+          onChange={handleDateChange}
+          KeyboardButtonProps={{
+            'aria-label': 'change date',
+          }}
+        />
+        <KeyboardTimePicker
+        style={{width:'40%'}}
+          margin="normal"
+          id="time-picker"
+          label="Start Time"
+          value={props.date}
+          onChange={handleDateChange}
+          KeyboardButtonProps={{
+            'aria-label': 'change time',
+          }}
+        />
+      </Grid>
+    </MuiPickersUtilsProvider>
+  );
+}

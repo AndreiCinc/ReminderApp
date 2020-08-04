@@ -1,6 +1,7 @@
 package event.ReminderApp.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import org.joda.time.DateTime;
 
 import java.util.Date;
 import java.util.UUID;
@@ -33,6 +34,7 @@ public class Event {
         return name;
     }
     public Date getStartDate() {
+        System.out.println(startDate);
         return startDate;
     }
     public Date getEndDate() {

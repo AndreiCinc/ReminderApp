@@ -1,12 +1,24 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import './title.style.css';
 
 
-export default function title() {
+export default function Title(props) {
+
+	const [name, setName] = useState(props.name);
+
+	function handlerName(e) {
+		props.handlerName(e);
+	}
 
 	return(
-		<div class="md-form active-cyan active-cyan-2 mb-3">
-		  <input class="form-control" type="text" placeholder="Insert Title..." aria-label="Search"/>
+		<div className="md-form active-cyan active-cyan-2 mb-3">
+		  <input 
+		  	className="form-control" 
+		  	type="text" 
+		  	placeholder={name} 
+		  	aria-label="Name"
+		  	onChange={(e) => {handlerName(e)}}
+		  	/>
 		</div>
 	);
 }

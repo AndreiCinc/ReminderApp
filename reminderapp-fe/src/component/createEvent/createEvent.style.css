@@ -1,16 +1,51 @@
 .App .Create-event {
   position: fixed; 
   flex: column;
-  margin-left: 3%;
+  margin-left: 45%;
   margin-top: 4%;
   height: 80%;
-  width: 55%;
+  width: 52%;
   background: white;
   opacity: 1;
   padding: 30px;
   -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.15);
   -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.15);
   box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.Create-event .text {
+  margin: 0%;
+  font-weight: bold;
+  padding: 5px;
+  font-family: "Lucida Console", Courier, monospace;
+}
+
+.Create-event .date {
+  margin-left: 0%;
+  margin-top: -3%;
+  padding: 0px;
+  font-family: "Lucida Console", Courier, monospace;
+}
+
+.Create-event .inline {
+  overflow: hidden;
+  width: 100%;
+  display: inline-block;
+}
+
+.Create-event .createButton {
+  margin-left: 69%;
+  border: 0px;
+  justify-content: center;
+  display: flex;
+  width: 30%;
+  -webkit-box-shadow: 0 1px 2px #D3E7F7;
+  -moz-box-shadow: 0 1px 2px #D3E7F7;
+  box-shadow: 0 1px 2px #D3E7F7;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
