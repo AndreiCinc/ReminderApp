@@ -1,4 +1,4 @@
-import React, { Component, useState} from 'react';
+import React, { useState} from 'react';
 import './card.style.css';
 import '../../template/loading.style.css';
 import Moment from 'react-moment';
@@ -10,17 +10,12 @@ import CustomComponent from './popover.component.js'
 export default function Card(props) {
 
 	const [openModal, setOpenModal] = useState(false);
-	const [openPopper, setOpenPopper] = useState(false);
-	const [eventObject, setEventObject] = useState({});
 
 	const deleteReminder = (e, id) => {
 		CardService.deleteEvent(id); 
 	}
-	const handlerOpen = (e) => {
+	const handlerModal = () => {
 		setOpenModal(!openModal);
-	}
-	const handlerPopper = (e) => {
-		setOpenPopper(!openPopper)
 	}
 	return(
 		props.object.map((object) => {
@@ -42,11 +37,11 @@ export default function Card(props) {
                				{object.endDate}
                			</Moment>
 					</div>
-					<button className="update-button" onClick={handlerOpen}>
+					<button className="update-button" onClick={(e) => handlerModal(e)}>
 						<i className="fa fa-cog">
 						</i>
 					</button>
-					<Modal onClose={handlerOpen}/>
+					<Modal onClose={handlerModal} isOpen={openModal} id={object.id}/>
 					<CustomComponent 
 						className="details-button"
 						title={object.name}

@@ -34,9 +34,13 @@ class CreateEvent extends React.Component {
 		}else if (
 			 this.state.startDate.getTime() >= this.state.endDate.getTime() ) {
 				alert("The start date cannot be equal or more than end date");
-		}else {
+		}else if (this.props.buttonFunction === "Create") {
 			CardService.postEvent(this.state)
+		}else if (this.props.buttonFunction === "Update") {
+			this.props.onClose(e.target.value);
+			CardService.putEvent(this.state, this.props.id);
 		}
+		e.preventDefault();
 	}	
 	render() {
 		return(
@@ -54,8 +58,8 @@ class CreateEvent extends React.Component {
 		        	<div className="text">
 		        		<Details type="submit" handleDetails={this.handleDetails}/>
 		        	</div>
-		        	<button className="createButton" >
-		        		Create   
+		        	<button className="createButton">
+		        		{this.props.buttonFunction}  
 		        	</button>
 		      	</div>
 	      	</form>

@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css';
 import List from './component/list/list.component.js';
 import CreateEvent from './component/createEvent/createEvent.component.js';
-import Create from './service/post.component.js';
 
 
 function App() {
@@ -12,7 +11,7 @@ function App() {
         <h4>ReminderApp</h4>
       </div>
       <div>
-        <Create />
+        <CreateEvent buttonFunction={"Create"} />
       </div>
       <div>
         <List />

@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './title.style.css';
 
 
 export default function Title(props) {
 
-	const [name, setName] = useState(props.name);
+	const name = props.name;
 
 	function handlerName(e) {
 		props.handlerName(e);

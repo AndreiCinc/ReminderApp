@@ -1,6 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import Modal from 'react-modal';
+import CreateEvent from '../createEvent/createEvent.component.js';
  
   const customStyles = {
     content : {
@@ -18,19 +18,17 @@ Modal.setAppElement('#root')
 export default function DetailsModal(props){
 
     function onClose(e) {
-      !props.onClose && props.onClose(e);
+      props.onClose && props.onClose(e);
     }
    
       return (
         <div>
           <Modal
-            isOpen={false}
+            isOpen={props.isOpen}
             onRequestClose={onClose}
             style={customStyles}
           >
-            <h2>Hello, {props.title}</h2>
-            <button className={"closeButton"} onClick={onClose}>close</button>
-            <div>I am a modal</div>
+            <CreateEvent buttonFunction={"Update"} id={props.id} onClose={onClose}/>
           </Modal>
         </div>
       );

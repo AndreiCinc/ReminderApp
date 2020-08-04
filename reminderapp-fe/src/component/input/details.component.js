@@ -8,7 +8,7 @@ export default function Details(props) {
 	}
 	return (
 		<div className="form-group blue-border inline">
-			<label for="exampleFormControlTextarea4">Details: </label>
+			<label className="exampleFormControlTextarea4">Details: </label>
 		  	<textarea className="form-control" 
 		  		id="exampleFormControlTextarea4" 
 		  		rows="3"

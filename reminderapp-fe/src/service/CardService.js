@@ -20,6 +20,24 @@ const CardService = {
 		});
 	},
 
+	putEvent(value, id) {
+		fetch("http://localhost:8080/event/ReminderApp/api/v1/event/" + id ,
+		{
+			method: 'PUT',
+			headers: {
+	 		   "Content-Type" : "application/JSON" ,
+	 		},
+	 		dataType: "json",
+			body: JSON.stringify(value),
+		})
+		.then(response => response.json())
+		.then(json => {console.log(json)
+		})
+		.catch(err => {
+	         console.log('Type send failed', err);
+		});
+	},
+
 	getEvents() {
        return fetch('http://localhost:8080/event/ReminderApp/api/v1/event')
 		.then((response) => response.json())
@@ -36,7 +54,7 @@ const CardService = {
 		.catch(err => {
 	         console.log('Type send failed', err);
 		});
-    },
+    }
 };
 
 export default CardService;
