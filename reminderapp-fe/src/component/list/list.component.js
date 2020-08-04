@@ -11,12 +11,12 @@ export default function List(props) {
 	const getData = async () => {
 		let reminders = await CardService.getEvents();
 		setLoaded(true);
-		setData(reminders)
+		setData(reminders);
 			
 	}
-	useEffect( () =>{
-		getData()
-	})
+	useEffect(() =>{
+	getData();
+	}, [true])
 
 	if (!isLoaded) {
 		return(
@@ -57,4 +57,5 @@ export default function List(props) {
 			/>
 		</div>	
 	);
+	
 }
