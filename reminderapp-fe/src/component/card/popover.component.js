@@ -14,7 +14,7 @@ export default function CustomComponent (props) {
 	let details = props.details;
 	
 	const container = ({ position, targetRect, popoverRect})=> ( 
-	    <ArrowContainer // if you'd like an arrow, you can import the ArrowContainer!
+	    <ArrowContainer 
 	    	position={position}
 	    	targetRect={targetRect}
 	    	popoverRect={popoverRect}
