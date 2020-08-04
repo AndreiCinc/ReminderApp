@@ -1,4 +1,4 @@
-import React, { Component, useState, useEffect} from 'react';
+import React, { useState, useEffect} from 'react';
 import './list.style.css';
 import Card from '../card/card.component.js';
 import CardService from '../../service/CardService.js';
@@ -16,7 +16,7 @@ export default function List(props) {
 	}
 	useEffect(() =>{
 	getData();
-	}, [true])
+	}, [])
 
 	if (!isLoaded) {
 		return(
