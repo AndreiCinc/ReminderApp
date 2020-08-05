@@ -1,6 +1,7 @@
 .App .Create-event {
   position: fixed; 
-  flex: column;
+  display: flex;
+  flex-direction: column;
   margin-left: 45%;
   margin-top: 4%;
   height: 80%;
@@ -17,27 +18,27 @@
   -o-border-radius: 5px;
 }
 
-.Create-event .text {
+.App .Create-event .text {
   margin: 0%;
   font-weight: bold;
   padding: 5px;
   font-family: "Lucida Console", Courier, monospace;
 }
 
-.Create-event .date {
+.App .Create-event .date {
   margin-left: 0%;
   margin-top: -3%;
   padding: 0px;
   font-family: "Lucida Console", Courier, monospace;
 }
 
-.Create-event .inline {
+.App .Create-event .inline {
   overflow: hidden;
   width: 100%;
   display: inline-block;
 }
 
-.Create-event .createButton {
+.App .Create-event .createButton {
   margin-left: 69%;
   border: 0px;
   justify-content: center;
@@ -52,50 +53,23 @@
   -o-border-radius: 5px;
 }
 
-/*@media screen and (max-width: 991px) {
-
-  .App .Create-event {
-    margin-top: 4%;
-    margin-left: 10px;
-    height: 75%;
-    width: 55%;
-  }
-}
-@media screen and (max-width: 767px) {
-
-  .App .Create-event {
-    margin-top: 4%;
-    margin-left: 10px;
-    height: 75%;
-    width: 55%;
-  }
-}
-
-@media screen and (max-width: 479px) {
-
-  .App .Create-event {
-    margin-top: 4%;
-    margin-left: 10px;
-    height: 75%;
-    width: 55%;
-  }
-}*/
-
 @media screen and (max-height: 250px) and (max-width: 500px) {
  
   .App .Create-event {
-    margin-top: 0px;
-    margin-left: 0px;
-    height: 78%;
     width: 55%;
   }
+
+  .App .Create-event .createButton {
+    width: 40%; 
+  }
 }
-@media screen and (max-height: 200px) and (max-width: 300px) {
+@media screen and (max-width: 300px) {
 
   .App .Create-event {
-    margin-top: 0px;
-    margin-left: 0px;
-    height: 100%;
     width: 60%;
+  }
+  
+  .App .Create-event .createButton {
+    width: 50%; 
   }
 }

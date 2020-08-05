@@ -57,4 +57,4 @@ const cardService = {
     }
 };
 
-export default CardService;
+export default cardService;

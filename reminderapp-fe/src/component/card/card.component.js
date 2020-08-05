@@ -6,7 +6,6 @@ import 'moment-timezone';
 import CardService from '../../service/cardService.js';
 import Modal from './modal.component.js';
 import CustomComponent from './popover.component.js'
-import List from '../list/list.component.js';
 
 export default function Card(props) {
 

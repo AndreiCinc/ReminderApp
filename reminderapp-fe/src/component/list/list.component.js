@@ -1,13 +1,12 @@
 import React, { useState, useEffect} from 'react';
 import './list.style.css';
 import Card from '../card/card.component.js';
-import CardService from '../../service/CardService.js';
+import CardService from '../../service/cardService.js';
 
 export default function List(props) {
 
 	const [isLoaded, setLoaded] = useState(true);
 	const [data, setData] = useState([]);
-	const [count, setCount] = useState(0);
 
 	const getData = async () => {
 		let reminders = await CardService.getEvents();

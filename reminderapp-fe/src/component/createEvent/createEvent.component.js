@@ -4,7 +4,6 @@ import Name from '../input/title.component.js';
 import Calendar from '../input/calendar.component.js';
 import Details from '../input/details.component.js';
 import CardService from '../../service/cardService.js';
-import List from '../list/list.component.js';
 
 
 class CreateEvent extends React.Component {
