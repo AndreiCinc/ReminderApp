@@ -6,13 +6,15 @@ import 'moment-timezone';
 import CardService from '../../service/CardService.js';
 import Modal from './modal.component.js';
 import CustomComponent from './popover.component.js'
+import List from '../list/list.component.js';
 
 export default function Card(props) {
 
 	const [openModal, setOpenModal] = useState(false);
 
 	const deleteReminder = (e, id) => {
-		CardService.deleteEvent(id); 
+		CardService.deleteEvent(id)
+		e.preventDefault();
 	}
 	const handlerModal = () => {
 		setOpenModal(!openModal);

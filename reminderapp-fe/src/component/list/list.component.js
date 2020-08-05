@@ -7,16 +7,20 @@ export default function List(props) {
 
 	const [isLoaded, setLoaded] = useState(true);
 	const [data, setData] = useState([]);
+	const [count, setCount] = useState(0);
 
 	const getData = async () => {
 		let reminders = await CardService.getEvents();
 		setLoaded(true);
-		setData(reminders);
-			
+		setData(reminders);	
 	}
-	useEffect(() =>{
-	getData();
-	}, [])
+
+	useEffect(() => {
+		let events = setInterval(() => {
+			getData();
+		}, 1000);
+		return () => clearInterval(events);
+	})
 
 	if (!isLoaded) {
 		return(

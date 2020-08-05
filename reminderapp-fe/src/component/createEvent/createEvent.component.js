@@ -4,6 +4,7 @@ import Name from '../input/title.component.js';
 import Calendar from '../input/calendar.component.js';
 import Details from '../input/details.component.js';
 import CardService from '../../service/CardService.js';
+import List from '../list/list.component.js';
 
 
 class CreateEvent extends React.Component {
@@ -41,13 +42,14 @@ class CreateEvent extends React.Component {
 			CardService.putEvent(this.state, this.props.id);
 		}
 		e.preventDefault();
-	}	
+	}
+
 	render() {
 		return(
 			<form onSubmit={(e) => {this.handleSubmit(e)}}>
 				<div className="Create-event">
 					<div>
-			        	<Name name={'Insert event name'} handlerName={(e) => this.handlerName(e)} />
+			        	<Name name={'Insert event name'} handlerName={this.handlerName} />
 		        	</div>
 		        	<div className="date">
 		         		<Calendar type="submit" handlerDate={this.handleStartDate} date={this.state.startDate}/>
@@ -58,7 +60,7 @@ class CreateEvent extends React.Component {
 		        	<div className="text">
 		        		<Details type="submit" handleDetails={this.handleDetails}/>
 		        	</div>
-		        	<button className="createButton">
+		        	<button className="createButton" onClick={(e) => {this.handleSubmit(e)}}>
 		        		{this.props.buttonFunction}  
 		        	</button>
 		      	</div>
