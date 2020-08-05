@@ -1,5 +1,5 @@
 
-const CardService = {
+const cardService = {
 
 	postEvent(value){
 		console.log(value);

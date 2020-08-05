@@ -3,7 +3,7 @@ import './card.style.css';
 import '../../template/loading.style.css';
 import Moment from 'react-moment';
 import 'moment-timezone';
-import CardService from '../../service/CardService.js';
+import CardService from '../../service/cardService.js';
 import Modal from './modal.component.js';
 import CustomComponent from './popover.component.js'
 import List from '../list/list.component.js';
