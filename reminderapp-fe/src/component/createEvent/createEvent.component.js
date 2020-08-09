@@ -4,6 +4,8 @@ import Name from '../input/title.component.js';
 import Calendar from '../input/calendar.component.js';
 import Details from '../input/details.component.js';
 import CardService from '../../service/cardService.js';
+import Memo from '../input/memo.component.js';
+import BellIcon from 'react-bell-icon';
 
 
 class CreateEvent extends React.Component {
@@ -13,7 +15,8 @@ class CreateEvent extends React.Component {
 			name: "",
 			startDate: new Date(),
 			endDate: new Date(),
-			details: ""
+			details: "",
+			memo: new Date()
 		}
 	}
 	handlerName = e =>{
@@ -26,7 +29,13 @@ class CreateEvent extends React.Component {
 		this.setState({endDate: date});
 	}
 	handleDetails = value => {
-		this.setState({details: value})
+		this.setState({details: value});
+	}
+	handleMemo = e => {
+		let date = e.target.value;
+		let memoDate = this.state.startDate.getTime() - (date * 60000);
+		let newDate = new Date(memoDate);
+		this.setState({memo: newDate});
 	}
 	handleSubmit = (e) => {
 		if (this.state.name === "" ) {
@@ -59,9 +68,19 @@ class CreateEvent extends React.Component {
 		        	<div className="text">
 		        		<Details type="submit" handleDetails={this.handleDetails}/>
 		        	</div>
-		        	<button className="createButton" onClick={(e) => {this.handleSubmit(e)}}>
-		        		{this.props.buttonFunction}  
-		        	</button>
+			        <div className="bottom" >
+			        	<div className="bell">
+			        		<BellIcon width='15' active={false} animate={false} opacity={0.6}/>
+			        	</div>
+			        	<div>
+			        		<Memo memo={this.handleMemo}/>
+			        	</div>
+			        	<div>
+				        <button className="createButton" onClick={(e) => {this.handleSubmit(e)}}>
+				        	{this.props.buttonFunction}  
+				        </button>
+				        </div>
+		        	</div>
 		      	</div>
 	      	</form>
 		);
