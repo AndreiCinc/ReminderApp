@@ -1,7 +1,6 @@
 package event.ReminderApp.service;
 
 import event.ReminderApp.dao.EventInterface;
-import event.ReminderApp.dao.EventList;
 import event.ReminderApp.model.Event;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
