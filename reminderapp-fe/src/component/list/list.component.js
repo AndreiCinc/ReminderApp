@@ -1,7 +1,7 @@
 import React, { useState, useEffect} from 'react';
 import './list.style.css';
 import Card from '../card/card.component.js';
-import CardService from '../../service/CardService.js';
+import CardService from '../../service/cardService.js';
 
 export default function List(props) {
 
@@ -11,12 +11,15 @@ export default function List(props) {
 	const getData = async () => {
 		let reminders = await CardService.getEvents();
 		setLoaded(true);
-		setData(reminders);
-			
+		setData(reminders);	
 	}
-	useEffect(() =>{
-	getData();
-	}, [])
+
+	useEffect(() => {
+		let events = setInterval(() => {
+			getData();
+		}, 1000);
+		return () => clearInterval(events);
+	})
 
 	if (!isLoaded) {
 		return(

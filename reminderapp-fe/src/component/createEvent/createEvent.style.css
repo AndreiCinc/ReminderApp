@@ -1,6 +1,7 @@
 .App .Create-event {
   position: fixed; 
-  flex: column;
+  display: flex;
+  flex-direction: column;
   margin-left: 45%;
   margin-top: 4%;
   height: 80%;
@@ -17,32 +18,46 @@
   -o-border-radius: 5px;
 }
 
-.Create-event .text {
+.App .Create-event .text {
   margin: 0%;
   font-weight: bold;
   padding: 5px;
   font-family: "Lucida Console", Courier, monospace;
 }
 
-.Create-event .date {
+.App .Create-event .date {
   margin-left: 0%;
   margin-top: -3%;
   padding: 0px;
   font-family: "Lucida Console", Courier, monospace;
 }
 
-.Create-event .inline {
-  overflow: hidden;
+.App .Create-event .bottom {
+  display: inline-flex;
+  flex-direction: row;
+  margin-left: 0px;
+  height: 22px;
   width: 100%;
-  display: inline-block;
+}
+.App .Create-event .bottom .bell {
+  margin-top: -8px;
+  margin-left: 0px;
 }
 
-.Create-event .createButton {
-  margin-left: 69%;
-  border: 0px;
-  justify-content: center;
+.App .Create-event .createButton {
   display: flex;
-  width: 30%;
+  position: relative;
+  flex-direction: column;
+  margin-left: 50%;
+  margin-top: 2px;
+  width: 100%;
+  height: 20px;
+  padding-left: 4px;
+  padding-top: 0px;
+  justify-content: center;
+  border: 0px;
+  text-align: center;
+  font-size: 14px;
   -webkit-box-shadow: 0 1px 2px #D3E7F7;
   -moz-box-shadow: 0 1px 2px #D3E7F7;
   box-shadow: 0 1px 2px #D3E7F7;
@@ -52,50 +67,85 @@
   -o-border-radius: 5px;
 }
 
-/*@media screen and (max-width: 991px) {
-
-  .App .Create-event {
-    margin-top: 4%;
-    margin-left: 10px;
-    height: 75%;
-    width: 55%;
-  }
-}
-@media screen and (max-width: 767px) {
-
-  .App .Create-event {
-    margin-top: 4%;
-    margin-left: 10px;
-    height: 75%;
-    width: 55%;
-  }
+.App .Create-event .bottom .form-control {
+  margin-left: 0px;
+  margin-top: 0px;
+  width: 110px;
 }
 
-@media screen and (max-width: 479px) {
-
-  .App .Create-event {
-    margin-top: 4%;
-    margin-left: 10px;
-    height: 75%;
-    width: 55%;
-  }
-}*/
-
-@media screen and (max-height: 250px) and (max-width: 500px) {
+@media screen and (max-width: 500px) {
  
   .App .Create-event {
-    margin-top: 0px;
-    margin-left: 0px;
-    height: 78%;
     width: 55%;
+    padding: 20px;
+    height: 90%;
   }
-}
-@media screen and (max-height: 200px) and (max-width: 300px) {
 
-  .App .Create-event {
+  .App .Create-event .bottom {
+    display: inline-flex;
+    flex-direction: column;
+    margin-left: 0px;
+    height: 22px;
+    width: 100%
+  }
+  
+  .App .Create-event .bottom .bell {
+    display: flex;
+    flex-direction: column;
     margin-top: 0px;
     margin-left: 0px;
-    height: 100%;
+  }
+
+  .App .Create-event .bottom .form-control {
+    margin-left: 10px;
+    margin-top: -30px; 
     width: 60%;
   }
+
+  .App .Create-event .createButton {
+    margin-left: 70%;
+    margin-top: -34px;
+    width: 15%;
+    height: 20px;
+    padding-left: 10px;
+    padding-top: 0px;
+    width: 30%;
+    font-size: 130%; 
+  }
+
 }
+
+@media screen and (max-width: 350px) {
+
+  .App .Create-event {
+    width: 60%;
+    padding: 10px;
+    height: 90%;
+  }
+
+   .App .Create-event .bottom {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    height: 22px;
+    width: 100%
+  }
+
+  .App .Create-event .buttom .bell {
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+
+  .App .Create-event .bottom .form-control {
+    margin-left: 10px;
+    margin-top: -30px; 
+    width: 50%;
+  }
+
+  .App .Create-event .createButton {
+    margin-left: 65%;
+    margin-top: -34px;
+    padding: 0px;
+  }
+}
+
