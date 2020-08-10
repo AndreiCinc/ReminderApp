@@ -60,10 +60,22 @@ class CreateEvent extends React.Component {
 			        	<Name name={'Insert event name'} handlerName={this.handlerName} />
 		        	</div>
 		        	<div className="date">
-		         		<Calendar type="submit" handlerDate={this.handleStartDate} date={this.state.startDate}/>
+		         		<Calendar 
+		         			type="submit" 
+		         			handlerDate={this.handleStartDate} 
+		         			date={this.state.startDate}
+		         			labelDate={"Start date"}
+		         			labelTime={"Start time"}
+		         			/>
 		        	</div>
 		        	<div className="date">
-		        		<Calendar type="submit" handlerDate={this.handleEndDate} date={this.state.endDate}/>
+		        		<Calendar 
+		        			type="submit"
+		        			handlerDate={this.handleEndDate} 
+		        			date={this.state.endDate}
+		        			labelDate={"End date"}
+		         			labelTime={"End time"}
+		         			/>
 		        	</div>
 		        	<div className="text">
 		        		<Details type="submit" handleDetails={this.handleDetails}/>
