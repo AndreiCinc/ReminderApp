@@ -20,21 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f1b897c-2125-4a62-9526-cba2e5fd6fdf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/event/ReminderApp/dao/EventDatabaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/event/ReminderApp/dao/EventDatabaseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/event/ReminderApp/dao/EventList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/event/ReminderApp/dao/EventList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/event/ReminderApp/model/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/event/ReminderApp/model/Event.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/event/ReminderApp/service/EventService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/event/ReminderApp/service/EventService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V1__EventTable.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V1__EventTable.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/event/ReminderApp/dao/EventDatabaseService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/event/ReminderApp/dao/EventDatabaseService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/event/ReminderApp/dao/EventList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/event/ReminderApp/dao/EventList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/event/ReminderApp/model/Event.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/event/ReminderApp/model/Event.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../reminderapp-fe/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../reminderapp-fe/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../reminderapp-fe/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../reminderapp-fe/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../reminderapp-fe/src/component/card/card.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/../reminderapp-fe/src/component/card/card.component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../reminderapp-fe/src/component/createEvent/createEvent.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/../reminderapp-fe/src/component/createEvent/createEvent.component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../reminderapp-fe/src/component/list/list.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/../reminderapp-fe/src/component/list/list.component.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reminderapp-fe/src/service/dateVerification.js" beforeDir="false" afterPath="$PROJECT_DIR$/../reminderapp-fe/src/service/dateVerification.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
