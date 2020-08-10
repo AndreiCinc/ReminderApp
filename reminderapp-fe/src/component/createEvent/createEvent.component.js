@@ -16,14 +16,14 @@ class CreateEvent extends React.Component {
 			startDate: new Date(),
 			endDate: new Date(),
 			details: "",
-			memo: new Date()
+			reminderDate: new Date()
 		}
 	}
 	handlerName = e =>{
 		this.setState({name: e.target.value});
 	}
 	handleStartDate = date => {
-		this.setState({startDate: date});
+		this.setState({startDate: date, reminderDate: date});
 	}
 	handleEndDate = date => {
 		this.setState({endDate: date});
@@ -35,7 +35,7 @@ class CreateEvent extends React.Component {
 		let date = e.target.value;
 		let memoDate = this.state.startDate.getTime() - (date * 60000);
 		let newDate = new Date(memoDate);
-		this.setState({memo: newDate});
+		this.setState({reminderDate: newDate});
 	}
 	handleSubmit = (e) => {
 		if (this.state.name === "" ) {

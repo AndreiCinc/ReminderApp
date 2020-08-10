@@ -5,7 +5,7 @@ import Moment from 'react-moment';
 import 'moment-timezone';
 import CardService from '../../service/cardService.js';
 import Modal from './modal.component.js';
-import { updateModal, memoPop} from './modal.style.js';
+import { updateModal } from './modal.style.js';
 import CustomComponent from './popover.component.js'
 import DateVerification  from '../../service/dateVerification.js';
 export default function Card(props) {
@@ -22,8 +22,6 @@ export default function Card(props) {
 	return(
 		props.object.map((object) => { 
 			if(DateVerification(object.startDate)) {
-				window.open(
-				);
 			}
 			return (
 			<>
@@ -53,6 +51,7 @@ export default function Card(props) {
 						title={object.name}
 						startDate={object.startDate}
 						endDate={object.endDate}
+						reminder={object.reminderDate}
 						details={object.details}
 					/>
 					<button className="delete-button" onClick={(e) => {deleteReminder(e, object.id)}}><i className="fa fa-trash-o"></i></button>

@@ -11,6 +11,7 @@ export default function CustomComponent (props) {
 	let name = props.title;
 	let start = props.startDate;
 	let end = props.endDate;
+	let reminder = props.reminder;
 	let details = props.details;
 	
 	const container = ({ position, targetRect, popoverRect})=> ( 
@@ -38,6 +39,12 @@ export default function CustomComponent (props) {
 						Event ends:   
 						<Moment format=" MM-DD-YYYY HH:mm">
                				{end}
+               			</Moment>
+					</div>
+					<div>
+						Reminde at:   
+						<Moment format=" MM-DD-YYYY HH:mm">
+               				{reminder} 
                			</Moment>
 					</div>
 					<div>

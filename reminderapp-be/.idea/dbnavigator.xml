@@ -40,7 +40,7 @@
     <last-used-providers />
   </component>
   <component name="DBNavigator.Project.FileConnectionMappingManager">
-    <mapping file-url="file://$PROJECT_DIR$/src/main/resources/db/migration/V1__EventTable.sql" connection-id="f5f7cdb7-52d4-4053-9e25-6085e8db5593" session-id="MAIN" current-schema="information_schema" />
+    <mapping file-url="file://$PROJECT_DIR$/src/main/resources/db/migration/V1__EventTable.sql" connection-id="virtual-postgres-connection" session-id="MAIN" current-schema="information_schema" />
   </component>
   <component name="DBNavigator.Project.MethodExecutionManager">
     <method-browser />

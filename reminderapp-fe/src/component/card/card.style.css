@@ -15,7 +15,7 @@
 	-o-border-radius: 5px;
 }
 
-.App .popoverStyle {
+.popoverStyle {
 	background:  #d9e6f2;
 	display: space-under;
 	font-family: "Lucida Console", Courier, monospace;
@@ -25,7 +25,7 @@
 	-ms-border-radius: 10px;	
 }
 
-.App .popoverStyle .header {
+.popoverStyle .header {
 	margin: 0px;
 	background:  #CAD1D7;
 	display: space-under;
@@ -36,7 +36,7 @@
   
 }
 
-.App .popoverStyle .body {
+.popoverStyle .body {
 	margin: 5px;
 	background:  #D3E7F7;
 	opacity: 0.7;

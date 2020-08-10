@@ -12,6 +12,7 @@ export default function Memo(props) {
 	return (
 		<form className="form-group col-md-4" >
 				<select id="inputState" value={time} onChange={handleValue} className="form-control">
+					<option value="0">When it starts</option>
 					<option value="30">30 min before</option>
 				    <option value="60">60 min before</option>
 				    <option value="120">120 min before</option>
