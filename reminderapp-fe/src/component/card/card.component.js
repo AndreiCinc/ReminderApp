@@ -2,12 +2,15 @@ import React, { useState} from 'react';
 import './card.style.css';
 import '../../template/loading.style.css';
 import Moment from 'react-moment';
+import moment from 'moment';
 import 'moment-timezone';
 import CardService from '../../service/cardService.js';
 import Modal from './modal.component.js';
 import { updateModal } from './modal.style.js';
 import CustomComponent from './popover.component.js'
 import DateVerification  from '../../service/dateVerification.js';
+
+
 export default function Card(props) {
 
 	const [openModal, setOpenModal] = useState(false);
@@ -19,9 +22,12 @@ export default function Card(props) {
 	const handlerModal = () => {
 		setOpenModal(!openModal);
 	}
+
 	return(
 		props.object.map((object) => { 
-			if(DateVerification(object.startDate)) {
+			if(DateVerification(object.reminderDate)) {
+				let mom = new Date(object.startDate);
+				alert("The event starts " + mom);
 			}
 			return (
 			<>

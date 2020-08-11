@@ -1,6 +1,6 @@
 body {
   background-image: url('./template/backgroundApp.image.jpg');
-  opacity: 5;
+  opacity: 1;
   display: flex;
   flex-direction: column;
 }
@@ -18,7 +18,7 @@ body {
   height: 400px; 
 /*  background: #B0C4DEF;
 */ 
-  opacity: 0.7;
+  opacity: 1;
   color: #000000 ;
   -webkit-box-shadow: 5px 5px 5px black;
   -moz-box-shadow: 5px 5px 5px black;
