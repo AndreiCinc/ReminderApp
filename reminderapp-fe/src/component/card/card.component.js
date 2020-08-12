@@ -5,22 +5,16 @@ import Moment from 'react-moment';
 import moment from 'moment';
 import 'moment-timezone';
 import CardService from '../../service/cardService.js';
-import Modal from './modal.component.js';
-import { updateModal } from './modal.style.js';
 import CustomComponent from './popover.component.js'
-import DateVerification  from '../../service/dateVerification.js';
+import DateVerification from '../../service/dateVerification.js';
+import UpdateEvent from '../updateEvent/updateEvent.component.js';
 
 
 export default function Card(props) {
 
-	const [openModal, setOpenModal] = useState(false);
-
 	const deleteReminder = (e, id) => {
 		CardService.deleteEvent(id)
 		e.preventDefault();
-	}
-	const handlerModal = () => {
-		setOpenModal(!openModal);
 	}
 
 	return(
@@ -47,11 +41,16 @@ export default function Card(props) {
                				{object.endDate}
                			</Moment>
 					</div>
-					<button className="update-button" onClick={(e) => handlerModal(e)}>
-						<i className="fa fa-cog">
-						</i>
-					</button>
-					<Modal onClose={handlerModal} isOpen={openModal} id={object.id} style={updateModal}/>
+					<UpdateEvent
+						className="update-button"
+						key={object.id}
+						id={object.id}
+						name={object.name}
+						startDate={object.startDate}
+						endDate={object.endDate}
+						reminderDate={object.reminderDate}
+						details={object.details}
+					/>
 					<CustomComponent 
 						className="details-button"
 						title={object.name}

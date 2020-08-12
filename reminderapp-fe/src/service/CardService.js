@@ -3,7 +3,7 @@ const cardService = {
 
 	postEvent(value){
 		console.log(value);
-		fetch("http://localhost:8080/event/ReminderApp/api/v1/event/" ,
+		fetch("https://reminderapp5.herokuapp.com/event/ReminderApp/api/v1/event/" ,
 		{
 			method: 'POST',
 			headers: {
@@ -21,7 +21,7 @@ const cardService = {
 	},
 
 	putEvent(value, id) {
-		fetch("http://localhost:8080/event/ReminderApp/api/v1/event/" + id ,
+		fetch("https://reminderapp5.herokuapp.com/event/ReminderApp/api/v1/event/" + id ,
 		{
 			method: 'PUT',
 			headers: {
@@ -39,7 +39,7 @@ const cardService = {
 	},
 
 	getEvents() {
-       return fetch('http://localhost:8080/event/ReminderApp/api/v1/event')
+       return fetch("https://reminderapp5.herokuapp.com/event/ReminderApp/api/v1/event/")
 		.then((response) => response.json())
 		.then((response) => {
 			return response;
@@ -47,7 +47,7 @@ const cardService = {
     }, 
     
     deleteEvent(value) {
-        fetch("http://localhost:8080/event/ReminderApp/api/v1/event/" + value,
+        fetch("https://reminderapp5.herokuapp.com/event/ReminderApp/api/v1/event/" + value,
 		{
 			method: 'DELETE',
 		})
