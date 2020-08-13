@@ -5,12 +5,14 @@ import event.ReminderApp.service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
+import javax.validation.constraints.NotNull;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
 @RestController
-@RequestMapping("/person")
+@RequestMapping("person")
 public class PersonController {
 
     public final PersonService personService;
@@ -22,7 +24,8 @@ public class PersonController {
 
     @CrossOrigin
     @PostMapping
-    public int insertPerson(@RequestBody Person person) {
+    public int insertPerson(@NotNull @RequestBody Person person) {
+        System.out.println(person.getPersonEmail());
         return personService.insertPerson(person);
     }
 
@@ -39,13 +42,13 @@ public class PersonController {
     }
 
     @CrossOrigin
-    @PutMapping({"id"})
-    public int updatePerson(@RequestBody Person person, @PathVariable("id") UUID id) {
+    @PutMapping("{id}")
+    public int updatePerson(@NotNull @Valid @RequestBody Person person, @PathVariable("id") UUID id) {
         return personService.updatePerson(person, id);
     }
 
     @CrossOrigin
-    @DeleteMapping({"id"})
+    @DeleteMapping("{id}")
     public int deletePerson(@PathVariable("id") UUID id) {
         return personService.deletePerson(id);
     }

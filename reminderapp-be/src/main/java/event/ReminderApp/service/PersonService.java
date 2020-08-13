@@ -16,7 +16,7 @@ public class PersonService {
     public final PersonInterface personInterface;
 
     @Autowired
-    public PersonService(@Qualifier("FakePerson") PersonInterface personInterface) {
+    public PersonService(@Qualifier("PersonDatabase") PersonInterface personInterface) {
         this.personInterface = personInterface;
     }
 

@@ -39,7 +39,7 @@ public class EventDatabaseService implements EventInterface {
 
     @Override
     public List<Event> selectAllEvents() {
-        final String sql = "SELECT id, eventName, startdate, enddate, reminderDate, details FROM event";
+        String sql = "SELECT id, eventName, startdate, enddate, reminderDate, details FROM event";
         return jdbcTemplate.query(sql, (resultSet, i )-> {
             UUID eventId =  UUID.fromString(resultSet.getString("id"));
             String eventName = resultSet.getString("eventName");

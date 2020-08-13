@@ -42,7 +42,15 @@ public class PersonFakeAccess implements PersonInterface{
     public int updatePerson(Person person, UUID id) {
        getPersonById(id).map(p -> {
            if (p.getPersonId().equals(id)) {
-               persons.set(persons.indexOf(p), person);
+               persons.set(persons.indexOf(p),
+                       new Person(
+                               id,
+                               person.getPersonName(),
+                               person.getPersonEmail(),
+                               person.getPersonPassword(),
+                               person.getPersonObservations(),
+                               person.getPersonRole()
+                       ));
            }
            return 0;
        });
