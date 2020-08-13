@@ -2,7 +2,7 @@ import React,  {useState } from 'react';
 
 export default function Memo(props) {
 
-	const [time, setTime] = useState("");
+	const [time, setTime] = useState(props.value);
 
 	const handleValue = (event) => {
 		setTime(event.target.value);

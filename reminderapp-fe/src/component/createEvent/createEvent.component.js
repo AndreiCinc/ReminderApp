@@ -41,17 +41,13 @@ class CreateEvent extends React.Component {
 		if (this.state.name === "" ) {
 			alert("The name field cannot be emty");
 		}else if (
-			 this.state.startDate.getTime() >= this.state.endDate.getTime() ) {
-				alert("The start date cannot be equal or more than end date");
-		}else if (this.props.buttonFunction === "Create") {
+			this.state.startDate.getTime() >= this.state.endDate.getTime() ) {
+			alert("The start date cannot be equal or more than end date");
+		}else {
 			CardService.postEvent(this.state)
-		}else if (this.props.buttonFunction === "Update") {
-			this.props.onClose(e.target.value);
-			CardService.putEvent(this.state, this.props.id);
 		}
 		e.preventDefault();
 	}
-
 	render() {
 		return(
 			<form onSubmit={(e) => {this.handleSubmit(e)}}>
@@ -60,10 +56,22 @@ class CreateEvent extends React.Component {
 			        	<Name name={'Insert event name'} handlerName={this.handlerName} />
 		        	</div>
 		        	<div className="date">
-		         		<Calendar type="submit" handlerDate={this.handleStartDate} date={this.state.startDate}/>
+		         		<Calendar 
+		         			type="submit" 
+		         			handlerDate={this.handleStartDate} 
+		         			date={this.state.startDate}
+		         			labelDate={"Start date"}
+		         			labelTime={"Start time"}
+		         			/>
 		        	</div>
 		        	<div className="date">
-		        		<Calendar type="submit" handlerDate={this.handleEndDate} date={this.state.endDate}/>
+		        		<Calendar 
+		        			type="submit"
+		        			handlerDate={this.handleEndDate} 
+		        			date={this.state.endDate}
+		        			labelDate={"End date"}
+		         			labelTime={"End time"}
+		         			/>
 		        	</div>
 		        	<div className="text">
 		        		<Details type="submit" handleDetails={this.handleDetails}/>
@@ -77,7 +85,7 @@ class CreateEvent extends React.Component {
 			        	</div>
 			        	<div>
 				        <button className="createButton" onClick={(e) => {this.handleSubmit(e)}}>
-				        	{this.props.buttonFunction}  
+				        	Create  
 				        </button>
 				        </div>
 		        	</div>

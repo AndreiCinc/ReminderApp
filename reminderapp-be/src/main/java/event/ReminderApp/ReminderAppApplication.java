@@ -12,13 +12,4 @@ public class ReminderAppApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(ReminderAppApplication.class, args);
 	}
-
-	/*@Bean
-	@ConfigurationProperties("app.datasource")
-	public HikariDataSource hikariDataSource() {
-		return DataSourceBuilder
-				.create()
-				.type(HikariDataSource.class)
-				.build();
-	}*/
 }

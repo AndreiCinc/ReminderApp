@@ -20,6 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f1b897c-2125-4a62-9526-cba2e5fd6fdf" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_annotations_0_0_1_SNAPSHOT.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/event/ReminderApp/api/PersonController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/event/ReminderApp/dao/PersonDatabaseService.java" afterDir="false" />
@@ -48,6 +49,10 @@
       <change beforePath="$PROJECT_DIR$/target/test-classes/event/ReminderApp/datasource/PostgresDataSourceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/event/ReminderApp/datasource/PostgresDataSourceTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/event/ReminderApp/model/EventTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/event/ReminderApp/model/EventTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/event/ReminderApp/service/EventServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/event/ReminderApp/service/EventServiceTest.class" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/event/ReminderApp/ReminderAppApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/event/ReminderApp/ReminderAppApplication.java" afterDir="false" />
+>>>>>>> master
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +75,10 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+<<<<<<< HEAD
     <option name="ROOT_SYNC" value="DONT_SYNC" />
+=======
+>>>>>>> master
   </component>
   <component name="ProjectId" id="1eiTQXoLubHNdPLLyb1mf6pjIFN" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -91,6 +99,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="studioMain" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -301,6 +310,7 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="299" y="67" key="DBNavigator.ProjectSettingsDialog/0.0.1536.824@0.0.1536.824" timestamp="1596287680731" />
+<<<<<<< HEAD
     <state x="722" y="154" key="FileChooserDialogImpl" timestamp="1597306542404">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -325,6 +335,32 @@
     </state>
     <state width="1493" height="176" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1280.728@0.0.1536.824" timestamp="1595931327039" />
     <state width="1493" height="179" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1597340849320" />
+=======
+    <state x="722" y="154" key="FileChooserDialogImpl" timestamp="1597176690048">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="722" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1597176690048" />
+    <state width="689" height="167" key="GridCell.Tab.0.bottom" timestamp="1597176693540">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="176" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1280.728@0.0.1536.824" timestamp="1595931327039" />
+    <state width="689" height="167" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1597176693540" />
+    <state width="689" height="167" key="GridCell.Tab.0.center" timestamp="1597176693540">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="176" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1280.728@0.0.1536.824" timestamp="1595931327039" />
+    <state width="689" height="167" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1597176693540" />
+    <state width="689" height="167" key="GridCell.Tab.0.left" timestamp="1597176693539">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="176" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1280.728@0.0.1536.824" timestamp="1595931327039" />
+    <state width="689" height="167" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1597176693539" />
+    <state width="689" height="167" key="GridCell.Tab.0.right" timestamp="1597176693540">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="176" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1280.728@0.0.1536.824" timestamp="1595931327039" />
+    <state width="689" height="167" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1597176693540" />
+>>>>>>> master
     <state width="1146" height="258" key="GridCell.Tab.1.bottom" timestamp="1596287317865">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -345,10 +381,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="156" y="70" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1596355600477" />
-    <state x="453" y="0" key="SettingsEditor" timestamp="1596286634175">
+    <state x="453" y="0" key="SettingsEditor" timestamp="1597132088836">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="453" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1596286634175" />
+    <state x="453" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1597132088836" />
     <state x="924" y="189" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1595232470508">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -357,10 +393,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="550" y="125" key="git4idea.branch.GitSmartOperationDialog/0.0.1536.824@0.0.1536.824" timestamp="1595235641103" />
-    <state x="418" y="77" key="new project wizard" timestamp="1595749797105">
+    <state x="418" y="66" key="new project wizard" timestamp="1597139027607">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="418" y="77" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1595749797105" />
+    <state x="418" y="66" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1597139027607" />
     <state x="611" y="170" key="refactoring.ChangeSignatureDialog" timestamp="1597055309530">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

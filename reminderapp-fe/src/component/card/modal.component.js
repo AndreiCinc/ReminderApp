@@ -1,14 +1,12 @@
 import React from 'react';
 import Modal from 'react-modal';
-import CreateEvent from '../createEvent/createEvent.component.js';
+import UpdateEvent from '../updateEvent/updateEvent.component.js';
    
 Modal.setAppElement('#root')
-   
+
 export default function DetailsModal(props) {
 
-    function onClose(e) {
-      props.onClose && props.onClose(e);
-    }
+    
    
       return (
         <div>
@@ -17,7 +15,15 @@ export default function DetailsModal(props) {
             onRequestClose={onClose}
             style={props.style}
           >
-            <CreateEvent buttonFunction={"Update"} id={props.id} onClose={onClose}/>
+            <UpdateEvent 
+              id={props.id}
+              onClose={onClose}
+              name={props.name}
+              startDate={props.startDate}
+              endDate={props.endDate}
+              details={props.details}
+              reminderDate={props.reminderDate}
+            />
           </Modal>
         </div>
       );

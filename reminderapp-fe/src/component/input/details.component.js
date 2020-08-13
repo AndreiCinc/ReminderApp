@@ -12,6 +12,7 @@ export default function Details(props) {
 		  	<textarea className="form-control" 
 		  		id="exampleFormControlTextarea4" 
 		  		rows="3"
+		  		value={props.value}
 		  		onChange={(e) => handleDetails(e)}
 		  	>
 		  	</textarea>
