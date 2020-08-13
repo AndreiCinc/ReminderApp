@@ -2,7 +2,8 @@ package event.ReminderApp.dao;
 
 import event.ReminderApp.model.Person;
 
-import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 
 public interface PersonInterface {
@@ -14,11 +15,11 @@ public interface PersonInterface {
         return insertPerson(person, id);
     }
     
-    public ArrayList<Person> getAllPersons();
+    Optional<Person> getPersonById(UUID id);
 
-    Person getPersonById(UUID id);
+    List<Person> getAllPersons();
 
-    void updatePerson(Person person, UUID id);
+    int updatePerson(Person person, UUID id);
 
-    void deletePerson(UUID id);
+    int deletePerson(UUID id);
 }

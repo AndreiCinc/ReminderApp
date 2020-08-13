@@ -3,11 +3,14 @@ package event.ReminderApp.dao;
 import event.ReminderApp.model.Person;
 
 import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
+
 
 public class PersonFakeAccess implements PersonInterface{
 
-    ArrayList<Person> persons = new ArrayList<>();
+    List<Person> persons = new ArrayList<>();
 
     @Override
     public int insertPerson(Person person, UUID id) {
@@ -23,27 +26,31 @@ public class PersonFakeAccess implements PersonInterface{
     }
 
     @Override
-    public ArrayList<Person> getAllPersons() {
+    public Optional<Person> getPersonById(UUID id) {
+       return persons.stream().filter(person -> person.getPersonId().equals(id))
+                .findFirst();
+    }
+
+    @Override
+    public List<Person> getAllPersons() {
         return persons;
     }
 
+
     @Override
-    public Person getPersonById(UUID id) {
-        for (Person p: persons) {
-            if (p.getPersonId().equals(id)) {
-                return p;
-            }
-        }
-        return null;
+    public int updatePerson(Person person, UUID id) {
+       getPersonById(id).map(p -> {
+           if (p.getPersonId().equals(id)) {
+               persons.set(persons.indexOf(p), person);
+           }
+           return 0;
+       });
+       return 0;
     }
 
     @Override
-    public void updatePerson(Person person, UUID id) {
-
-    }
-
-    @Override
-    public void deletePerson(UUID id) {
-
+    public int deletePerson(UUID id) {
+        persons.removeIf(p -> p.getPersonId().equals(id));
+    return 0;
     }
 }
