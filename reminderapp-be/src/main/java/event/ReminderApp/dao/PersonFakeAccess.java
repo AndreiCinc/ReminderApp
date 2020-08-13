@@ -1,13 +1,14 @@
 package event.ReminderApp.dao;
 
 import event.ReminderApp.model.Person;
+import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
-
+@Repository("FakePerson")
 public class PersonFakeAccess implements PersonInterface{
 
     List<Person> persons = new ArrayList<>();

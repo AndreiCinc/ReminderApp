@@ -1,5 +1,7 @@
 package event.ReminderApp.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.util.UUID;
 
 public class Person {
@@ -11,12 +13,12 @@ public class Person {
     private final String role;
 
     public Person(
-            UUID id,
-            String name,
-            String email,
-            String password,
-            String observations,
-            String role) {
+            @JsonProperty("id") UUID id,
+            @JsonProperty("name") String name,
+            @JsonProperty("email") String email,
+            @JsonProperty("password") String password,
+            @JsonProperty("observations") String observations,
+            @JsonProperty("role") String role) {
         this.id = id;
         this.name = name;
         this.email = email;
