@@ -23,7 +23,7 @@ public class EventDatabaseService implements EventInterface {
     @Override
     public int insertEvent(UUID id, Event event) {
         final String sql = "" +
-                "INSERT INTO event (id, eventName, startdate, enddate, reminderDate, details) " +
+                "INSERT INTO event (id, eventName, startdate, enddate, reminderDate, details, personId) " +
                 "VALUES ( ?, ?, ?, ?, ?, ?)";
         jdbcTemplate.update(
                 sql,
@@ -32,7 +32,8 @@ public class EventDatabaseService implements EventInterface {
                 event.getStartDate(),
                 event.getEndDate(),
                 event.getReminderDate(),
-                event.getDetails()
+                event.getDetails(),
+                event.getPersonId()
         );
         return 0;
     }
@@ -47,7 +48,8 @@ public class EventDatabaseService implements EventInterface {
             Date endDate = new Date(resultSet.getTimestamp("endDate").getTime());
             Date reminderDate = new Date(resultSet.getTimestamp("reminderDate").getTime());
             String details = resultSet.getString("details");
-            return new Event(eventId, eventName, startDate, endDate, reminderDate, details);
+            UUID personId =  UUID.fromString(resultSet.getString("personId"));
+            return new Event(eventId, eventName, startDate, endDate, reminderDate, details, personId);
         });
     }
 
@@ -64,7 +66,8 @@ public class EventDatabaseService implements EventInterface {
                     Date endDate = new Date(resultSet.getTimestamp("endDate").getTime());
                     Date reminderDate = new Date(resultSet.getTimestamp("reminderDate").getTime());
                     String details = resultSet.getString("details");
-                    return new Event( eventId, eventName, startDate, endDate, reminderDate, details);
+                    UUID personId =  UUID.fromString(resultSet.getString("personId"));
+                    return new Event( eventId, eventName, startDate, endDate, reminderDate, details, personId);
                  })
         );
         return Optional.ofNullable(event);
@@ -72,8 +75,23 @@ public class EventDatabaseService implements EventInterface {
 
     @Override
     public int updateEventById(UUID id, Event event) {
-        final String sql = "UPDATE event SET eventName = ?, startdate = ?, enddate = ?, reminderDate = ?, details = ? WHERE id = ?";
-        jdbcTemplate.update(sql, event.getName(), event.getStartDate(), event.getEndDate(), event.getReminderDate(), event.getDetails(), id);
+        final String sql = "UPDATE event SET " +
+                "eventName = ?, " +
+                "startdate = ?, " +
+                "enddate = ?, " +
+                "reminderDate = ?, " +
+                "details = ?, " +
+                "personId = ? " +
+                "WHERE id = ?";
+        jdbcTemplate.update(
+                sql,
+                event.getName(),
+                event.getStartDate(),
+                event.getEndDate(),
+                event.getReminderDate(),
+                event.getDetails(),
+                event.getPersonId(),
+                id);
         return 0;
     }
 

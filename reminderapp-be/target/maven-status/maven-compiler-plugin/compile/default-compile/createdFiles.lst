@@ -1,7 +1,14 @@
 event\ReminderApp\datasource\PostgresDataSource.class
+event\ReminderApp\dao\PersonInterface.class
 event\ReminderApp\dao\EventDatabaseService.class
-event\ReminderApp\model\Event.class
 event\ReminderApp\service\EventService.class
+event\ReminderApp\model\Person.class
+event\ReminderApp\dao\EventList.class
 event\ReminderApp\dao\EventInterface.class
+event\ReminderApp\dao\PersonFakeAccess.class
+event\ReminderApp\api\PersonController.class
+event\ReminderApp\model\Event.class
+event\ReminderApp\service\PersonService.class
+event\ReminderApp\dao\PersonDatabaseService.class
 event\ReminderApp\ReminderAppApplication.class
 event\ReminderApp\api\EventController.class

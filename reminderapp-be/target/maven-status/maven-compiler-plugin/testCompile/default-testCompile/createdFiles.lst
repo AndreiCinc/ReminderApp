@@ -1,0 +1,6 @@
+event\ReminderApp\ReminderAppApplicationTest.class
+event\ReminderApp\api\EventControllerTest.class
+event\ReminderApp\datasource\PostgresDataSourceTest.class
+event\ReminderApp\model\EventTest.class
+event\ReminderApp\service\EventServiceTest.class
+event\ReminderApp\dao\EventDatabaseServiceTest.class

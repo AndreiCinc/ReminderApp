@@ -21,8 +21,9 @@ public class EventList implements EventInterface{
                 event.getStartDate(),
                 event.getEndDate(),
                 event.getReminderDate(),
-                event.getDetails())
-        );
+                event.getDetails(),
+                event.getPersonId()
+        ));
         return 0;
     }
 
@@ -49,7 +50,8 @@ public class EventList implements EventInterface{
                         event.getStartDate(),
                         event.getEndDate(),
                         event.getReminderDate(),
-                        event.getDetails()
+                        event.getDetails(),
+                        event.getPersonId()
                 ));
                 return 1;
             }

@@ -12,13 +12,15 @@ public class Event {
     private final Date endDate;
     private final Date reminderDate;
     private final String details;
+    private final UUID personId;
 
     public Event(@JsonProperty("id") UUID id,
                  @JsonProperty("name") String name,
                  @JsonProperty("startDate") Date startDate,
                  @JsonProperty("endDate") Date endDate,
                  @JsonProperty("reminderDate") Date reminderDate,
-                 @JsonProperty("details") String details) {
+                 @JsonProperty("details") String details,
+                 @JsonProperty("personId") UUID personId) {
 
         this.id = id;
         this.name = name;
@@ -26,6 +28,7 @@ public class Event {
         this.endDate = endDate;
         this.reminderDate = reminderDate;
         this.details = details;
+        this.personId = personId;
     }
 
 
@@ -46,6 +49,9 @@ public class Event {
     }
     public String getDetails() {
         return details;
+    }
+    public UUID getPersonId() {
+        return personId;
     }
 
 }
