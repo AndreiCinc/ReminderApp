@@ -1,8 +1,0 @@
-CREATE TABLE person (
-  id UUID NOT NULL UNIQUE,
-  personName VARCHAR(50) NOT NULL,
-  email VARCHAR(100) NOT NULL UNIQUE,
-  password VARCHAR(100) NOT NULL,
-  observations VARCHAR(300),
-  role VARCHAR(10) NOT NULL
-)
