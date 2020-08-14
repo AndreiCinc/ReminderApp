@@ -28,6 +28,11 @@ public class EventList implements EventInterface{
     }
 
     @Override
+    public List<Event> selectEventsByPersonId(UUID id) {
+        return null;
+    }
+
+    @Override
     public List<Event> selectAllEvents() {
         return events;
     }
@@ -64,5 +69,10 @@ public class EventList implements EventInterface{
     public int deleteEventById(UUID id) {
         events.removeIf(e -> e.getId().equals(id));
         return 1;
+    }
+
+    @Override
+    public int deleteEventByPersonId(UUID id) {
+        return 0;
     }
 }

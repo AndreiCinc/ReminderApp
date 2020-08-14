@@ -6,7 +6,7 @@ import java.util.UUID;
 
 public class Person {
     private final UUID id;
-    private final String name;
+    private final String personName;
     private final String email;
     private final String password;
     private final String observations;
@@ -14,13 +14,13 @@ public class Person {
 
     public Person(
             @JsonProperty("id") UUID id,
-            @JsonProperty("name") String name,
-            @JsonProperty("email") String email,
-            @JsonProperty("password") String password,
-            @JsonProperty("observations") String observations,
-            @JsonProperty("role") String role) {
+            @JsonProperty("personName") String personName,
+            @JsonProperty("personEmail") String email,
+            @JsonProperty("personPassword") String password,
+            @JsonProperty("personObservations") String observations,
+            @JsonProperty("personRole") String role) {
         this.id = id;
-        this.name = name;
+        this.personName = personName;
         this.email = email;
         this.password = password;
         this.observations = observations;
@@ -31,7 +31,7 @@ public class Person {
         return id;
     }
     public String getPersonName() {
-        return name;
+        return personName;
     }
     public String getPersonEmail() {
         return email;

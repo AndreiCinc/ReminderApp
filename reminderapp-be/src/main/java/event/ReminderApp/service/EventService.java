@@ -29,6 +29,9 @@ public class EventService {
         return eventInterface.selectEventById(id);
     }
 
+    public List<Event> getAllEventsByPersonId(UUID id) {
+        return eventInterface.selectEventsByPersonId(id);
+    }
     public List<Event> getAllEvents() {
         return eventInterface.selectAllEvents();
     }
@@ -39,5 +42,9 @@ public class EventService {
 
     public int deleteEvent(UUID id) {
         return eventInterface.deleteEventById(id);
+    }
+
+    public int deleteEventsByPersonId(UUID id) {
+        return eventInterface.deleteEventByPersonId(id);
     }
 }

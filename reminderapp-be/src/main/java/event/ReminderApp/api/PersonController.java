@@ -12,7 +12,7 @@ import java.util.Optional;
 import java.util.UUID;
 
 @RestController
-@RequestMapping("person")
+@RequestMapping("person/")
 public class PersonController {
 
     public final PersonService personService;
@@ -24,19 +24,18 @@ public class PersonController {
 
     @CrossOrigin
     @PostMapping
-    public int insertPerson(@NotNull @RequestBody Person person) {
-        System.out.println(person.getPersonEmail());
+    public int insertPerson(@RequestBody Person person) {
         return personService.insertPerson(person);
     }
 
     @CrossOrigin
-    @GetMapping("{id}")
+    @GetMapping("persinId/{id}")
     public Optional<Person> getPersonById(@PathVariable("id") UUID id) {
         return personService.getPersonById(id);
     }
 
     @CrossOrigin
-    @GetMapping
+    @GetMapping("getAll/")
     public List<Person> getAllPersons() {
         return personService.getAllPersons();
     }

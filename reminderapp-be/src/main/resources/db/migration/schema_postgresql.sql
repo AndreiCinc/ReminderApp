@@ -14,6 +14,6 @@ CREATE TABLE event (
   endDate timestamp  NOT NULL,
   reminderDate timestamp NOT NULL,
   details VARCHAR(300),
-  personId UUID NOT NULL PRIMARY KEY UNIQUE,
+  personId UUID NOT NULL PRIMARY KEY,
 FOREIGN KEY (personId) REFERENCES person(id)
 )

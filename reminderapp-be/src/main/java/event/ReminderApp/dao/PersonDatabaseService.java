@@ -21,7 +21,7 @@ public class PersonDatabaseService implements PersonInterface {
 
     @Override
     public int insertPerson(Person person, UUID id) {
-        String sql = "INSERT INTO person(id, name, email, password, observations, role)" +
+        String sql = "INSERT INTO person(id, personName, email, password, observations, role)" +
                 "VALUES (?, ?, ?, ?, ?, ?)";
         jdbcTemplate.update(
                 sql,
@@ -37,13 +37,13 @@ public class PersonDatabaseService implements PersonInterface {
 
     @Override
     public Optional<Person> getPersonById(UUID id) {
-        String sql = "SELECT id, name, email, password, observations, role FROM person WHERE id= ?";
+        String sql = "SELECT id, personName, email, password, observations, role FROM person WHERE id= ?";
         Person person =  jdbcTemplate.queryForObject(
                 sql,
                 new Object[]{id},
                 (rs, i) -> {
                     UUID personId = UUID.fromString(rs.getString("id"));
-                    String personName = rs.getString("name");
+                    String personName = rs.getString("personName");
                     String personEmail = rs.getString("email");
                     String personPassword = rs.getString("password");
                     String personObservations = rs.getString("observations");
@@ -55,10 +55,10 @@ public class PersonDatabaseService implements PersonInterface {
 
     @Override
     public List<Person> getAllPersons() {
-        String sql = "SELECT id, name, email, password, observations, role FROM person";
+        String sql = "SELECT id, personName, email, password, observations, role FROM person";
         return jdbcTemplate.query(sql, (resultSet, i) -> {
             UUID personId = UUID.fromString(resultSet.getString("id"));
-            String personName = resultSet.getString("name");
+            String personName = resultSet.getString("personName");
             String personEmail = resultSet.getString("email");
             String personPassword = resultSet.getString("password");
             String personObservations = resultSet.getString("observations");
@@ -69,20 +69,28 @@ public class PersonDatabaseService implements PersonInterface {
 
     @Override
     public int updatePerson(Person person, UUID id) {
-        String sql = "UPDATE person SET name = ? email = ?, password = ?, observations = ?, role = ? WHERE id = ?";
+        String sql = "UPDATE person " +
+                "SET personName = ?, " +
+                "email = ?, " +
+                "password = ?, " +
+                "observations = ?, " +
+                "role = ? " +
+                "WHERE id = ?";
         jdbcTemplate.update(
                 sql,
                 person.getPersonName(),
                 person.getPersonEmail(),
                 person.getPersonPassword(),
                 person.getPersonObservations(),
-                person.getPersonRole(), id);
+                person.getPersonRole(),
+                id
+        );
         return 0;
     }
 
     @Override
     public int deletePerson(UUID id) {
-        String sql = "DELETE person WHERE id = ?";
+        String sql = "DELETE FROM person WHERE id = ?";
         jdbcTemplate.update(sql, id);
         return 0;
     }

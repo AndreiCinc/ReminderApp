@@ -16,6 +16,8 @@ public interface EventInterface {
         return insertEvent(id, event);
     }
 
+    List<Event> selectEventsByPersonId(UUID id);
+
     List<Event> selectAllEvents();
 
     Optional<Event> selectEventById(UUID id);
@@ -23,5 +25,7 @@ public interface EventInterface {
     int updateEventById(UUID id, Event Event);
 
     int deleteEventById(UUID id);
+
+    int deleteEventByPersonId(UUID id);
 
 }

@@ -7,7 +7,7 @@ import java.util.UUID;
 
 public class Event {
     private final UUID id;
-    private final String name;
+    private final String eventName;
     private final Date startDate;
     private final Date endDate;
     private final Date reminderDate;
@@ -15,7 +15,7 @@ public class Event {
     private final UUID personId;
 
     public Event(@JsonProperty("id") UUID id,
-                 @JsonProperty("name") String name,
+                 @JsonProperty("eventName") String eventName,
                  @JsonProperty("startDate") Date startDate,
                  @JsonProperty("endDate") Date endDate,
                  @JsonProperty("reminderDate") Date reminderDate,
@@ -23,7 +23,7 @@ public class Event {
                  @JsonProperty("personId") UUID personId) {
 
         this.id = id;
-        this.name = name;
+        this.eventName = eventName;
         this.startDate = startDate;
         this.endDate = endDate;
         this.reminderDate = reminderDate;
@@ -36,7 +36,7 @@ public class Event {
         return id;
     }
     public String getName() {
-        return name;
+        return eventName;
     }
     public Date getStartDate() {
         return startDate;

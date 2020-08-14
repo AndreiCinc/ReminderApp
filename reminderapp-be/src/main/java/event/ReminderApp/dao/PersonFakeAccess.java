@@ -11,7 +11,7 @@ import java.util.UUID;
 @Repository("FakePerson")
 public class PersonFakeAccess implements PersonInterface{
 
-    List<Person> persons = new ArrayList<>();
+    private static List<Person> persons = new ArrayList<>();
 
     @Override
     public int insertPerson(Person person, UUID id) {
