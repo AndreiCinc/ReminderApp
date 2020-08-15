@@ -1,8 +1,8 @@
 
-const eventService = {
+const personService = {
 
-	postEvent(value){
-
+	postPerson(value){
+		console.log(value);
 		fetch("https://reminderapp5.herokuapp.com/event/ReminderApp/api/v1/event/" ,
 		{
 			method: 'POST',
@@ -20,8 +20,7 @@ const eventService = {
 		});
 	},
 
-	putEvent(value, id) {
-
+	putPerson(value, id) {
 		fetch("https://reminderapp5.herokuapp.com/event/ReminderApp/api/v1/event/" + id ,
 		{
 			method: 'PUT',
@@ -39,7 +38,7 @@ const eventService = {
 		});
 	},
 
-	getEvents() {
+	getPerson() {
        return fetch("https://reminderapp5.herokuapp.com/event/ReminderApp/api/v1/event/")
 		.then((response) => response.json())
 		.then((response) => {
@@ -47,16 +46,8 @@ const eventService = {
 		});
     }, 
     
-    getEvents(personId) {
-       return fetch("https://localhost:8080/getEvent/personId/" + personId )
-		.then((response) => response.json())
-		.then((response) => {
-			return response;
-		});
-    }, 
-
-    deleteEvent(id) {
-        fetch("https://reminderapp5.herokuapp.com/event/ReminderApp/api/v1/event/" + id,
+    deletePerson(value) {
+        fetch("https://reminderapp5.herokuapp.com/event/ReminderApp/api/v1/event/" + value,
 		{
 			method: 'DELETE',
 		})
@@ -66,4 +57,4 @@ const eventService = {
     }
 };
 
-export default eventService;
+export default personService;
