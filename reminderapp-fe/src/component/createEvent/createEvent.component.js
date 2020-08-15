@@ -3,7 +3,7 @@ import './createEvent.style.css';
 import Name from '../input/title.component.js';
 import Calendar from '../input/calendar.component.js';
 import Details from '../input/details.component.js';
-import CardService from '../../service/cardService.js';
+import EventService from '../../service/eventService.js';
 import Memo from '../input/memo.component.js';
 import BellIcon from 'react-bell-icon';
 
@@ -44,7 +44,7 @@ class CreateEvent extends React.Component {
 			this.state.startDate.getTime() >= this.state.endDate.getTime() ) {
 			alert("The start date cannot be equal or more than end date");
 		}else {
-			CardService.postEvent(this.state)
+			EventService.postEvent(this.state)
 		}
 		e.preventDefault();
 	}

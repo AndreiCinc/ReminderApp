@@ -2,7 +2,7 @@ import React from 'react';
 import Name from '../input/title.component.js';
 import Calendar from '../input/calendar.component.js';
 import Details from '../input/details.component.js';
-import CardService from '../../service/cardService.js';
+import EventService from '../../service/eventService.js';
 import Memo from '../input/memo.component.js';
 import BellIcon from 'react-bell-icon';
 import Modal from 'react-modal';
@@ -59,7 +59,7 @@ class updateEvent extends React.Component{
 	handleSubmit = (e) => {
 		console.log(this.state);
 		this.setState({openModal: !this.state.openModal});
-		CardService.putEvent(this.state, this.props.id);
+		EventService.putEvent(this.state, this.props.id);
 		e.preventDefault();
 	}
 	handlerModal = (e) => {

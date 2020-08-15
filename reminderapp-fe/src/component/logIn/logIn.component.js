@@ -12,17 +12,15 @@ import CardService from '../../service/cardService.js';
 function LogIn(props) {
 
 	const [state, setState] = useState({email: "", password: ""});
-	
+
 	const saltRounds = 10;
 
 	const handleSubmit = (values, {setSubmitting}) => {
 		bcrypt.genSalt(saltRounds, function(err, salt) {
    			bcrypt.hash(values.password, salt, function(err, hash) {
    				setState({email: values.email, password: hash});
-   				//post request
 		    });
 		});
-		console.log(state.email);
 		setTimeout(() => {
 					setSubmitting(false);
 				}, 500);

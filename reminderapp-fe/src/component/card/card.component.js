@@ -4,7 +4,7 @@ import '../../template/loading.style.css';
 import Moment from 'react-moment';
 import moment from 'moment';
 import 'moment-timezone';
-import CardService from '../../service/cardService.js';
+import EventService from '../../service/eventService.js';
 import CustomComponent from './popover.component.js'
 import DateVerification from '../../service/dateVerification.js';
 import UpdateEvent from '../updateEvent/updateEvent.component.js';
@@ -13,7 +13,7 @@ import UpdateEvent from '../updateEvent/updateEvent.component.js';
 export default function Card(props) {
 
 	const deleteReminder = (e, id) => {
-		CardService.deleteEvent(id)
+		EventService.deleteEvent(id)
 		e.preventDefault();
 	}
 

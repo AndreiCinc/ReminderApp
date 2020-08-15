@@ -1,7 +1,7 @@
 import React, { useState, useEffect} from 'react';
 import './list.style.css';
 import Card from '../card/card.component.js';
-import cardService from '../../service/cardService.js';
+import eventService from '../../service/eventService.js';
 
 export default function List(props) {
 
@@ -9,7 +9,7 @@ export default function List(props) {
 	const [data, setData] = useState([]);
 
 	const getData = async () => {
-		let reminders = await cardService.getEvents();
+		let reminders = await eventService.getEvents();
 		setLoaded(true);
 		setData(reminders);	
 	}

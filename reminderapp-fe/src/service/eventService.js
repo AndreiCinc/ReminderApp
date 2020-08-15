@@ -1,5 +1,5 @@
 
-const cardService = {
+const eventService = {
 
 	postEvent(value){
 		console.log(value);
@@ -57,4 +57,4 @@ const cardService = {
     }
 };
 
-export default cardService;
+export default eventService;
