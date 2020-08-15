@@ -1,24 +1,43 @@
 //I should be an layar that contains one form with 2 inputs, a link to a register page and login button
 
 // the layer should have width as list plus create event and should be positioned on top of those;
-import React from 'react';
+import React, { useState } from 'react';
 import './logIn.style.css';
 import { Formik } from 'formik';
-import * as EmailValidator from 'email-validator';
 import * as Yup from 'yup';
+import bcrypt from 'bcryptjs';
+import CardService from '../../service/cardService.js';
 
 
 function LogIn(props) {
 
+	const [state, setState] = useState({email: "", password: ""});
+	const handleChange = (emailValue, passwordValue)=> {
+		setState(prevState => ({
+			...prevState,
+			[state.email]: emailValue,
+			[state.password]: passwordValue
+		}));
+		
+	};
+	const saltRounds = 10;
+
+	const handleSubmit = (values, {setSubmitting}) => {
+		bcrypt.genSalt(saltRounds, function(err, salt) {
+   			bcrypt.hash(values.password, salt, function(err, hash) {
+   				setState({email: values.email, password: hash});
+   				
+		    });
+		});
+		console.log(state.email);
+		setTimeout(() => {
+					setSubmitting(false);
+				}, 500);
+	}
 	return(
 		<Formik
 			initialValues={{ email: "", password: ""}}
-			onSubmit={(values, {setSubmitting }) => {
-				setTimeout(() => {
-					console.log("Loggin in", values);
-					setSubmitting(false);
-				}, 500);
-			}}
+			onSubmit={(values, {setSubmitting }) => handleSubmit(values, {setSubmitting})}
 			validationSchema={Yup.object().shape({
 		    	email: Yup.string()
 		        	.email()
