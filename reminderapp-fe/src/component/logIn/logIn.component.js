@@ -6,7 +6,7 @@ import './logIn.style.css';
 import { Formik } from 'formik';
 import * as Yup from 'yup';
 import bcrypt from 'bcryptjs';
-import CardService from '../../service/cardService.js';
+import EventService from '../../service/eventService.js';
 
 
 function LogIn(props) {
