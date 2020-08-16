@@ -1,8 +1,7 @@
-import React, { useState} from 'react';
+import React from 'react';
 import './card.style.css';
 import '../../template/loading.style.css';
 import Moment from 'react-moment';
-import moment from 'moment';
 import 'moment-timezone';
 import EventService from '../../service/eventService.js';
 import CustomComponent from './popover.component.js'
