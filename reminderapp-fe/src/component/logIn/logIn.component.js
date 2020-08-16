@@ -1,7 +1,7 @@
 //I should be an layar that contains one form with 2 inputs, a link to a register page and login button
 
 // the layer should have width as list plus create event and should be positioned on top of those;
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './logIn.style.css';
 import { Formik } from 'formik';
 import * as Yup from 'yup';
@@ -25,6 +25,10 @@ function LogIn(props) {
 					setSubmitting(false);
 				}, 500);
 	}
+	useEffect(() => {
+		// backend connection
+		console.log(state);
+	})
 	return(
 		<Formik
 			initialValues={{ email: "", password: ""}}
