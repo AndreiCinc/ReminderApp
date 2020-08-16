@@ -3,7 +3,7 @@ const personService = {
 
 	postPerson(value){
 		console.log(value);
-		fetch("https://localhost:8080/person/" ,
+		fetch("http://localhost:8080/person/" ,
 		{
 			method: 'POST',
 			headers: {
