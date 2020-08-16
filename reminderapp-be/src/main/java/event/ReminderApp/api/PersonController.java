@@ -29,7 +29,7 @@ public class PersonController {
     }
 
     @CrossOrigin
-    @GetMapping("persinId/{id}")
+    @GetMapping("personId/{id}")
     public Optional<Person> getPersonById(@PathVariable("id") UUID id) {
         return personService.getPersonById(id);
     }

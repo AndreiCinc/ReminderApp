@@ -14,11 +14,11 @@ public class Person {
 
     public Person(
             @JsonProperty("id") UUID id,
-            @JsonProperty("personName") String personName,
-            @JsonProperty("personEmail") String email,
-            @JsonProperty("personPassword") String password,
-            @JsonProperty("personObservations") String observations,
-            @JsonProperty("personRole") String role) {
+            @JsonProperty("name") String personName,
+            @JsonProperty("email") String email,
+            @JsonProperty("password") String password,
+            @JsonProperty("observations") String observations,
+            @JsonProperty("role") String role) {
         this.id = id;
         this.personName = personName;
         this.email = email;
