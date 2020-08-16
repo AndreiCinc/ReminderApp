@@ -60,9 +60,6 @@
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/reminder-spring-postgres.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/reminder-spring-postgres.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../reminderapp-fe/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../reminderapp-fe/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../reminderapp-fe/src/component/logIn/logIn.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/../reminderapp-fe/src/component/logIn/logIn.component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../reminderapp-fe/src/component/logIn/logIn.style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../reminderapp-fe/src/component/logIn/logIn.style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
