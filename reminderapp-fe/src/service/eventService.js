@@ -47,7 +47,7 @@ const eventService = {
 		});
     }, 
     
-    getEvents(personId) {
+    getEventsByPersonId(personId) {
        return fetch("https://localhost:8080/getEvent/personId/" + personId )
 		.then((response) => response.json())
 		.then((response) => {
