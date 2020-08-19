@@ -28,6 +28,10 @@ public class PersonService {
         return personInterface.getPersonById(id);
     }
 
+    public Optional<Person> getPersonByEmail(String email) {
+        return personInterface.getPersonByEmail(email);
+    }
+
     public List<Person> getAllPersons() {
         return personInterface.getAllPersons();
     }

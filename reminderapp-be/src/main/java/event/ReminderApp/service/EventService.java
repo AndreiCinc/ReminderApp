@@ -1,11 +1,14 @@
 package event.ReminderApp.service;
 
+import event.ReminderApp.Exceptions.ApiRequestException;
 import event.ReminderApp.dao.EventInterface;
 import event.ReminderApp.model.Event;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.core.Constants;
 import org.springframework.stereotype.Service;
 
+import javax.validation.ConstraintViolationException;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
