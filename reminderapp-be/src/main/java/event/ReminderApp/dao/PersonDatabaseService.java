@@ -36,6 +36,24 @@ public class PersonDatabaseService implements PersonInterface {
     }
 
     @Override
+    public Optional<Person> getPersonByEmail(String email) {
+        String sql = "SELECT id, personName, email, password, observations, role FROM person WHERE email= ?";
+        Person person =  jdbcTemplate.queryForObject(
+                sql,
+                new Object[]{email},
+                (rs, i) -> {
+                    UUID personId = UUID.fromString(rs.getString("id"));
+                    String personName = rs.getString("personName");
+                    String personEmail = rs.getString("email");
+                    String personPassword = rs.getString("password");
+                    String personObservations = rs.getString("observations");
+                    String personRole = rs.getString("role");
+                    return new Person(personId, personName, personEmail, personPassword, personObservations, personRole);
+                });
+        return Optional.ofNullable(person);
+    }
+
+    @Override
     public Optional<Person> getPersonById(UUID id) {
         String sql = "SELECT id, personName, email, password, observations, role FROM person WHERE id= ?";
         Person person =  jdbcTemplate.queryForObject(
