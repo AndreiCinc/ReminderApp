@@ -6,29 +6,42 @@ import './logIn.style.css';
 import { Formik } from 'formik';
 import * as Yup from 'yup';
 import bcrypt from 'bcryptjs';
-import EventService from '../../service/eventService.js';
+import PersonService from '../../service/personService.js';
+import {Route, BrowserRouter as Router, Switch, Link, Redirect} from 'react-router-dom';
+
 
 
 function LogIn(props) {
 
-	const [state, setState] = useState({email: "", password: ""});
+	const [person, setPerson] = useState({email: "", password: ""});
+	const [personDetails, setPersonDetails] = useState();
 
 	const saltRounds = 10;
 
-	const handleSubmit = (values, {setSubmitting}) => {
-		bcrypt.genSalt(saltRounds, function(err, salt) {
-   			bcrypt.hash(values.password, salt, function(err, hash) {
-   				setState({email: values.email, password: hash});
-		    });
-		});
+	const handleSubmit = async (values, {setSubmitting}) => {
+		const person = await PersonService.getPersonByEmail(values.email)
+		const set = await setPersonDetails(person);
+		const personSet = await setPerson({email: values.email, password: values.password})
+
 		setTimeout(() => {
 					setSubmitting(false);
 				}, 500);
 	}
+
 	useEffect(() => {
-		// backend connection
-		console.log(state);
+		if (personDetails != undefined){
+			bcrypt.compare(person.password, personDetails.personPassword, function(err, result) {
+		   		if (!result) {
+	    			alert("Wrong password");
+		   		}else {
+		   			return(
+		   				<Redirect to="/mainPage" />
+		   			)
+		   		}
+		   	});
+		}
 	})
+
 	return(
 		<Formik
 			initialValues={{ email: "", password: ""}}
@@ -87,10 +100,18 @@ function LogIn(props) {
   							<div className="input-feedback">{errors.password}</div>
 							)
 						}
-						<button type="submit disable={isSubmitting}">
-							LogIn
-						</button>
 
+							<button type="submit">
+								<Link to="/mainPage">
+									LogIn
+								</Link>
+							</button>
+						
+						<button type="submit">
+							<Link to="/register" type="submit">
+								Register
+							</Link>
+						</button>
 					</form>
 				);
 			}}
