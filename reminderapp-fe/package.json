@@ -75,6 +75,10 @@
     "react-modal": "^3.11.2",
     "react-moment": "^0.9.7",
     "react-popper": "^2.2.3",
+
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^3.4.3",
+
     "react-tiny-popover": "^5.1.0",
     "react-tooltip": "^4.2.7",
     "reactstrap": "^8.5.1",
@@ -113,6 +117,7 @@
       "last 1 safari version"
     ]
   },
+
   "jest": {
     "roots": [
       "<rootDir>/src"
@@ -165,5 +170,9 @@
     "presets": [
       "react-app"
     ]
+=======
+  "devDependencies": {
+    "@babel/plugin-proposal-throw-expressions": "^7.10.4",
+    "cross-env": "^7.0.2"
   }
 }

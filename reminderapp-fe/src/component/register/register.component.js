@@ -4,6 +4,7 @@ import PersonService from '../../service/personService.js';
 import bcrypt from 'bcryptjs';
 import { Formik } from 'formik';
 import * as Yup from 'yup';
+import {Route, BrowserRouter as Router, Switch, Link} from 'react-router-dom';
 
 
 
@@ -18,6 +19,7 @@ function Register(props) {
 								});
 
 	const saltRounds = 10;
+
 	const handleSubmit = (values, {setSubmitting}) => {
 		bcrypt.genSalt(saltRounds, function(err, salt) {
    			bcrypt.hash(values.password, salt, function(err, hash) {
@@ -28,8 +30,11 @@ function Register(props) {
 					setSubmitting(false);
 				}, 500);
 	}
-	useEffect(() => {
-		PersonService.postPerson(person);
+
+	useEffect(() => {	
+		if (person.email != "") {
+			PersonService.postPerson(person);
+		}
 	});
 	return(
 		<Formik
@@ -127,9 +132,13 @@ function Register(props) {
 						}
 
 						<button type="submit disable={isSubmitting}">
-							LogIn
+							Register
 						</button>
-
+						<button type="submit">
+							<Link to="/" type="submit">
+								LogIn
+							</Link>
+						</button>
 					</form>
 				);
 			}}

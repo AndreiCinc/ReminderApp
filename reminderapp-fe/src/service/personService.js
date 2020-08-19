@@ -1,4 +1,3 @@
-
 const personService = {
 
 	postPerson(value){
@@ -13,10 +12,13 @@ const personService = {
 			body: JSON.stringify(value),
 		})
 		.then(response => response.json())
-		.then(json => {console.log(json)
+		.then(response => {
+			if (response.message) {
+				alert(response.message);
+			}
 		})
-		.catch(err => {
-	         console.log('Type send failed', err);
+		.catch(function(error) {
+  			console.error('Error:', error);
 		});
 	},
 
@@ -39,11 +41,24 @@ const personService = {
 	},
 
 	getPerson() {
-       return fetch("https://localhost:8080/person/getAll/")
+       return fetch("http://localhost:8080/person/getAll/")
 		.then((response) => response.json())
 		.then((response) => {
 			return response;
 		});
+    },
+
+    async getPersonByEmail(email) {
+       return await fetch("http://localhost:8080/person/email/" + email)
+		.then(response => response.json())
+		.then(response => {
+			if (response.name === undefined) {
+					alert(response.message);
+			}else {
+				return response;
+			}
+		})
+		.catch(error => console.log(error));
     }, 
     
     deletePerson(value) {
