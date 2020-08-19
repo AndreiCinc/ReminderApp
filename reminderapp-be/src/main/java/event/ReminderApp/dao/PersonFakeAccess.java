@@ -27,6 +27,12 @@ public class PersonFakeAccess implements PersonInterface{
     }
 
     @Override
+    public Optional<Person> getPersonByEmail(String email) {
+        return persons.stream().filter(person -> person.getPersonEmail().equals(email))
+                .findFirst();
+    }
+
+    @Override
     public Optional<Person> getPersonById(UUID id) {
        return persons.stream().filter(person -> person.getPersonId().equals(id))
                 .findFirst();

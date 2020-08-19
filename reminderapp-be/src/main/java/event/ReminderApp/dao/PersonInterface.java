@@ -14,7 +14,9 @@ public interface PersonInterface {
         UUID id = UUID.randomUUID();
         return insertPerson(person, id);
     }
-    
+
+    Optional<Person> getPersonByEmail(String email);
+
     Optional<Person> getPersonById(UUID id);
 
     List<Person> getAllPersons();
