@@ -19,37 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e524bbb-9efd-4a75-8619-8b3bf8b32bf9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/event/ReminderApp/api/EventController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/event/ReminderApp/api/EventController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/event/ReminderApp/api/PersonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/event/ReminderApp/api/PersonController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/event/ReminderApp/api/PersonController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/event/ReminderApp/api/PersonController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../reminderapp-fe/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/../reminderapp-fe/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../reminderapp-fe/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../reminderapp-fe/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../reminderapp-fe/src/component/card/card.component.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../reminderapp-fe/src/component/card/card.style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../reminderapp-fe/src/component/card/modal.component.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../reminderapp-fe/src/component/card/popover.component.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../reminderapp-fe/src/component/createEvent/createEvent.component.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../reminderapp-fe/src/component/createEvent/createEvent.style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../reminderapp-fe/src/component/input/calendar.component.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../reminderapp-fe/src/component/input/details.component.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../reminderapp-fe/src/component/input/memo.component.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../reminderapp-fe/src/component/input/title.component.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../reminderapp-fe/src/component/input/title.style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../reminderapp-fe/src/component/list/list.component.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../reminderapp-fe/src/component/list/list.style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../reminderapp-fe/src/component/logIn/logIn.component.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../reminderapp-fe/src/component/logIn/logIn.style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../reminderapp-fe/src/component/mainPage/MainPage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../reminderapp-fe/src/component/register/register.component.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../reminderapp-fe/src/component/register/register.style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../reminderapp-fe/src/component/updateEvent/updateEvent.component.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../reminderapp-fe/src/service/dateVerification.js" beforeDir="false" afterPath="$PROJECT_DIR$/../reminderapp-fe/src/service/dateVerification.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../reminderapp-fe/src/service/eventService.js" beforeDir="false" afterPath="$PROJECT_DIR$/../reminderapp-fe/src/service/eventService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../reminderapp-fe/src/service/personService.js" beforeDir="false" afterPath="$PROJECT_DIR$/../reminderapp-fe/src/service/personService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../reminderapp-fe/src/template/loading.style.css" beforeDir="false" />
-    </list>
+    <list default="true" id="4e524bbb-9efd-4a75-8619-8b3bf8b32bf9" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
