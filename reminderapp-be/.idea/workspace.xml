@@ -20,28 +20,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4e524bbb-9efd-4a75-8619-8b3bf8b32bf9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReminderApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ReminderApp.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/event/ReminderApp/api/EventController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/event/ReminderApp/api/EventController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/event/ReminderApp/api/PersonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/event/ReminderApp/api/PersonController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/event/ReminderApp/dao/PersonDatabaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/event/ReminderApp/dao/PersonDatabaseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/event/ReminderApp/dao/PersonFakeAccess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/event/ReminderApp/dao/PersonFakeAccess.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/event/ReminderApp/dao/PersonInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/event/ReminderApp/dao/PersonInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/event/ReminderApp/service/EventService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/event/ReminderApp/service/EventService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/event/ReminderApp/service/PersonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/event/ReminderApp/service/PersonService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/event/ReminderApp/api/PersonController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/event/ReminderApp/api/PersonController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/event/ReminderApp/dao/PersonDatabaseService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/event/ReminderApp/dao/PersonDatabaseService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/event/ReminderApp/dao/PersonFakeAccess.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/event/ReminderApp/dao/PersonFakeAccess.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/event/ReminderApp/dao/PersonInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/event/ReminderApp/dao/PersonInterface.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/event/ReminderApp/service/EventService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/event/ReminderApp/service/EventService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/event/ReminderApp/service/PersonService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/event/ReminderApp/service/PersonService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../reminderapp-fe/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../reminderapp-fe/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../reminderapp-fe/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../reminderapp-fe/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reminderapp-fe/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/../reminderapp-fe/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../reminderapp-fe/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../reminderapp-fe/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../reminderapp-fe/src/component/logIn/logIn.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/../reminderapp-fe/src/component/logIn/logIn.component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../reminderapp-fe/src/component/register/register.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/../reminderapp-fe/src/component/register/register.component.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reminderapp-fe/src/component/card/card.component.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reminderapp-fe/src/component/card/card.style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reminderapp-fe/src/component/card/modal.component.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reminderapp-fe/src/component/card/popover.component.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reminderapp-fe/src/component/createEvent/createEvent.component.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reminderapp-fe/src/component/createEvent/createEvent.style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reminderapp-fe/src/component/input/calendar.component.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reminderapp-fe/src/component/input/details.component.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reminderapp-fe/src/component/input/memo.component.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reminderapp-fe/src/component/input/title.component.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reminderapp-fe/src/component/input/title.style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reminderapp-fe/src/component/list/list.component.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reminderapp-fe/src/component/list/list.style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reminderapp-fe/src/component/logIn/logIn.component.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reminderapp-fe/src/component/logIn/logIn.style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reminderapp-fe/src/component/mainPage/MainPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reminderapp-fe/src/component/register/register.component.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reminderapp-fe/src/component/register/register.style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reminderapp-fe/src/component/updateEvent/updateEvent.component.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reminderapp-fe/src/service/dateVerification.js" beforeDir="false" afterPath="$PROJECT_DIR$/../reminderapp-fe/src/service/dateVerification.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reminderapp-fe/src/service/eventService.js" beforeDir="false" afterPath="$PROJECT_DIR$/../reminderapp-fe/src/service/eventService.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../reminderapp-fe/src/service/personService.js" beforeDir="false" afterPath="$PROJECT_DIR$/../reminderapp-fe/src/service/personService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reminderapp-fe/src/template/loading.style.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,6 +157,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="833" y="285" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog/0.0.1536.824@0.0.1536.824" timestamp="1597705256185" />
+    <state x="20" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1597916777467">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="20" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1597916777467" />
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1597704353702">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -158,22 +169,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="0" y="0" width="558" height="248" key="DBNavigator.IdleConnectionDialog/0.0.1536.824@0.0.1536.824" timestamp="1597392270074" />
-    <state width="1309" height="267" key="GridCell.Tab.0.bottom" timestamp="1597764950276">
+    <state width="901" height="114" key="GridCell.Tab.0.bottom" timestamp="1597918240186">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1309" height="267" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1597764950276" />
-    <state width="1309" height="267" key="GridCell.Tab.0.center" timestamp="1597764950276">
+    <state width="901" height="114" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1597918240186" />
+    <state width="901" height="114" key="GridCell.Tab.0.center" timestamp="1597918240186">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1309" height="267" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1597764950276" />
-    <state width="1309" height="267" key="GridCell.Tab.0.left" timestamp="1597764950276">
+    <state width="901" height="114" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1597918240186" />
+    <state width="901" height="114" key="GridCell.Tab.0.left" timestamp="1597918240185">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1309" height="267" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1597764950276" />
-    <state width="1309" height="267" key="GridCell.Tab.0.right" timestamp="1597764950276">
+    <state width="901" height="114" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1597918240185" />
+    <state width="901" height="114" key="GridCell.Tab.0.right" timestamp="1597918240186">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1309" height="267" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1597764950276" />
+    <state width="901" height="114" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1597918240186" />
     <state width="989" height="236" key="GridCell.Tab.1.bottom" timestamp="1597710612213">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

@@ -1,14 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import './register.style.css';
-import PersonService from '../../service/personService.js';
+import './Register.css';
+import PersonService from '../Service/PersonService.js';
 import bcrypt from 'bcryptjs';
 import { Formik } from 'formik';
 import * as Yup from 'yup';
-import {Route, BrowserRouter as Router, Switch, Link} from 'react-router-dom';
+import {Route, BrowserRouter as Router, Switch, Link, Redirect, useHistory} from 'react-router-dom';
 
-
-
-function Register(props) {
+export default function Register(props) {
 
 	const [person, setPerson] = useState({
 									name: "",
@@ -17,25 +15,19 @@ function Register(props) {
 									observations: "",
 									role: ""
 								});
-
 	const saltRounds = 10;
 
+	let history = useHistory();
+
 	const handleSubmit = (values, {setSubmitting}) => {
-		bcrypt.genSalt(saltRounds, function(err, salt) {
-   			bcrypt.hash(values.password, salt, function(err, hash) {
-   				setPerson({name: values.name, email: values.email, password: hash});
-		    });
-		});
+		PersonService.postPerson(values);
+
 		setTimeout(() => {
-					setSubmitting(false);
-				}, 500);
+			setSubmitting(false);
+		}, 500);
 	}
 
-	useEffect(() => {	
-		if (person.email != "") {
-			PersonService.postPerson(person);
-		}
-	});
+
 	return(
 		<Formik
 			initialValues={{passwordConfirmation: "" }, { name: "", email: "", password: ""}}
@@ -131,14 +123,13 @@ function Register(props) {
 							)
 						}
 
-						<button type="submit disable={isSubmitting}">
+						<button className="register" type="submit disable={isSubmitting}">
 							Register
 						</button>
-						<button type="submit">
-							<Link to="/" type="submit">
-								LogIn
-							</Link>
-						</button>
+						
+						<div className="login" >
+							Login
+						</div>
 					</form>
 				);
 			}}
@@ -146,5 +137,4 @@ function Register(props) {
 	);
 }
 
-export default Register;
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import './title.style.css';
+import './Name.css';
 
 
 export default function Title(props) {
@@ -12,13 +12,13 @@ export default function Title(props) {
 
 	return(
 		<div className="md-form active-cyan active-cyan-2 mb-3">
-		  <input 
-		  	className="form-control" 
-		  	type="text" 
-		  	placeholder={name} 
-		  	aria-label="Name"
-		  	onChange={(e) => {handlerName(e)}}
-		  	/>
+			<input 
+				className="form-control" 
+				type="text" 
+				placeholder={name} 
+				aria-label="Name"
+				onChange={(e) => {handlerName(e)}}
+			/>
 		</div>
 	);
 }

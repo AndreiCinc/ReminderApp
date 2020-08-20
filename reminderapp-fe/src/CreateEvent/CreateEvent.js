@@ -1,12 +1,11 @@
 import React from 'react';
-import './createEvent.style.css';
-import Name from '../input/title.component.js';
-import Calendar from '../input/calendar.component.js';
-import Details from '../input/details.component.js';
-import EventService from '../../service/eventService.js';
-import Memo from '../input/memo.component.js';
+import './CreateEvent.css';
+import Name from '../Input/Name.js';
+import Calendar from '../Input/Calendar.js';
+import Details from '../Input/Details.js';
+import EventService from '../Service/EventService.js';
+import Memo from '../Input/Memo.js';
 import BellIcon from 'react-bell-icon';
-
 
 class CreateEvent extends React.Component {
 	constructor(props) {
@@ -19,24 +18,31 @@ class CreateEvent extends React.Component {
 			reminderDate: new Date()
 		}
 	}
+
 	handlerName = e =>{
+		console.log(e.target.value);
 		this.setState({name: e.target.value});
 	}
+
 	handleStartDate = date => {
 		this.setState({startDate: date, reminderDate: date});
 	}
+
 	handleEndDate = date => {
 		this.setState({endDate: date});
 	}
+
 	handleDetails = value => {
 		this.setState({details: value});
 	}
+
 	handleMemo = e => {
 		let date = e.target.value;
 		let memoDate = this.state.startDate.getTime() - (date * 60000);
 		let newDate = new Date(memoDate);
 		this.setState({reminderDate: newDate});
 	}
+
 	handleSubmit = (e) => {
 		if (this.state.name === "" ) {
 			alert("The name field cannot be emty");
@@ -48,13 +54,15 @@ class CreateEvent extends React.Component {
 		}
 		e.preventDefault();
 	}
+
 	render() {
 		return(
-			<form onSubmit={(e) => {this.handleSubmit(e)}}>
-				<div className="Create-event">
+			<form className="Create-event" onSubmit={(e) => {this.handleSubmit(e)}}>
+			
 					<div>
 			        	<Name name={'Insert event name'} handlerName={this.handlerName} />
 		        	</div>
+
 		        	<div className="date">
 		         		<Calendar 
 		         			type="submit" 
@@ -62,8 +70,9 @@ class CreateEvent extends React.Component {
 		         			date={this.state.startDate}
 		         			labelDate={"Start date"}
 		         			labelTime={"Start time"}
-		         			/>
+		         		/>
 		        	</div>
+
 		        	<div className="date">
 		        		<Calendar 
 		        			type="submit"
@@ -71,16 +80,18 @@ class CreateEvent extends React.Component {
 		        			date={this.state.endDate}
 		        			labelDate={"End date"}
 		         			labelTime={"End time"}
-		         			/>
+		         		/>
 		        	</div>
+
 		        	<div className="text">
 		        		<Details type="submit" handleDetails={this.handleDetails}/>
 		        	</div>
+
 			        <div className="bottom" >
 			        	<div className="bell">
 			        		<BellIcon width='15' active={false} animate={false} opacity={0.6}/>
 			        	</div>
-			        	<div>
+			        	<div className="memo">
 			        		<Memo memo={this.handleMemo}/>
 			        	</div>
 			        	<div>
@@ -89,7 +100,7 @@ class CreateEvent extends React.Component {
 				        </button>
 				        </div>
 		        	</div>
-		      	</div>
+		        	
 	      	</form>
 		);
 	}

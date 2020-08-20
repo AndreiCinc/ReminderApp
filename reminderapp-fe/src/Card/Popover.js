@@ -1,18 +1,12 @@
 import React, { useState } from 'react';
-import './card.style.css';
+import './Card.css';
 import Popover, { ArrowContainer } from 'react-tiny-popover';
 import Moment from 'react-moment';
 import 'moment-timezone';
 
-
 export default function CustomComponent (props) {
 
 	const [isPopoverOpen, setIsPopoverOpen] = useState(false);
-	let name = props.title;
-	let start = props.startDate;
-	let end = props.endDate;
-	let reminder = props.reminder;
-	let details = props.details;
 	
 	const container = ({ position, targetRect, popoverRect})=> ( 
 	    <ArrowContainer 
@@ -26,34 +20,34 @@ export default function CustomComponent (props) {
 	    >
 		    <div className="popoverStyle" >
 		    	<div className="header">
-					{name}
+					{props.title}
 				</div>
 				<div className="body">
 					<div>
 						Event starts: 
 						<Moment format=" MM-DD-YYYY HH:mm" locale="ro">
-               				{start}
+               				{props.startDate}
                			</Moment>
 					</div>
 					<div>
 						Event ends:   
 						<Moment format=" MM-DD-YYYY HH:mm">
-               				{end}
+               				{props.endDate}
                			</Moment>
 					</div>
 					<div>
 						Reminde at:   
 						<Moment format=" MM-DD-YYYY HH:mm">
-               				{reminder} 
+               				{props.reminder} 
                			</Moment>
 					</div>
 					<div>
-						Details: {details}
+						Details: {props.details}
 					</div>
 				</div>
 		    </div>
 	    </ArrowContainer>
-	);
+	)
 
 	return(
 		<Popover

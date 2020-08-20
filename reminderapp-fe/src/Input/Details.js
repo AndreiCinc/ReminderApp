@@ -1,12 +1,13 @@
 import React from 'react';
-import '../createEvent/createEvent.style.css';
+import '../CreateEvent/CreateEvent.css';
 
 export default function Details(props) {
 
 	function handleDetails(e) {
 		props.handleDetails(e.target.value);
 	}
-	return (
+	
+	return(
 		<div className="form-group blue-border inline">
 			<label className="exampleFormControlTextarea4">Details: </label>
 		  	<textarea className="form-control" 

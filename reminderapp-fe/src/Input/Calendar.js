@@ -13,11 +13,12 @@ export default function MaterialUIPickers(props) {
   const handleDateChange = (date) => {
     props.handlerDate(date);
   };
+  
   return (
     <MuiPickersUtilsProvider utils={DateFnsUtils}>
       <Grid container justify="space-around">
         <KeyboardDatePicker
-        style={{width:'50%'}}
+          style={{width:'50%'}}
           margin="normal"
           id="date-picker-dialog"
           label={props.labelDate}
@@ -29,7 +30,7 @@ export default function MaterialUIPickers(props) {
           }}
         />
         <KeyboardTimePicker
-        style={{width:'40%'}}
+          style={{width:'40%'}}
           margin="normal"
           id="time-picker"
           label={props.labelTime}

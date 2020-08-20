@@ -1,8 +1,10 @@
+
 const personService = {
 
 	postPerson(value){
+		
 		console.log(value);
-		fetch("http://localhost:8080/person/" ,
+		fetch("http://localhost:8080/user/create/" ,
 		{
 			method: 'POST',
 			headers: {
@@ -23,7 +25,7 @@ const personService = {
 	},
 
 	putPerson(value, id) {
-		fetch("https://localhost:8080/person/" + id ,
+		fetch("http://localhost:8080/user/" + id + "/update" ,
 		{
 			method: 'PUT',
 			headers: {
@@ -41,17 +43,18 @@ const personService = {
 	},
 
 	getPerson() {
-       return fetch("http://localhost:8080/person/getAll/")
+       return fetch("http://localhost:8080/user/all/")
 		.then((response) => response.json())
 		.then((response) => {
 			return response;
 		});
     },
 
-    async getPersonByEmail(email) {
-       return await fetch("http://localhost:8080/person/email/" + email)
+    getPersonByEmail(email) {
+       return fetch("http://localhost:8080/user/" + email + "/select")
 		.then(response => response.json())
 		.then(response => {
+			console.log(response);
 			if (response.name === undefined) {
 					alert(response.message);
 			}else {
@@ -62,7 +65,7 @@ const personService = {
     }, 
     
     deletePerson(value) {
-        fetch("https://localhost:8080/person/" + value,
+        fetch("http://localhost:8080/user/" + value + "/delete" ,
 		{
 			method: 'DELETE',
 		})

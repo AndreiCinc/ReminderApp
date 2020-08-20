@@ -23,42 +23,43 @@ public class EventController {
     }
 
     @CrossOrigin
-    @PostMapping
+    @PostMapping("create/")
     public void addEvent(@RequestBody Event event) {
         eventService.addEvent(event);
     }
 
     @CrossOrigin
-    @GetMapping("getEvent/personId/{id}")
+    @GetMapping("{id}/selectByPerson")
     public List<Event> getAllEventsByPersonId(@PathVariable("id") UUID id) {
         return eventService.getAllEventsByPersonId(id);
     }
-    @CrossOrigin
-    @GetMapping("getAll/")
-    public List<Event> getAllEvents() {
-        return eventService.getAllEvents();
-    }
 
-    @GetMapping("getEvent/eventId/{id}")
+    @GetMapping("{id}/select")
     public Event getEventById(@PathVariable("id") UUID id) {
         return eventService.getEventById(id)
                 .orElse(null);
     }
 
     @CrossOrigin
-    @PutMapping("putEvent/eventId/{id}")
+    @GetMapping("all/")
+    public List<Event> getAllEvents() {
+        return eventService.getAllEvents();
+    }
+
+    @CrossOrigin
+    @PutMapping("{id}/update")
     public void updateEvent(@PathVariable("id") UUID id, @Valid @NotNull @RequestBody Event eventToUpdate) {
         eventService.updateEvent(id, eventToUpdate);
     }
 
     @CrossOrigin
-    @DeleteMapping("deleteEvent/eventId/{id}")
+    @DeleteMapping("{id}/delete")
     public void deleteEvent(@PathVariable("id") UUID id) {
         eventService.deleteEvent(id);
     }
 
     @CrossOrigin
-    @DeleteMapping("deleteEvent/personId/{id}")
+    @DeleteMapping("{id}/deleteByPerson")
     public void deleteEventByPersonId(@PathVariable("id") UUID id) {
         eventService.deleteEventsByPersonId(id);
     }

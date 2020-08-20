@@ -1,7 +1,7 @@
 import React, { useState, useEffect} from 'react';
-import './list.style.css';
-import Card from '../card/card.component.js';
-import EventService from '../../service/eventService.js';
+import './List.css';
+import Card from '../Card/Card.js';
+import EventService from '../Service/EventService.js';
 
 export default function List(props) {
 
@@ -53,6 +53,7 @@ export default function List(props) {
 	   	</div>
 		);
 	}
+	
 	return(
 		<div className="list">
 			<Card 
@@ -60,5 +61,4 @@ export default function List(props) {
 			/>
 		</div>	
 	);
-	
 }

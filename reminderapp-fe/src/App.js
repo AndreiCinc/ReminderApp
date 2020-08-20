@@ -1,23 +1,23 @@
 import React from 'react';
 import './App.css';
-import List from './component/list/list.component.js';
-import CreateEvent from './component/createEvent/createEvent.component.js';
-import LogIn from './component/logIn/logIn.component.js';
-import Register from './component/register/register.component.js';
-import MainPage from './component/mainPage/MainPage.js';
+import List from './List/List.js';
+import CreateEvent from './CreateEvent/CreateEvent.js';
+import LogIn from './LogIn/LogIn.js';
+import Register from './Register/Register.js';
+import MainPage from './MainPage/MainPage.js';
 import {Route, BrowserRouter as Router, Switch, Link} from 'react-router-dom';
 
-function App() {
+export default function App() {
 
   return (
     <div className="App">
-	    <Router>
-		    <Route path="/" exact component={LogIn}/>
+    <Router>
+	    <Switch>
+		    <Route path="/logIn" component={LogIn}/>
 		    <Route path="/register" component={Register}/>
 			<Route path="/mainPage" component={MainPage}/>
-	    </Router>
+	    </Switch>
+	</Router>
     </div>
   );
 }
-
-export default App;

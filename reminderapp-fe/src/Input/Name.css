@@ -1,8 +1,5 @@
 .active-cyan input.form-control[type=text] {
 	margin: 0px;
-	border-top: 0px;
-	border-right: 0px;
-	border-left: 0px;
   	text-align: center;
   	font-family: "Lucida Console", Courier, monospace;
   	font-size: 13px;

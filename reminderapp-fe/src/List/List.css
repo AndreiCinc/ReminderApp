@@ -37,6 +37,17 @@
     margin-left: 0px;
     margin-top: 4%;
     width: 45%;
+    height: 80%;
+  }
+
+}
+
+@media screen and (max-width: 380px) {
+
+  .App .list {
+    margin-left: 0px;
+    margin-top: 4%;
+    width: 45%;
     height: 90%;
   }
 
