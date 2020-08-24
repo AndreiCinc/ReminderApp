@@ -1,9 +1,11 @@
 
+const api_url = "https://reminderapp5.herokuapp.com/event/";
+
 const eventService = {
 
 	postEvent(value){
 
-		fetch("http://localhost:8080/event/create/" ,
+		fetch("https://reminderapp5.herokuapp.com/event/ReminderApp/api/v1/event/" ,
 		{
 			method: 'POST',
 			headers: {
@@ -22,7 +24,7 @@ const eventService = {
 
 	putEvent(value, id) {
 
-		fetch("http://localhost:8080/event/" + id + "/update" ,
+		fetch("https://reminderapp5.herokuapp.com/event/ReminderApp/api/v1/event/" ,
 		{
 			method: 'PUT',
 			headers: {
@@ -40,7 +42,7 @@ const eventService = {
 	},
 
 	getEvents() {
-       return fetch("http://localhost:8080/event/all/")
+       return fetch("https://reminderapp5.herokuapp.com/event/ReminderApp/api/v1/event/")
 		.then((response) => response.json())
 		.then((response) => {
 			return response;
@@ -48,7 +50,7 @@ const eventService = {
     }, 
     
     getEventsByPersonId(personId) {
-       return fetch("http://localhost:8080/event/" + personId + "/selectByPerson" )
+       return fetch("https://reminderapp5.herokuapp.com/event/ReminderApp/api/v1/event/" + personId )
 		.then((response) => response.json())
 		.then((response) => {
 			return response;
@@ -56,7 +58,7 @@ const eventService = {
     }, 
 
     deleteEvent(id) {
-        fetch("http://localhost:8080/event/" + id + "/delete",
+        fetch("https://reminderapp5.herokuapp.com/event/ReminderApp/api/v1/event/" + id,
 		{
 			method: 'DELETE',
 		})
