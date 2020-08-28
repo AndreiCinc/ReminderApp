@@ -23,7 +23,6 @@ public class EventService {
         this.eventInterface = eventInterface;
     }
 
-
     public int addEvent(Event event) {
         return eventInterface.insertEvent(event);
     }
@@ -35,6 +34,7 @@ public class EventService {
     public List<Event> getAllEventsByPersonId(UUID id) {
         return eventInterface.selectEventsByPersonId(id);
     }
+
     public List<Event> getAllEvents() {
         return eventInterface.selectAllEvents();
     }

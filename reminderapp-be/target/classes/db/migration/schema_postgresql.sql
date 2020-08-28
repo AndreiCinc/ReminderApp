@@ -1,4 +1,4 @@
-CREATE TABLE person (
+CREATE TABLE user (
   id UUID NOT NULL UNIQUE,
   personName VARCHAR(50) NOT NULL,
   email VARCHAR(100) NOT NULL UNIQUE,
@@ -15,5 +15,5 @@ CREATE TABLE event (
   reminderDate timestamp NOT NULL,
   details VARCHAR(300),
   personId UUID NOT NULL PRIMARY KEY,
-FOREIGN KEY (personId) REFERENCES person(id)
+FOREIGN KEY (personId) REFERENCES user(id)
 )

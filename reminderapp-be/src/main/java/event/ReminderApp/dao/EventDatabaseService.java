@@ -59,7 +59,6 @@ public class EventDatabaseService implements EventInterface {
                         list.add(new Event(eventId, eventName, startDate, endDate, reminderDate, details, personId));
                 }
                 return list;
-
             }
         });
     }
