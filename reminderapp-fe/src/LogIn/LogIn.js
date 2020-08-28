@@ -3,47 +3,37 @@ import './LogIn.css';
 import { Formik } from 'formik';
 import * as Yup from 'yup';
 import bcrypt from 'bcryptjs';
-import PersonService from '../Service/PersonService.js';
+import Authentication from '../Service/AuthenticationService.js';
 import {Route, BrowserRouter as Router, Switch, Link, Redirect} from 'react-router-dom';
+import Cookies from 'universal-cookie';
 
 export default function LogIn(props) {
 
 	const [person, setPerson] = useState({email: "", password: ""});
-	const [personDetails, setPersonDetails] = useState({email: "", password: ""});
-	const [personExists, setPersonExists] = useState(false);
-
-	const saltRounds = 10;
+	const cookies = new Cookies();
 
 	const handleSubmit = async (values, {setSubmitting}) => {
-		const personService = await PersonService.getPersonByEmail(values.email);
-		console.log(personService);
-		const setDetails = await setPersonDetails({email: personService.email, password: personService.password});
-		console.log(setDetails);
-		const person = await setPerson({email: values.email, password: values.password});
-		const redirect = () => {
-			console.log(personDetails.email);
-			if (personDetails.email != undefined) {
-				return(
-					<Redirect to="/mainPage" />
-				)
-			}
-		};
 		
-
+		setPerson({email: values.email, password: values.password});
 		setTimeout(() => {
 			setSubmitting(false);
 		}, 500);
-		console.log(personDetails.personPassword);
 	}
 
 	useEffect(() => {
-		if (personDetails != undefined){
-			bcrypt.compare(person.password, personDetails.personPassword, function(err, result) {
-		   		if (!result) {
-	    			alert("Wrong password");
-		   		}
-		   	});
+		if (person.email != "" ) {
+			const response = Authentication.authenticate(person)
+			.then((response) => {
+
+				if (cookies.get("person") != null) {
+					alert("You are logged as another user, proceeding log out...");
+					cookies.remove("person");
+				}
+				cookies.set('person', response, { path: "/"});
+				console.log(cookies.get("person"))
+			})
 		}
+
 	})
 
 	return(

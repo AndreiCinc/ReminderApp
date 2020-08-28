@@ -1,6 +1,4 @@
 
-const api_url = "https://reminderapp5.herokuapp.com/event/";
-
 const eventService = {
 
 	postEvent(value){

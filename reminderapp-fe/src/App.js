@@ -9,15 +9,14 @@ import {Route, BrowserRouter as Router, Switch, Link} from 'react-router-dom';
 
 export default function App() {
 
-  return (
-    <div className="App">
-    <Router>
-	    <Switch>
-		    <Route path="/logIn" component={LogIn}/>
-		    <Route path="/register" component={Register}/>
-			<Route path="/mainPage" component={MainPage}/>
-	    </Switch>
-	</Router>
-    </div>
-  );
+
+	return (
+	    <div className="App">
+		    <Router>
+			    <Route path="/logIn" component={LogIn}/>
+			    <Route path="/register" component={Register}/>
+				<Route path="/mainPage" component={MainPage}/>
+			</Router>
+	    </div>
+ 	);
 }

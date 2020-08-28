@@ -15,18 +15,32 @@ export default function Register(props) {
 									observations: "",
 									role: ""
 								});
-	const saltRounds = 10;
-
 	let history = useHistory();
 
 	const handleSubmit = (values, {setSubmitting}) => {
-		PersonService.postPerson(values);
-
-		setTimeout(() => {
+			setPerson({	name: values.name,
+						email: values.email,
+						password: values.password,
+						observations: "",
+						role: ""
+			})
+	setTimeout(() => {
 			setSubmitting(false);
 		}, 500);
 	}
 
+	useEffect(() => {
+		if (person.email != "") {
+			const response = PersonService.postPerson(person)
+			.then((response) => { 
+				if (response != undefined) {
+					alert("Registered succesfully!")
+					history.push("/logIn")
+				}
+			})
+		}
+
+	})
 
 	return(
 		<Formik
@@ -127,9 +141,6 @@ export default function Register(props) {
 							Register
 						</button>
 						
-						<div className="login" >
-							Login
-						</div>
 					</form>
 				);
 			}}
