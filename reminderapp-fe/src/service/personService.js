@@ -2,20 +2,17 @@ import axios from 'axios';
 
 const api_url_user = "http://localhost:8080/user/";
 
+const api_url_authentication = "http://localHost:8080/authentication/authenticate/";
+
 const personService = {
 
-	postPerson(name, email, password){
+	postPerson(person){
 		
-		return axios.post(api_url_user + "create/", {
-			name,
-			email,
-			password
-		})
-		.then(response => response.json())
-		.then(json => {console.log(json)
-		})
+		return axios.post(api_url_user + "create/", person
+		)
+		.then(response => { return response})
 		.catch(err => {
-	         console.log('Type send failed', err);
+	        alert("Email already exists!");
 		});
 	},
 
@@ -53,6 +50,7 @@ const personService = {
 		})
 		.catch(error => console.log(error));
     }, 
+
     
     deletePerson(value) {
         fetch("http://localhost:8080/user/delete/" + value + "/delete" ,

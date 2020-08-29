@@ -14,6 +14,7 @@
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "aws-sdk": "^2.734.0",
+    "axios": "^0.20.0",
     "bcrypt": "^5.0.0",
     "bcryptjs": "^2.4.3",
     "boostrap": "^2.0.0",
@@ -41,6 +42,7 @@
     "react-tooltip": "^4.2.7",
     "reactstrap": "^8.5.1",
     "source-map-resolve": "^0.6.0",
+    "universal-cookie": "^4.0.3",
     "yup": "^0.29.3"
   },
   "scripts": {
