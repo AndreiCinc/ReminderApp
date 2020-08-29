@@ -35,6 +35,7 @@ public class UserDatabaseService implements UserInterface {
         return 0;
     }
 
+
     @Override
     public Optional<User> getUserByEmail(String email) {
         String sql = "SELECT id, personName, email, password, observations, role FROM person WHERE email= ?";
@@ -75,13 +76,13 @@ public class UserDatabaseService implements UserInterface {
     public List<User> getAllUsers() {
         String sql = "SELECT id, personName, email, password, observations, role FROM person";
         return jdbcTemplate.query(sql, (resultSet, i) -> {
-            UUID personId = UUID.fromString(resultSet.getString("id"));
-            String personName = resultSet.getString("personName");
-            String personEmail = resultSet.getString("email");
-            String personPassword = resultSet.getString("password");
-            String personObservations = resultSet.getString("observations");
-            String personRole = resultSet.getString("role");
-            return new User(personId, personName, personEmail, personPassword, personObservations, personRole);
+            UUID userId = UUID.fromString(resultSet.getString("id"));
+            String userName = resultSet.getString("personName");
+            String userEmail = resultSet.getString("email");
+            String userPassword = resultSet.getString("password");
+            String userObservations = resultSet.getString("observations");
+            String userRole = resultSet.getString("role");
+            return new User(userId, userName, userEmail, userPassword, userObservations, userRole);
         });
     }
 

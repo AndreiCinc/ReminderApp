@@ -24,4 +24,5 @@ public interface UserInterface {
     int updateUser(User user, UUID id);
 
     int deleteUser(UUID id);
+    
 }

@@ -113,18 +113,25 @@
 			<artifactId>annotations</artifactId>
 			<version>16.0.1</version>
 		</dependency>
+<<<<<<< HEAD
 
+=======
+>>>>>>> refactor
         <dependency>
             <groupId>io.jsonwebtoken</groupId>
             <artifactId>jjwt</artifactId>
             <version>0.9.1</version>
         </dependency>
+<<<<<<< HEAD
 		<dependency>
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-core</artifactId>
 			<version>5.3.3.RELEASE</version>
 		</dependency>
 	</dependencies>
+=======
+    </dependencies>
+>>>>>>> refactor
 
 	<build>
 		<plugins>

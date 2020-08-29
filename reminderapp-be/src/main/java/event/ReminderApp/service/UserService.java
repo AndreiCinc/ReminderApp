@@ -4,9 +4,12 @@ import event.ReminderApp.dao.UserInterface;
 import event.ReminderApp.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+<<<<<<< HEAD
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
+=======
+>>>>>>> refactor
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -16,6 +19,7 @@ import java.util.UUID;
 @Service
 public class UserService {
 
+<<<<<<< HEAD
     public final UserInterface userInterface;
 
     @Autowired
@@ -61,5 +65,36 @@ public class UserService {
     @Bean
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
+=======
+    public final UserInterface personInterface;
+
+    @Autowired
+    public UserService(@Qualifier("PersonDatabase") UserInterface personInterface) {
+        this.personInterface = personInterface;
+    }
+
+    public int insertUser(User user) {
+        return personInterface.insertUser(user);
+    }
+
+    public Optional<User> getUserById(UUID id) {
+        return personInterface.getUserById(id);
+    }
+
+    public Optional<User> getUserByEmail(String email) {
+        return personInterface.getUserByEmail(email);
+    }
+
+    public List<User> getAllUsers() {
+        return personInterface.getAllUsers();
+    }
+
+    public int updateUser(User person, UUID id) {
+        return personInterface.updateUser(person, id);
+    }
+
+    public int deleteUser(UUID id) {
+        return personInterface.deleteUser(id);
+>>>>>>> refactor
     }
 }

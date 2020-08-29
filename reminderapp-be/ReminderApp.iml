@@ -125,7 +125,10 @@
     <orderEntry type="library" name="Maven: joda-time:joda-time:2.9.2" level="project" />
     <orderEntry type="library" name="Maven: org.jetbrains:annotations:16.0.1" level="project" />
     <orderEntry type="library" name="Maven: io.jsonwebtoken:jjwt:0.9.1" level="project" />
+<<<<<<< HEAD
     <orderEntry type="library" name="Maven: org.springframework.security:spring-security-core:5.3.3.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-expression:5.2.7.RELEASE" level="project" />
+=======
+>>>>>>> refactor
   </component>
 </module>

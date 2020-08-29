@@ -27,11 +27,11 @@ public class UserController {
 
     @CrossOrigin
     @PostMapping("create/")
-    public int insertPerson(@RequestBody User user) {
+    public int insertUser(@RequestBody User user) {
         try{
-           return userService.insertPerson(user);
-       }catch (DataIntegrityViolationException e) {
-           if (e.getMostSpecificCause().getClass().getName().equals("org.postgresql.util.PSQLException") && ((SQLException) e.getMostSpecificCause()).getSQLState().equals("23505"))
+            return userService.insertUser(user);
+        }catch (DataIntegrityViolationException e) {
+            if (e.getMostSpecificCause().getClass().getName().equals("org.postgresql.util.PSQLException") && ((SQLException) e.getMostSpecificCause()).getSQLState().equals("23505"))
                 throw new ApiRequestException("Dublicate email, you may have already registered!", e.getMostSpecificCause());
             throw e;
         }
@@ -39,15 +39,15 @@ public class UserController {
 
     @CrossOrigin
     @GetMapping("{id}/select")
-    public Optional<User> getPersonById(@PathVariable("id") UUID id) {
-        return userService.getPersonById(id);
+    public Optional<User> getUserById(@PathVariable("id") UUID id) {
+        return userService.getUserById(id);
     }
 
     @CrossOrigin
     @GetMapping("{email}/select")
-    public Optional<User> getPersonByEmail(@PathVariable("email")String email) {
+    public Optional<User> getUserByEmail(@PathVariable("email")String email) {
         try{
-            return userService.getPersonByEmail(email);
+            return userService.getUserByEmail(email);
         }catch (EmptyResultDataAccessException e) {
             throw new ApiRequestException("Email not found", e.getCause());
         }
@@ -55,19 +55,19 @@ public class UserController {
 
     @CrossOrigin
     @GetMapping("all/")
-    public List<User> getAllPersons() {
-        return userService.getAllPersons();
+    public List<User> getAllUsers() {
+        return userService.getAllUsers();
     }
 
     @CrossOrigin
     @PutMapping("{id}/update")
-    public int updatePerson(@NotNull @Valid @RequestBody User user, @PathVariable("id") UUID id) {
-        return userService.updatePerson(user, id);
+    public int updateUser(@NotNull @Valid @RequestBody User user, @PathVariable("id") UUID id) {
+        return userService.updateUser(user, id);
     }
 
     @CrossOrigin
     @DeleteMapping("{id}/delete")
-    public int deletePerson(@PathVariable("id") UUID id) {
-        return userService.deletePerson(id);
+    public int deleteUser(@PathVariable("id") UUID id) {
+        return userService.deleteUser(id);
     }
 }
