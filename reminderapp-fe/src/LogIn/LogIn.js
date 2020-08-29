@@ -5,7 +5,7 @@ import * as Yup from 'yup';
 import bcrypt from 'bcryptjs';
 import Authentication from '../Service/AuthenticationService.js';
 import Cookies from '../Service/CookiesService.js';
-import {Route, BrowserRouter as Router, Switch, Link, Redirect} from 'react-router-dom';
+import {Route, BrowserRouter as Router, Switch, Link, Redirect, useHistory} from 'react-router-dom';
 
 export default function LogIn(props) {
 
@@ -19,16 +19,18 @@ export default function LogIn(props) {
 		}, 500);
 	}
 
+	let history = useHistory();
+	
 	useEffect(() => {
 		if (person.email != "" ) {
 			const response = Authentication.authenticate(person)
 			.then((response) => {
 				if (response) {
 					Cookies.setCookie("person", response);
+					history.push("/mainPage")
 				}
 			})
 		}
-
 	})
 
 	return(
