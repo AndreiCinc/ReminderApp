@@ -23,7 +23,7 @@ public class AuthenticationController {
         try{
             return authenticationService.Authenticate(user);
         }catch (Exception e) {
-           throw new ApiRequestException("Failed to authenticate" + e.getMessage(), e.getCause());
+            throw new ApiRequestException("Failed to authenticate" + e.getMessage(), e.getCause());
         }
     }
 }
