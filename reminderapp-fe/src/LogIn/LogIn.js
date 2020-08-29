@@ -4,13 +4,12 @@ import { Formik } from 'formik';
 import * as Yup from 'yup';
 import bcrypt from 'bcryptjs';
 import Authentication from '../Service/AuthenticationService.js';
+import Cookies from '../Service/CookiesService.js';
 import {Route, BrowserRouter as Router, Switch, Link, Redirect} from 'react-router-dom';
-import Cookies from 'universal-cookie';
 
 export default function LogIn(props) {
 
 	const [person, setPerson] = useState({email: "", password: ""});
-	const cookies = new Cookies();
 
 	const handleSubmit = async (values, {setSubmitting}) => {
 		
@@ -24,13 +23,9 @@ export default function LogIn(props) {
 		if (person.email != "" ) {
 			const response = Authentication.authenticate(person)
 			.then((response) => {
-
-				if (cookies.get("person") != null) {
-					alert("You are logged as another user, proceeding log out...");
-					cookies.remove("person");
+				if (response) {
+					Cookies.setCookie("person", response);
 				}
-				cookies.set('person', response, { path: "/"});
-				console.log(cookies.get("person"))
 			})
 		}
 

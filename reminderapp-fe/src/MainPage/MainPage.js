@@ -3,13 +3,14 @@ import List from '../List/List.js';
 import '../LogIn/LogIn.css';
 import CreateEvent from '../CreateEvent/CreateEvent.js';
 
-export default function MainPage() {
+export default function MainPage(props) {
+	
 	return(
 		<div>
 			<div className="Title">
     			<h2>ReminderApp</h2>
     		</div>
-			<List />
+			<List props={props.id}/>
 			<CreateEvent />
 		</div>
 	)
