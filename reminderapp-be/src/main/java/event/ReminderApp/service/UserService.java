@@ -16,11 +16,11 @@ import java.util.UUID;
 @Service
 public class UserService {
 
-    public final UserInterface personInterface;
+    public final UserInterface userInterface;
 
     @Autowired
-    public UserService(@Qualifier("PersonDatabase") UserInterface personInterface) {
-        this.personInterface = personInterface;
+    public UserService(@Qualifier("PersonDatabase") UserInterface userInterface) {
+        this.userInterface = userInterface;
     }
 
     @Bean
@@ -30,7 +30,7 @@ public class UserService {
 
     public int insertUser(User user) {
         String password = passwordEncoder().encode(user.getUserPassword());
-        return personInterface.insertUser(
+        return userInterface.insertUser(
                 new User(
                         user.getUserId(),
                         user.getUserName(),
@@ -43,22 +43,22 @@ public class UserService {
     }
 
     public Optional<User> getUserById(UUID id) {
-        return personInterface.getUserById(id);
+        return userInterface.getUserById(id);
     }
 
     public Optional<User> getUserByEmail(String email) {
-        return personInterface.getUserByEmail(email);
+        return userInterface.getUserByEmail(email);
     }
 
     public List<User> getAllUsers() {
-        return personInterface.getAllUsers();
+        return userInterface.getAllUsers();
     }
 
     public int updateUser(User person, UUID id) {
-        return personInterface.updateUser(person, id);
+        return userInterface.updateUser(person, id);
     }
 
     public int deleteUser(UUID id) {
-        return personInterface.deleteUser(id);
+        return userInterface.deleteUser(id);
     }
 }
