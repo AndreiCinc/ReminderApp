@@ -1,0 +1,424 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"BranchesTreeState\">\n    <expand>\n      <path>\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"LOCAL_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n      </path>\n      <path>\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n      </path>\n      <path>\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"GROUP_NODE:origin\" type=\"e8cecc67:BranchNodeDescriptor\" />\n      </path>\n    </expand>\n    <select />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"4e524bbb-9efd-4a75-8619-8b3bf8b32bf9\" name=\"Default Changelist\" comment=\"\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/event/ReminderApp/service/AuthenticationService.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/event/ReminderApp/service/AuthenticationService.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/target/classes/event/ReminderApp/service/AuthenticationService.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/classes/event/ReminderApp/service/AuthenticationService.class\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/target/classes/event/ReminderApp/service/UserService.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/classes/event/ReminderApp/service/UserService.class\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Interface\" />\n        <option value=\"Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$/..\" />\n    <option name=\"ROOT_SYNC\" value=\"SYNC\" />\n  </component>\n  <component name=\"ProjectId\" id=\"1g4xQ43y8fT9reKxqArJMONxzuL\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\n    <property name=\"SHARE_PROJECT_CONFIGURATION_FILES\" value=\"true\" />\n  </component>\n  <component name=\"RecentsManager\">\n    <key name=\"ExtractSuperBase.RECENT_KEYS\">\n      <recent name=\"event.ReminderApp.Exceptions.CustomRestExceptionHandler\" />\n      <recent name=\"event.ReminderApp.Exceptions\" />\n    </key>\n    <key name=\"MoveClassesOrPackagesDialog.RECENTS_KEY\">\n      <recent name=\"event.ReminderApp\" />\n    </key>\n    <key name=\"MoveFile.RECENT_KEYS\">\n      <recent name=\"D:\\Projects\\ReminderApp\\reminderapp-be\\src\\main\\resources\\db\\migration\" />\n      <recent name=\"D:\\Projects\\ReminderApp\\reminderapp-be\\src\\main\\resources\" />\n    </key>\n  </component>\n  <component name=\"RunManager\">\n    <configuration name=\"ReminderAppApplication\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"event.ReminderApp.ReminderAppApplication\" />\n      <module name=\"ReminderApp\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"event.ReminderApp.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"Application.ReminderAppApplication\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SvnConfiguration\">\n    <configuration />\n  </component>\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"4e524bbb-9efd-4a75-8619-8b3bf8b32bf9\" name=\"Default Changelist\" comment=\"\" />\n      <created>1597384427198</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1597384427198</updated>\n    </task>\n    <servers />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n    <option name=\"oldMeFiltersMigrated\" value=\"true\" />\n  </component>\n  <component name=\"WindowStateProjectService\">\n    <state x=\"654\" y=\"275\" key=\"#Notifications\" timestamp=\"1597387683453\">\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\n    </state>\n    <state x=\"654\" y=\"275\" key=\"#Notifications/0.0.1536.824@0.0.1536.824\" timestamp=\"1597387683453\" />\n    <state x=\"361\" y=\"53\" key=\"#Plugins\" timestamp=\"1597387689535\">\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\n    </state>\n    <state x=\"361\" y=\"53\" key=\"#Plugins/0.0.1536.824@0.0.1536.824\" timestamp=\"1597387689535\" />\n    <state x=\"499\" y=\"167\" key=\"#com.intellij.codeInsight.editorActions.RestoreReferencesDialog\" timestamp=\"1597684680929\">\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\n    </state>\n    <state x=\"499\" y=\"167\" key=\"#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1536.824@0.0.1536.824\" timestamp=\"1597684680929\" />\n    <state x=\"581\" y=\"130\" key=\"#com.intellij.ide.util.MemberChooser\" timestamp=\"1598365432960\">\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\n    </state>\n    <state x=\"581\" y=\"130\" key=\"#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824\" timestamp=\"1598365432960\" />\n    <state x=\"449\" y=\"148\" key=\"#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog\" timestamp=\"1597387430449\">\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\n    </state>\n    <state x=\"449\" y=\"148\" key=\"#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824@0.0.1536.824\" timestamp=\"1597387430449\" />\n    <state x=\"91\" y=\"340\" key=\"#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog\" timestamp=\"1598637887574\">\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\n    </state>\n    <state x=\"91\" y=\"340\" key=\"#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.824@0.0.1536.824\" timestamp=\"1598637887574\" />\n    <state x=\"278\" y=\"297\" key=\"#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages\" timestamp=\"1598637889375\">\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\n    </state>\n    <state x=\"278\" y=\"297\" key=\"#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1536.824@0.0.1536.824\" timestamp=\"1598637889375\" />\n    <state x=\"833\" y=\"285\" key=\"#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog\" timestamp=\"1597705256185\">\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\n    </state>\n    <state x=\"833\" y=\"285\" key=\"#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog/0.0.1536.824@0.0.1536.824\" timestamp=\"1597705256185\" />\n    <state x=\"20\" y=\"0\" key=\"#com.intellij.refactoring.rename.AutomaticRenamingDialog\" timestamp=\"1598348433079\">\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\n    </state>\n    <state x=\"20\" y=\"0\" key=\"#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824\" timestamp=\"1598348433079\" />\n    <state x=\"499\" y=\"159\" key=\"#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog\" timestamp=\"1597704353702\">\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\n    </state>\n    <state x=\"499\" y=\"159\" key=\"#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824\" timestamp=\"1597704353702\" />\n    <state x=\"0\" y=\"0\" width=\"558\" height=\"248\" key=\"DBNavigator.IdleConnectionDialog\" timestamp=\"1597392270074\">\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\n    </state>\n    <state x=\"0\" y=\"0\" width=\"558\" height=\"248\" key=\"DBNavigator.IdleConnectionDialog/0.0.1536.824@0.0.1536.824\" timestamp=\"1597392270074\" />\n    <state width=\"914\" height=\"170\" key=\"GridCell.Tab.0.bottom\" timestamp=\"1598638186626\">\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\n    </state>\n    <state width=\"914\" height=\"170\" key=\"GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824\" timestamp=\"1598638186626\" />\n    <state width=\"914\" height=\"170\" key=\"GridCell.Tab.0.center\" timestamp=\"1598638186626\">\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\n    </state>\n    <state width=\"914\" height=\"170\" key=\"GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824\" timestamp=\"1598638186626\" />\n    <state width=\"914\" height=\"170\" key=\"GridCell.Tab.0.left\" timestamp=\"1598638186626\">\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\n    </state>\n    <state width=\"914\" height=\"170\" key=\"GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824\" timestamp=\"1598638186626\" />\n    <state width=\"914\" height=\"170\" key=\"GridCell.Tab.0.right\" timestamp=\"1598638186626\">\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\n    </state>\n    <state width=\"914\" height=\"170\" key=\"GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824\" timestamp=\"1598638186626\" />\n    <state width=\"989\" height=\"236\" key=\"GridCell.Tab.1.bottom\" timestamp=\"1597710612213\">\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\n    </state>\n    <state width=\"989\" height=\"236\" key=\"GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824\" timestamp=\"1597710612213\" />\n    <state width=\"989\" height=\"236\" key=\"GridCell.Tab.1.center\" timestamp=\"1597710612212\">\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\n    </state>\n    <state width=\"989\" height=\"236\" key=\"GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824\" timestamp=\"1597710612212\" />\n    <state width=\"989\" height=\"236\" key=\"GridCell.Tab.1.left\" timestamp=\"1597710612212\">\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\n    </state>\n    <state width=\"989\" height=\"236\" key=\"GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824\" timestamp=\"1597710612212\" />\n    <state width=\"989\" height=\"236\" key=\"GridCell.Tab.1.right\" timestamp=\"1597710612213\">\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\n    </state>\n    <state width=\"989\" height=\"236\" key=\"GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824\" timestamp=\"1597710612213\" />\n    <state x=\"556\" y=\"70\" key=\"Maven.ArtifactSearchDialog\" timestamp=\"1598473826905\">\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\n    </state>\n    <state x=\"556\" y=\"70\" key=\"Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824\" timestamp=\"1598473826905\" />\n    <state x=\"1223\" y=\"340\" key=\"refactoring.ChangeSignatureDialog\" timestamp=\"1597411396276\">\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\n    </state>\n    <state x=\"1223\" y=\"340\" key=\"refactoring.ChangeSignatureDialog/0.0.1536.824@0.0.1536.824\" timestamp=\"1597411396276\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(revision 1b101c9a773021ab5cc6d02e5a7b251ce7a34bc1)
++++ .idea/workspace.xml	(date 1598727532177)
+@@ -20,10 +20,52 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="4e524bbb-9efd-4a75-8619-8b3bf8b32bf9" name="Default Changelist" comment="">
++      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_3_3_RELEASE.xml" beforeDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++<<<<<<< HEAD
+       <change beforePath="$PROJECT_DIR$/src/main/java/event/ReminderApp/service/AuthenticationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/event/ReminderApp/service/AuthenticationService.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/target/classes/event/ReminderApp/service/AuthenticationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/event/ReminderApp/service/AuthenticationService.class" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/target/classes/event/ReminderApp/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/event/ReminderApp/service/UserService.class" afterDir="false" />
++=======
++      <change beforePath="$PROJECT_DIR$/ReminderApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ReminderApp.iml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/event/ReminderApp/api/PersonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/event/ReminderApp/api/PersonController.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/event/ReminderApp/api/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/event/ReminderApp/api/UserController.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/event/ReminderApp/dao/PersonDatabaseService.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/event/ReminderApp/dao/PersonFakeAccess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/event/ReminderApp/dao/PersonFakeAccess.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/event/ReminderApp/dao/PersonInterface.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/event/ReminderApp/dao/UserDatabaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/event/ReminderApp/dao/UserDatabaseService.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/event/ReminderApp/dao/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/event/ReminderApp/dao/UserInterface.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/event/ReminderApp/model/Person.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/event/ReminderApp/service/AuthenticationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/event/ReminderApp/service/AuthenticationService.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/event/ReminderApp/service/PersonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/event/ReminderApp/service/UserService.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/event/ReminderApp/Exceptions/ApiException.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/event/ReminderApp/Exceptions/ApiExceptionHandler.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/event/ReminderApp/Exceptions/ApiRequestException.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/event/ReminderApp/ReminderAppApplication.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/event/ReminderApp/api/AuthenticationController.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/event/ReminderApp/api/EventController.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/event/ReminderApp/api/PersonController.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/event/ReminderApp/dao/EventDatabaseService$1.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/event/ReminderApp/dao/EventDatabaseService.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/event/ReminderApp/dao/EventInterface.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/event/ReminderApp/dao/EventList.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/event/ReminderApp/dao/PersonDatabaseService.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/event/ReminderApp/dao/PersonFakeAccess.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/event/ReminderApp/dao/PersonInterface.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/event/ReminderApp/datasource/PostgresDataSource.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/event/ReminderApp/model/Event.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/event/ReminderApp/model/Person.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/event/ReminderApp/service/AuthenticationService.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/event/ReminderApp/service/EventService.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/event/ReminderApp/service/PersonService.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/event/ReminderApp/ReminderAppApplicationTest.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/event/ReminderApp/api/EventControllerTest.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/event/ReminderApp/dao/EventDatabaseServiceTest.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/event/ReminderApp/datasource/PostgresDataSourceTest.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/event/ReminderApp/model/EventTest.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/event/ReminderApp/service/EventServiceTest.class" beforeDir="false" />
++>>>>>>> refactor
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -54,6 +96,7 @@
+   </component>
+   <component name="RecentsManager">
+     <key name="ExtractSuperBase.RECENT_KEYS">
++      <recent name="event.ReminderApp.dao" />
+       <recent name="event.ReminderApp.Exceptions.CustomRestExceptionHandler" />
+       <recent name="event.ReminderApp.Exceptions" />
+     </key>
+@@ -123,10 +166,10 @@
+       <screen x="0" y="0" width="1536" height="824" />
+     </state>
+     <state x="499" y="167" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1597684680929" />
+-    <state x="581" y="130" key="#com.intellij.ide.util.MemberChooser" timestamp="1598365432960">
++    <state x="581" y="130" key="#com.intellij.ide.util.MemberChooser" timestamp="1598719763424">
+       <screen x="0" y="0" width="1536" height="824" />
+     </state>
+-    <state x="581" y="130" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1598365432960" />
++    <state x="581" y="130" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1598719763424" />
+     <state x="449" y="148" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1597387430449">
+       <screen x="0" y="0" width="1536" height="824" />
+     </state>
+@@ -143,18 +186,19 @@
+       <screen x="0" y="0" width="1536" height="824" />
+     </state>
+     <state x="833" y="285" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog/0.0.1536.824@0.0.1536.824" timestamp="1597705256185" />
+-    <state x="20" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1598348433079">
++    <state x="20" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1598719180393">
+       <screen x="0" y="0" width="1536" height="824" />
+     </state>
+-    <state x="20" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1598348433079" />
+-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1597704353702">
++    <state x="20" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1598719180393" />
++    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1598719273290">
+       <screen x="0" y="0" width="1536" height="824" />
+     </state>
+-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1597704353702" />
++    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1598719273290" />
+     <state x="0" y="0" width="558" height="248" key="DBNavigator.IdleConnectionDialog" timestamp="1597392270074">
+       <screen x="0" y="0" width="1536" height="824" />
+     </state>
+     <state x="0" y="0" width="558" height="248" key="DBNavigator.IdleConnectionDialog/0.0.1536.824@0.0.1536.824" timestamp="1597392270074" />
++<<<<<<< HEAD
+     <state width="914" height="170" key="GridCell.Tab.0.bottom" timestamp="1598638186626">
+       <screen x="0" y="0" width="1536" height="824" />
+     </state>
+@@ -171,6 +215,24 @@
+       <screen x="0" y="0" width="1536" height="824" />
+     </state>
+     <state width="914" height="170" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1598638186626" />
++=======
++    <state width="1493" height="171" key="GridCell.Tab.0.bottom" timestamp="1598718946823">
++      <screen x="0" y="0" width="1536" height="824" />
++    </state>
++    <state width="1493" height="171" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1598718946823" />
++    <state width="1493" height="171" key="GridCell.Tab.0.center" timestamp="1598718946822">
++      <screen x="0" y="0" width="1536" height="824" />
++    </state>
++    <state width="1493" height="171" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1598718946822" />
++    <state width="1493" height="171" key="GridCell.Tab.0.left" timestamp="1598718946822">
++      <screen x="0" y="0" width="1536" height="824" />
++    </state>
++    <state width="1493" height="171" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1598718946822" />
++    <state width="1493" height="171" key="GridCell.Tab.0.right" timestamp="1598718946822">
++      <screen x="0" y="0" width="1536" height="824" />
++    </state>
++    <state width="1493" height="171" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1598718946822" />
++>>>>>>> refactor
+     <state width="989" height="236" key="GridCell.Tab.1.bottom" timestamp="1597710612213">
+       <screen x="0" y="0" width="1536" height="824" />
+     </state>
+@@ -187,10 +249,10 @@
+       <screen x="0" y="0" width="1536" height="824" />
+     </state>
+     <state width="989" height="236" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1597710612213" />
+-    <state x="556" y="70" key="Maven.ArtifactSearchDialog" timestamp="1598473826905">
++    <state x="556" y="70" key="Maven.ArtifactSearchDialog" timestamp="1598718953400">
+       <screen x="0" y="0" width="1536" height="824" />
+     </state>
+-    <state x="556" y="70" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1598473826905" />
++    <state x="556" y="70" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1598718953400" />
+     <state x="1223" y="340" key="refactoring.ChangeSignatureDialog" timestamp="1597411396276">
+       <screen x="0" y="0" width="1536" height="824" />
+     </state>
+Index: src/main/java/event/ReminderApp/api/UserController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package event.ReminderApp.api;\n\nimport event.ReminderApp.Exceptions.ApiRequestException;\nimport event.ReminderApp.model.User;\nimport event.ReminderApp.service.UserService;\nimport org.springframework.beans.factory.annotation.Autowired;\nimport org.springframework.dao.DataIntegrityViolationException;\nimport org.springframework.dao.EmptyResultDataAccessException;\nimport org.springframework.web.bind.annotation.*;\nimport javax.validation.Valid;\nimport javax.validation.constraints.NotNull;\nimport java.sql.SQLException;\nimport java.util.List;\nimport java.util.Optional;\nimport java.util.UUID;\n\n@RestController\n@RequestMapping(\"user/\")\npublic class UserController {\n\n    public final UserService userService;\n\n    @Autowired\n    public UserController(UserService userService) {\n        this.userService = userService;\n    }\n\n    @CrossOrigin\n    @PostMapping(\"create/\")\n    public int insertPerson(@RequestBody User user) {\n        try{\n           return userService.insertPerson(user);\n       }catch (DataIntegrityViolationException e) {\n           if (e.getMostSpecificCause().getClass().getName().equals(\"org.postgresql.util.PSQLException\") && ((SQLException) e.getMostSpecificCause()).getSQLState().equals(\"23505\"))\n                throw new ApiRequestException(\"Dublicate email, you may have already registered!\", e.getMostSpecificCause());\n            throw e;\n        }\n    }\n\n    @CrossOrigin\n    @GetMapping(\"{id}/select\")\n    public Optional<User> getPersonById(@PathVariable(\"id\") UUID id) {\n        return userService.getPersonById(id);\n    }\n\n    @CrossOrigin\n    @GetMapping(\"{email}/select\")\n    public Optional<User> getPersonByEmail(@PathVariable(\"email\")String email) {\n        try{\n            return userService.getPersonByEmail(email);\n        }catch (EmptyResultDataAccessException e) {\n            throw new ApiRequestException(\"Email not found\", e.getCause());\n        }\n    }\n\n    @CrossOrigin\n    @GetMapping(\"all/\")\n    public List<User> getAllPersons() {\n        return userService.getAllPersons();\n    }\n\n    @CrossOrigin\n    @PutMapping(\"{id}/update\")\n    public int updatePerson(@NotNull @Valid @RequestBody User user, @PathVariable(\"id\") UUID id) {\n        return userService.updatePerson(user, id);\n    }\n\n    @CrossOrigin\n    @DeleteMapping(\"{id}/delete\")\n    public int deletePerson(@PathVariable(\"id\") UUID id) {\n        return userService.deletePerson(id);\n    }\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main/java/event/ReminderApp/api/UserController.java	(revision 1b101c9a773021ab5cc6d02e5a7b251ce7a34bc1)
++++ src/main/java/event/ReminderApp/api/UserController.java	(date 1598727532180)
+@@ -27,11 +27,11 @@
+ 
+     @CrossOrigin
+     @PostMapping("create/")
+-    public int insertPerson(@RequestBody User user) {
++    public int insertUser(@RequestBody User user) {
+         try{
+-           return userService.insertPerson(user);
+-       }catch (DataIntegrityViolationException e) {
+-           if (e.getMostSpecificCause().getClass().getName().equals("org.postgresql.util.PSQLException") && ((SQLException) e.getMostSpecificCause()).getSQLState().equals("23505"))
++            return userService.insertUser(user);
++        }catch (DataIntegrityViolationException e) {
++            if (e.getMostSpecificCause().getClass().getName().equals("org.postgresql.util.PSQLException") && ((SQLException) e.getMostSpecificCause()).getSQLState().equals("23505"))
+                 throw new ApiRequestException("Dublicate email, you may have already registered!", e.getMostSpecificCause());
+             throw e;
+         }
+@@ -39,15 +39,15 @@
+ 
+     @CrossOrigin
+     @GetMapping("{id}/select")
+-    public Optional<User> getPersonById(@PathVariable("id") UUID id) {
+-        return userService.getPersonById(id);
++    public Optional<User> getUserById(@PathVariable("id") UUID id) {
++        return userService.getUserById(id);
+     }
+ 
+     @CrossOrigin
+     @GetMapping("{email}/select")
+-    public Optional<User> getPersonByEmail(@PathVariable("email")String email) {
++    public Optional<User> getUserByEmail(@PathVariable("email")String email) {
+         try{
+-            return userService.getPersonByEmail(email);
++            return userService.getUserByEmail(email);
+         }catch (EmptyResultDataAccessException e) {
+             throw new ApiRequestException("Email not found", e.getCause());
+         }
+@@ -55,19 +55,19 @@
+ 
+     @CrossOrigin
+     @GetMapping("all/")
+-    public List<User> getAllPersons() {
+-        return userService.getAllPersons();
++    public List<User> getAllUsers() {
++        return userService.getAllUsers();
+     }
+ 
+     @CrossOrigin
+     @PutMapping("{id}/update")
+-    public int updatePerson(@NotNull @Valid @RequestBody User user, @PathVariable("id") UUID id) {
+-        return userService.updatePerson(user, id);
++    public int updateUser(@NotNull @Valid @RequestBody User user, @PathVariable("id") UUID id) {
++        return userService.updateUser(user, id);
+     }
+ 
+     @CrossOrigin
+     @DeleteMapping("{id}/delete")
+-    public int deletePerson(@PathVariable("id") UUID id) {
+-        return userService.deletePerson(id);
++    public int deleteUser(@PathVariable("id") UUID id) {
++        return userService.deleteUser(id);
+     }
+-}
++}
+\ No newline at end of file
+Index: ReminderApp.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule=\"true\" type=\"JAVA_MODULE\" version=\"4\">\n  <component name=\"NewModuleRootManager\" LANGUAGE_LEVEL=\"JDK_1_8\">\n    <output url=\"file://$MODULE_DIR$/target/classes\" />\n    <output-test url=\"file://$MODULE_DIR$/target/test-classes\" />\n    <content url=\"file://$MODULE_DIR$\">\n      <sourceFolder url=\"file://$MODULE_DIR$/src/main/java\" isTestSource=\"false\" />\n      <sourceFolder url=\"file://$MODULE_DIR$/src/main/resources\" type=\"java-resource\" />\n      <sourceFolder url=\"file://$MODULE_DIR$/src/test/java\" isTestSource=\"true\" />\n      <excludeFolder url=\"file://$MODULE_DIR$/target\" />\n    </content>\n    <orderEntry type=\"jdk\" jdkName=\"11\" jdkType=\"JavaSDK\" />\n    <orderEntry type=\"sourceFolder\" forTests=\"false\" />\n    <orderEntry type=\"library\" name=\"Maven: org.springframework.boot:spring-boot-starter-web:2.3.1.RELEASE\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.springframework.boot:spring-boot-starter:2.3.1.RELEASE\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.springframework.boot:spring-boot:2.3.1.RELEASE\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.springframework.boot:spring-boot-autoconfigure:2.3.1.RELEASE\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.springframework.boot:spring-boot-starter-logging:2.3.1.RELEASE\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: ch.qos.logback:logback-classic:1.2.3\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: ch.qos.logback:logback-core:1.2.3\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.apache.logging.log4j:log4j-to-slf4j:2.13.3\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.apache.logging.log4j:log4j-api:2.13.3\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.slf4j:jul-to-slf4j:1.7.30\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: jakarta.annotation:jakarta.annotation-api:1.3.5\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.yaml:snakeyaml:1.26\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.springframework.boot:spring-boot-starter-json:2.3.1.RELEASE\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.11.0\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: com.fasterxml.jackson.module:jackson-module-parameter-names:2.11.0\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.springframework.boot:spring-boot-starter-tomcat:2.3.1.RELEASE\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.apache.tomcat.embed:tomcat-embed-core:9.0.36\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.glassfish:jakarta.el:3.0.3\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.apache.tomcat.embed:tomcat-embed-websocket:9.0.36\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.springframework:spring-web:5.2.7.RELEASE\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.springframework:spring-webmvc:5.2.7.RELEASE\" level=\"project\" />\n    <orderEntry type=\"library\" scope=\"TEST\" name=\"Maven: org.springframework.boot:spring-boot-starter-test:2.3.1.RELEASE\" level=\"project\" />\n    <orderEntry type=\"library\" scope=\"TEST\" name=\"Maven: org.springframework.boot:spring-boot-test:2.3.1.RELEASE\" level=\"project\" />\n    <orderEntry type=\"library\" scope=\"TEST\" name=\"Maven: org.springframework.boot:spring-boot-test-autoconfigure:2.3.1.RELEASE\" level=\"project\" />\n    <orderEntry type=\"library\" scope=\"TEST\" name=\"Maven: com.jayway.jsonpath:json-path:2.4.0\" level=\"project\" />\n    <orderEntry type=\"library\" scope=\"TEST\" name=\"Maven: net.minidev:json-smart:2.3\" level=\"project\" />\n    <orderEntry type=\"library\" scope=\"TEST\" name=\"Maven: net.minidev:accessors-smart:1.2\" level=\"project\" />\n    <orderEntry type=\"library\" scope=\"TEST\" name=\"Maven: org.ow2.asm:asm:5.0.4\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: jakarta.xml.bind:jakarta.xml.bind-api:2.3.3\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: jakarta.activation:jakarta.activation-api:1.2.2\" level=\"project\" />\n    <orderEntry type=\"library\" scope=\"TEST\" name=\"Maven: org.assertj:assertj-core:3.16.1\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.hamcrest:hamcrest:2.2\" level=\"project\" />\n    <orderEntry type=\"library\" scope=\"TEST\" name=\"Maven: org.junit.jupiter:junit-jupiter:5.6.2\" level=\"project\" />\n    <orderEntry type=\"library\" scope=\"TEST\" name=\"Maven: org.junit.jupiter:junit-jupiter-api:5.6.2\" level=\"project\" />\n    <orderEntry type=\"library\" scope=\"TEST\" name=\"Maven: org.apiguardian:apiguardian-api:1.1.0\" level=\"project\" />\n    <orderEntry type=\"library\" scope=\"TEST\" name=\"Maven: org.opentest4j:opentest4j:1.2.0\" level=\"project\" />\n    <orderEntry type=\"library\" scope=\"TEST\" name=\"Maven: org.junit.platform:junit-platform-commons:1.6.2\" level=\"project\" />\n    <orderEntry type=\"library\" scope=\"TEST\" name=\"Maven: org.junit.jupiter:junit-jupiter-params:5.6.2\" level=\"project\" />\n    <orderEntry type=\"library\" scope=\"TEST\" name=\"Maven: org.junit.jupiter:junit-jupiter-engine:5.6.2\" level=\"project\" />\n    <orderEntry type=\"library\" scope=\"TEST\" name=\"Maven: org.junit.platform:junit-platform-engine:1.6.2\" level=\"project\" />\n    <orderEntry type=\"library\" scope=\"TEST\" name=\"Maven: org.mockito:mockito-core:3.3.3\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: net.bytebuddy:byte-buddy:1.10.11\" level=\"project\" />\n    <orderEntry type=\"library\" scope=\"TEST\" name=\"Maven: net.bytebuddy:byte-buddy-agent:1.10.11\" level=\"project\" />\n    <orderEntry type=\"library\" scope=\"TEST\" name=\"Maven: org.objenesis:objenesis:2.6\" level=\"project\" />\n    <orderEntry type=\"library\" scope=\"TEST\" name=\"Maven: org.mockito:mockito-junit-jupiter:3.3.3\" level=\"project\" />\n    <orderEntry type=\"library\" scope=\"TEST\" name=\"Maven: org.skyscreamer:jsonassert:1.5.0\" level=\"project\" />\n    <orderEntry type=\"library\" scope=\"TEST\" name=\"Maven: com.vaadin.external.google:android-json:0.0.20131108.vaadin1\" level=\"project\" />\n    <orderEntry type=\"library\" scope=\"TEST\" name=\"Maven: org.springframework:spring-test:5.2.7.RELEASE\" level=\"project\" />\n    <orderEntry type=\"library\" scope=\"TEST\" name=\"Maven: org.xmlunit:xmlunit-core:2.7.0\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: javax.persistence:javax.persistence-api:2.2\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.springframework.boot:spring-boot-starter-jdbc:2.3.1.RELEASE\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: com.zaxxer:HikariCP:3.4.5\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.springframework:spring-jdbc:5.2.7.RELEASE\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.springframework.boot:spring-boot-starter-data-jpa:2.3.1.RELEASE\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.springframework.boot:spring-boot-starter-aop:2.3.1.RELEASE\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.aspectj:aspectjweaver:1.9.5\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: jakarta.transaction:jakarta.transaction-api:1.3.3\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: jakarta.persistence:jakarta.persistence-api:2.2.3\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.hibernate:hibernate-core:5.4.17.Final\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.jboss.logging:jboss-logging:3.4.1.Final\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.javassist:javassist:3.24.0-GA\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: antlr:antlr:2.7.7\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.jboss:jandex:2.1.3.Final\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: com.fasterxml:classmate:1.5.1\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.dom4j:dom4j:2.1.3\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.hibernate.common:hibernate-commons-annotations:5.1.0.Final\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.glassfish.jaxb:jaxb-runtime:2.3.3\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.glassfish.jaxb:txw2:2.3.3\" level=\"project\" />\n    <orderEntry type=\"library\" scope=\"RUNTIME\" name=\"Maven: com.sun.activation:jakarta.activation:1.2.2\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.springframework:spring-aspects:5.2.7.RELEASE\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.apache.maven.plugins:maven-install-plugin:2.5.2\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.apache.maven:maven-plugin-api:2.2.1\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.apache.maven:maven-project:2.2.1\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.apache.maven:maven-settings:2.2.1\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.apache.maven:maven-profile:2.2.1\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.apache.maven:maven-plugin-registry:2.2.1\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.codehaus.plexus:plexus-interpolation:1.11\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.codehaus.plexus:plexus-container-default:1.0-alpha-9-stable-1\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: junit:junit:4.13\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.hamcrest:hamcrest-core:2.2\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: classworlds:classworlds:1.1-alpha-2\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.apache.maven:maven-model:2.2.1\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.apache.maven:maven-artifact-manager:2.2.1\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.apache.maven:maven-repository-metadata:2.2.1\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.apache.maven.wagon:wagon-provider-api:1.0-beta-6\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: backport-util-concurrent:backport-util-concurrent:3.1\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.apache.maven:maven-artifact:2.2.1\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: commons-codec:commons-codec:1.14\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.apache.maven.shared:maven-shared-utils:0.4\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: com.google.code.findbugs:jsr305:2.0.1\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.codehaus.plexus:plexus-utils:3.0.15\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.postgresql:postgresql:42.2.14\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.11.0\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: com.fasterxml.jackson.core:jackson-annotations:2.11.0\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: com.fasterxml.jackson.core:jackson-core:2.11.0\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: com.fasterxml.jackson.core:jackson-databind:2.11.0\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.flywaydb:flyway-core:6.4.4\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: javax.xml.bind:jaxb-api:2.3.0\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.springframework.data:spring-data-jpa:2.1.17.RELEASE\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.springframework.data:spring-data-commons:2.3.1.RELEASE\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.springframework:spring-orm:5.2.7.RELEASE\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.springframework:spring-context:5.2.7.RELEASE\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.springframework:spring-aop:5.2.7.RELEASE\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.springframework:spring-tx:5.2.7.RELEASE\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.springframework:spring-beans:5.2.7.RELEASE\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.aspectj:aspectjrt:1.9.5\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.slf4j:slf4j-api:1.7.30\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: jakarta.validation:jakarta.validation-api:2.0.2\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: com.sun.istack:istack-commons-runtime:3.0.11\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.springframework:spring-core:5.2.7.RELEASE\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.springframework:spring-jcl:5.2.7.RELEASE\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: joda-time:joda-time:2.9.2\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.jetbrains:annotations:16.0.1\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: io.jsonwebtoken:jjwt:0.9.1\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.springframework.security:spring-security-core:5.3.3.RELEASE\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.springframework:spring-expression:5.2.7.RELEASE\" level=\"project\" />\n  </component>\n</module>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- ReminderApp.iml	(revision 1b101c9a773021ab5cc6d02e5a7b251ce7a34bc1)
++++ ReminderApp.iml	(date 1598727532178)
+@@ -125,7 +125,10 @@
+     <orderEntry type="library" name="Maven: joda-time:joda-time:2.9.2" level="project" />
+     <orderEntry type="library" name="Maven: org.jetbrains:annotations:16.0.1" level="project" />
+     <orderEntry type="library" name="Maven: io.jsonwebtoken:jjwt:0.9.1" level="project" />
++<<<<<<< HEAD
+     <orderEntry type="library" name="Maven: org.springframework.security:spring-security-core:5.3.3.RELEASE" level="project" />
+     <orderEntry type="library" name="Maven: org.springframework:spring-expression:5.2.7.RELEASE" level="project" />
++=======
++>>>>>>> refactor
+   </component>
+ </module>
+\ No newline at end of file
+Index: src/main/java/event/ReminderApp/dao/UserDatabaseService.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package event.ReminderApp.dao;\n\nimport event.ReminderApp.model.User;\nimport org.springframework.beans.factory.annotation.Autowired;\nimport org.springframework.jdbc.core.JdbcTemplate;\nimport org.springframework.stereotype.Repository;\n\nimport java.util.List;\nimport java.util.Optional;\nimport java.util.UUID;\n\n@Repository(\"PersonDatabase\")\npublic class UserDatabaseService implements UserInterface {\n\n    private final JdbcTemplate jdbcTemplate;\n\n    @Autowired\n    public UserDatabaseService(JdbcTemplate jdbcTemplate) {\n        this.jdbcTemplate = jdbcTemplate;\n    }\n\n    @Override\n    public int insertUser(User user, UUID id) {\n        String sql = \"INSERT INTO person(id, personName, email, password, observations, role)\" +\n                \"VALUES (?, ?, ?, ?, ?, ?)\";\n        jdbcTemplate.update(\n                sql,\n                id,\n                user.getUserName(),\n                user.getUserEmail(),\n                user.getUserPassword(),\n                user.getUserObservations(),\n                user.getUserRole()\n        );\n        return 0;\n    }\n\n    @Override\n    public Optional<User> getUserByEmail(String email) {\n        String sql = \"SELECT id, personName, email, password, observations, role FROM person WHERE email= ?\";\n        User user =  jdbcTemplate.queryForObject(\n                sql,\n                new Object[]{email},\n                (rs, i) -> {\n                    UUID personId = UUID.fromString(rs.getString(\"id\"));\n                    String personName = rs.getString(\"personName\");\n                    String personEmail = rs.getString(\"email\");\n                    String personPassword = rs.getString(\"password\");\n                    String personObservations = rs.getString(\"observations\");\n                    String personRole = rs.getString(\"role\");\n                    return new User(personId, personName, personEmail, personPassword, personObservations, personRole);\n                });\n        return Optional.ofNullable(user);\n    }\n\n    @Override\n    public Optional<User> getUserById(UUID id) {\n        String sql = \"SELECT id, personName, email, password, observations, role FROM person WHERE id= ?\";\n        User user =  jdbcTemplate.queryForObject(\n                sql,\n                new Object[]{id},\n                (rs, i) -> {\n                    UUID personId = UUID.fromString(rs.getString(\"id\"));\n                    String personName = rs.getString(\"personName\");\n                    String personEmail = rs.getString(\"email\");\n                    String personPassword = rs.getString(\"password\");\n                    String personObservations = rs.getString(\"observations\");\n                    String personRole = rs.getString(\"role\");\n                    return new User(personId, personName, personEmail, personPassword, personObservations, personRole);\n                });\n        return Optional.ofNullable(user);\n    }\n\n    @Override\n    public List<User> getAllUsers() {\n        String sql = \"SELECT id, personName, email, password, observations, role FROM person\";\n        return jdbcTemplate.query(sql, (resultSet, i) -> {\n            UUID personId = UUID.fromString(resultSet.getString(\"id\"));\n            String personName = resultSet.getString(\"personName\");\n            String personEmail = resultSet.getString(\"email\");\n            String personPassword = resultSet.getString(\"password\");\n            String personObservations = resultSet.getString(\"observations\");\n            String personRole = resultSet.getString(\"role\");\n            return new User(personId, personName, personEmail, personPassword, personObservations, personRole);\n        });\n    }\n\n    @Override\n    public int updateUser(User user, UUID id) {\n        String sql = \"UPDATE person \" +\n                \"SET personName = ?, \" +\n                \"email = ?, \" +\n                \"password = ?, \" +\n                \"observations = ?, \" +\n                \"role = ? \" +\n                \"WHERE id = ?\";\n        jdbcTemplate.update(\n                sql,\n                user.getUserName(),\n                user.getUserEmail(),\n                user.getUserPassword(),\n                user.getUserObservations(),\n                user.getUserRole(),\n                id\n        );\n        return 0;\n    }\n\n    @Override\n    public int deleteUser(UUID id) {\n        String sql = \"DELETE FROM person WHERE id = ?\";\n        jdbcTemplate.update(sql, id);\n        return 0;\n    }\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main/java/event/ReminderApp/dao/UserDatabaseService.java	(revision 1b101c9a773021ab5cc6d02e5a7b251ce7a34bc1)
++++ src/main/java/event/ReminderApp/dao/UserDatabaseService.java	(date 1598727532181)
+@@ -35,6 +35,7 @@
+         return 0;
+     }
+ 
++
+     @Override
+     public Optional<User> getUserByEmail(String email) {
+         String sql = "SELECT id, personName, email, password, observations, role FROM person WHERE email= ?";
+@@ -75,13 +76,13 @@
+     public List<User> getAllUsers() {
+         String sql = "SELECT id, personName, email, password, observations, role FROM person";
+         return jdbcTemplate.query(sql, (resultSet, i) -> {
+-            UUID personId = UUID.fromString(resultSet.getString("id"));
+-            String personName = resultSet.getString("personName");
+-            String personEmail = resultSet.getString("email");
+-            String personPassword = resultSet.getString("password");
+-            String personObservations = resultSet.getString("observations");
+-            String personRole = resultSet.getString("role");
+-            return new User(personId, personName, personEmail, personPassword, personObservations, personRole);
++            UUID userId = UUID.fromString(resultSet.getString("id"));
++            String userName = resultSet.getString("personName");
++            String userEmail = resultSet.getString("email");
++            String userPassword = resultSet.getString("password");
++            String userObservations = resultSet.getString("observations");
++            String userRole = resultSet.getString("role");
++            return new User(userId, userName, userEmail, userPassword, userObservations, userRole);
+         });
+     }
+ 
+Index: src/main/java/event/ReminderApp/dao/UserInterface.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package event.ReminderApp.dao;\n\nimport event.ReminderApp.model.User;\n\nimport java.util.List;\nimport java.util.Optional;\nimport java.util.UUID;\n\npublic interface UserInterface {\n\n    int insertUser (User user, UUID id);\n\n    default int insertUser (User user) {\n        UUID id = UUID.randomUUID();\n        return insertUser(user, id);\n    }\n\n    Optional<User> getUserByEmail(String email);\n\n    Optional<User> getUserById(UUID id);\n\n    List<User> getAllUsers();\n\n    int updateUser(User user, UUID id);\n\n    int deleteUser(UUID id);\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main/java/event/ReminderApp/dao/UserInterface.java	(revision 1b101c9a773021ab5cc6d02e5a7b251ce7a34bc1)
++++ src/main/java/event/ReminderApp/dao/UserInterface.java	(date 1598727532181)
+@@ -24,4 +24,5 @@
+     int updateUser(User user, UUID id);
+ 
+     int deleteUser(UUID id);
++    
+ }
+Index: pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project xmlns=\"http://maven.apache.org/POM/4.0.0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n\txsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd\">\n\t<modelVersion>4.0.0</modelVersion>\n\t<parent>\n\t\t<groupId>org.springframework.boot</groupId>\n\t\t<artifactId>spring-boot-starter-parent</artifactId>\n\t\t<version>2.3.1.RELEASE</version>\n\t\t<relativePath/> <!-- lookup parent from repository -->\n\t</parent>\n\t<groupId>event</groupId>\n\t<artifactId>ReminderApp</artifactId>\n\t<version>0.0.1-SNAPSHOT</version>\n\t<name>ReminderApp</name>\n\t<description>This app is a google calendar clone</description>\n\n\t<properties>\n\t\t<java.version>1.8</java.version>\n\t</properties>\n\n\t<dependencies>\n\t\t<dependency>\n\t\t\t<groupId>org.springframework.boot</groupId>\n\t\t\t<artifactId>spring-boot-starter-web</artifactId>\n\t\t</dependency>\n\n\t\t<dependency>\n\t\t\t<groupId>org.springframework.boot</groupId>\n\t\t\t<artifactId>spring-boot-starter-test</artifactId>\n\t\t\t<scope>test</scope>\n\t\t\t<exclusions>\n\t\t\t\t<exclusion>\n\t\t\t\t\t<groupId>org.junit.vintage</groupId>\n\t\t\t\t\t<artifactId>junit-vintage-engine</artifactId>\n\t\t\t\t</exclusion>\n\t\t\t</exclusions>\n\t\t</dependency>\n\n\t\t<!-- https://mvnrepository.com/artifact/javax.persistence/javax.persistence-api -->\n\t\t<dependency>\n\t\t\t<groupId>javax.persistence</groupId>\n\t\t\t<artifactId>javax.persistence-api</artifactId>\n\t\t\t<version>2.2</version>\n\t\t</dependency>\n\n\t\t<dependency>\n\t\t\t<groupId>org.springframework.boot</groupId>\n\t\t\t<artifactId>spring-boot-starter-jdbc</artifactId>\n\t\t</dependency>\n\n\t\t<dependency>\n\t\t\t<groupId>org.springframework.boot</groupId>\n\t\t\t<artifactId>spring-boot-starter-data-jpa</artifactId>\n\t\t</dependency>\n\n\t\t<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-install-plugin -->\n\t\t<dependency>\n\t\t\t<groupId>org.apache.maven.plugins</groupId>\n\t\t\t<artifactId>maven-install-plugin</artifactId>\n\t\t\t<version>2.5.2</version>\n\t\t</dependency>\n\n\t\t<!-- https://mvnrepository.com/artifact/postgresql/postgresql -->\n\t\t<dependency>\n\t\t\t<groupId>org.postgresql</groupId>\n\t\t\t<artifactId>postgresql</artifactId>\n\t\t</dependency>\n\t\t<dependency>\n\t\t\t<groupId>com.fasterxml.jackson.datatype</groupId>\n\t\t\t<artifactId>jackson-datatype-jsr310</artifactId>\n\t\t</dependency>\n\n\t\t<!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-core -->\n\t\t<dependency>\n\t\t\t<groupId>org.flywaydb</groupId>\n\t\t\t<artifactId>flyway-core</artifactId>\n\t\t</dependency>\n\n\n\t\t<dependency>\n\t\t\t<groupId>javax.xml.bind</groupId>\n\t\t\t<artifactId>jaxb-api</artifactId>\n\t\t\t<version>2.3.0</version>\n\t\t</dependency>\n\t\t<dependency>\n\t\t\t<groupId>org.springframework.data</groupId>\n\t\t\t<artifactId>spring-data-jpa</artifactId>\n\t\t\t<version>2.1.17.RELEASE</version>\n\t\t</dependency>\n\t\t<dependency>\n\t\t\t<groupId>jakarta.validation</groupId>\n\t\t\t<artifactId>jakarta.validation-api</artifactId>\n\t\t\t<version>2.0.2</version>\n\t\t</dependency>\n\t\t<dependency>\n\t\t\t<groupId>com.sun.istack</groupId>\n\t\t\t<artifactId>istack-commons-runtime</artifactId>\n\t\t\t<version>3.0.11</version>\n\t\t</dependency>\n\t\t<dependency>\n\t\t\t<groupId>org.springframework</groupId>\n\t\t\t<artifactId>spring-core</artifactId>\n\t\t\t<version>5.2.7.RELEASE</version>\n\t\t</dependency>\n        <dependency>\n            <groupId>joda-time</groupId>\n            <artifactId>joda-time</artifactId>\n            <version>2.9.2</version>\n        </dependency>\n\t\t<!-- https://mvnrepository.com/artifact/org.jetbrains/annotations -->\n\t\t<dependency>\n\t\t\t<groupId>org.jetbrains</groupId>\n\t\t\t<artifactId>annotations</artifactId>\n\t\t\t<version>16.0.1</version>\n\t\t</dependency>\n\n        <dependency>\n            <groupId>io.jsonwebtoken</groupId>\n            <artifactId>jjwt</artifactId>\n            <version>0.9.1</version>\n        </dependency>\n\t\t<dependency>\n\t\t\t<groupId>org.springframework.security</groupId>\n\t\t\t<artifactId>spring-security-core</artifactId>\n\t\t\t<version>5.3.3.RELEASE</version>\n\t\t</dependency>\n\t</dependencies>\n\n\t<build>\n\t\t<plugins>\n\t\t\t<plugin>\n\t\t\t\t<groupId>org.flywaydb</groupId>\n\t\t\t\t<artifactId>flyway-maven-plugin</artifactId>\n\t\t\t\t<version>6.5.4</version>\n\t\t\t</plugin>\n\t\t\t<plugin>\n\t\t\t\t<artifactId>maven-compiler-plugin</artifactId>\n\t\t\t\t<version>3.8.0</version>\n\t\t\t\t<configuration>\n\t\t\t\t\t<source>1.8</source>\n\t\t\t\t\t<target>1.8</target>\n\t\t\t\t\t<encoding>UTF-8</encoding>\n\t\t\t\t</configuration>\n\t\t\t</plugin>\n\t\t\t<plugin>\n\t\t\t\t<groupId>com.spotify</groupId>\n\t\t\t\t<artifactId>docker-maven-plugin</artifactId>\n\t\t\t\t<version>1.2.2</version>\n\n\t\t\t\t<configuration>\n\t\t\t\t\t<imageName>ReminderApp/${project.artifactId}</imageName>\n\t\t\t\t\t<dockerDirectory>src/main/docker</dockerDirectory>\n\t\t\t\t\t<resources>\n\t\t\t\t\t\t<resource>\n\t\t\t\t\t\t\t<targetPath>/</targetPath>\n\t\t\t\t\t\t\t<directory>${project.build.directory}</directory>\n\t\t\t\t\t\t\t<include>${project.build.finalName}.jar</include>\n\t\t\t\t\t\t\t<dockerHost>https://192.168.99.100:2376</dockerHost>\n\t\t\t\t\t\t\t<goal>compile</goal>\n\t\t\t\t\t\t</resource>\n\t\t\t\t\t</resources>\n\t\t\t\t</configuration>\n\t\t\t</plugin>\n\t\t\t<plugin>\n\t\t\t\t<groupId>com.heroku.sdk</groupId>\n\t\t\t\t<artifactId>heroku-maven-plugin</artifactId>\n\t\t\t\t<version>3.0.3</version>\n\t\t\t</plugin>\n\t\t\t<plugin>\n\t\t\t\t<groupId>org.springframework.boot</groupId>\n\t\t\t\t<artifactId>spring-boot-maven-plugin</artifactId>\n\t\t\t\t<configuration>\n\t\t\t\t\t<finalName>reminder-spring-postgres</finalName>\n\t\t\t\t</configuration>\n\t\t\t</plugin>\n\t\t\t<plugin>\n\t\t\t\t<artifactId>maven-surefire-plugin</artifactId>\n\t\t\t\t<version>3.0.0-M5</version>\n\t\t\t\t<configuration>\n\t\t\t\t\t\t<skipTests>true</skipTests>\n\t\t\t\t\t<!-- Activate the use of TCP to transmit events to the plugin -->\n\t\t\t\t\t<forkNode implementation=\"org.apache.maven.plugin.surefire.extensions.SurefireForkNodeFactory\"/>\n\t\t\t\t</configuration>\n\t\t\t</plugin>\n        </plugins>\n\t</build>\n\n</project>\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- pom.xml	(revision 1b101c9a773021ab5cc6d02e5a7b251ce7a34bc1)
++++ pom.xml	(date 1598727532178)
+@@ -113,18 +113,25 @@
+ 			<artifactId>annotations</artifactId>
+ 			<version>16.0.1</version>
+ 		</dependency>
++<<<<<<< HEAD
+ 
++=======
++>>>>>>> refactor
+         <dependency>
+             <groupId>io.jsonwebtoken</groupId>
+             <artifactId>jjwt</artifactId>
+             <version>0.9.1</version>
+         </dependency>
++<<<<<<< HEAD
+ 		<dependency>
+ 			<groupId>org.springframework.security</groupId>
+ 			<artifactId>spring-security-core</artifactId>
+ 			<version>5.3.3.RELEASE</version>
+ 		</dependency>
+ 	</dependencies>
++=======
++    </dependencies>
++>>>>>>> refactor
+ 
+ 	<build>
+ 		<plugins>
+Index: src/main/java/event/ReminderApp/service/AuthenticationService.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package event.ReminderApp.service;\n\nimport event.ReminderApp.dao.UserInterface;\nimport event.ReminderApp.model.User;\nimport org.springframework.beans.factory.annotation.Autowired;\nimport org.springframework.beans.factory.annotation.Qualifier;\nimport org.springframework.stereotype.Service;\nimport javax.crypto.spec.SecretKeySpec;\nimport javax.xml.bind.DatatypeConverter;\nimport java.security.Key;\n\nimport io.jsonwebtoken.*;\n\nimport java.util.Date;\n\n@Service\npublic class AuthenticationService {\n\n    public final UserInterface userInterface;\n\n    private static final String\n            SECRET_KEY = \"oeRaYY7Wo24sDqKSX3IM9ASGmdGPmkTd9jo1QTy4b7P9Ze5_9hKolVX8xNrQDcNRfVEdTZNOuOyqEGhXEbdJI-ZQ19k_\" +\n            \"o9MI0y3eZN2lp9jow55FfXMiINEdt1XR85VipRLSOkT6kSpzs2x-jbLDiz9iFVzkd81YKxMgPA7VfZeQUm4n-mOmnWMaVX30zGFU4L3oPB\" +\n            \"ctYKkl4dYfqYWqRNfrgPJVi5DGFjywgxx0ASEiJHtV72paI3fDR2XwlSkyhhmY-ICjCRmsJN4fX1pdoL8a18-aQrvyu4j0Os6dVPYIoPvvY\" +\n            \"0SAZtWYKHfM15g7A3HD4cVREf9cUsprCRK93w\";\n\n    @Autowired\n    public final UserService userService;\n\n    @Autowired\n    public AuthenticationService(@Qualifier(\"PersonDatabase\") UserInterface userInterface, UserService userService) {\n        this.userInterface = userInterface;\n        this.userService = userService;\n    }\n\n    public String Authenticate(User user) throws Exception {\n\n        User dbUser =  userInterface.getUserByEmail(user.getUserEmail()).get();\n\n        if(user.getUserEmail().compareTo(dbUser.getUserEmail()) != 0 ||\n                !userService.passwordEncoder().matches(user.getUserPassword(), dbUser.getUserPassword())){\n            throw new Exception(\"Failed to authenticate\");\n        }\n        return createJWT(String.valueOf(dbUser.getUserId()), dbUser.getUserName(), dbUser.getUserEmail(),86400000);\n    }\n\n    public String createJWT(String id, String issuer, String subject, long ttlMillis) {\n\n        SignatureAlgorithm signatureAlgorithm = SignatureAlgorithm.HS256;\n\n        long nowMillis = System.currentTimeMillis();\n        Date now = new Date(nowMillis);\n\n        byte[] apiKeySecretBytes = DatatypeConverter.parseBase64Binary(SECRET_KEY);\n        Key signingKey = new SecretKeySpec(apiKeySecretBytes, signatureAlgorithm.getJcaName());\n\n        JwtBuilder builder = Jwts.builder().setId(id)\n                .setIssuedAt(now)\n                .setSubject(subject)\n                .setIssuer(issuer)\n                .signWith(signatureAlgorithm, signingKey);\n\n        if (ttlMillis > 0) {\n            long expMillis = nowMillis + ttlMillis;\n            Date exp = new Date(expMillis);\n            builder.setExpiration(exp);\n        }\n        return builder.compact();\n    }\n\n    public Claims decodeJWT(String jwt) {\n        return Jwts.parser()\n                .setSigningKey(DatatypeConverter.parseBase64Binary(SECRET_KEY))\n                .parseClaimsJws(jwt).getBody();\n    }\n\n}\n\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main/java/event/ReminderApp/service/AuthenticationService.java	(revision 1b101c9a773021ab5cc6d02e5a7b251ce7a34bc1)
++++ src/main/java/event/ReminderApp/service/AuthenticationService.java	(date 1598727532182)
+@@ -1,7 +1,11 @@
+ package event.ReminderApp.service;
+ 
++import io.jsonwebtoken.SignatureAlgorithm;
+ import event.ReminderApp.dao.UserInterface;
+ import event.ReminderApp.model.User;
++import io.jsonwebtoken.Claims;
++import io.jsonwebtoken.JwtBuilder;
++import io.jsonwebtoken.Jwts;
+ import org.springframework.beans.factory.annotation.Autowired;
+ import org.springframework.beans.factory.annotation.Qualifier;
+ import org.springframework.stereotype.Service;
+@@ -9,8 +13,6 @@
+ import javax.xml.bind.DatatypeConverter;
+ import java.security.Key;
+ 
+-import io.jsonwebtoken.*;
+-
+ import java.util.Date;
+ 
+ @Service
+Index: src/main/java/event/ReminderApp/service/UserService.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package event.ReminderApp.service;\n\nimport event.ReminderApp.dao.UserInterface;\nimport event.ReminderApp.model.User;\nimport org.springframework.beans.factory.annotation.Autowired;\nimport org.springframework.beans.factory.annotation.Qualifier;\nimport org.springframework.context.annotation.Bean;\nimport org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;\nimport org.springframework.security.crypto.password.PasswordEncoder;\nimport org.springframework.stereotype.Service;\n\nimport java.util.List;\nimport java.util.Optional;\nimport java.util.UUID;\n\n@Service\npublic class UserService {\n\n    public final UserInterface userInterface;\n\n    @Autowired\n    private PasswordEncoder passwordEncoder;\n\n    @Autowired\n    public UserService(@Qualifier(\"PersonDatabase\") UserInterface userInterface) {\n        this.userInterface = userInterface;\n    }\n\n    public int insertPerson(User user) {\n        return userInterface.insertUser(\n                new User(\n                        user.getUserId(),\n                        user.getUserName(),\n                        user.getUserEmail(),\n                        passwordEncoder.encode(user.getUserPassword()),\n                        user.getUserObservations(),\n                        user.getUserRole()\n        ));\n    }\n\n    public Optional<User> getPersonById(UUID id) {\n        return userInterface.getUserById(id);\n    }\n\n    public Optional<User> getPersonByEmail(String email) {\n        return userInterface.getUserByEmail(email);\n    }\n\n    public List<User> getAllPersons() {\n        return userInterface.getAllUsers();\n    }\n\n    public int updatePerson(User user, UUID id) {\n        return userInterface.updateUser(user, id);\n    }\n\n    public int deletePerson(UUID id) {\n        return userInterface.deleteUser(id);\n    }\n\n    @Bean\n    public PasswordEncoder passwordEncoder() {\n        return new BCryptPasswordEncoder();\n    }\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main/java/event/ReminderApp/service/UserService.java	(revision 1b101c9a773021ab5cc6d02e5a7b251ce7a34bc1)
++++ src/main/java/event/ReminderApp/service/UserService.java	(date 1598727532182)
+@@ -4,9 +4,12 @@
+ import event.ReminderApp.model.User;
+ import org.springframework.beans.factory.annotation.Autowired;
+ import org.springframework.beans.factory.annotation.Qualifier;
++<<<<<<< HEAD
+ import org.springframework.context.annotation.Bean;
+ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+ import org.springframework.security.crypto.password.PasswordEncoder;
++=======
++>>>>>>> refactor
+ import org.springframework.stereotype.Service;
+ 
+ import java.util.List;
+@@ -16,6 +19,7 @@
+ @Service
+ public class UserService {
+ 
++<<<<<<< HEAD
+     public final UserInterface userInterface;
+ 
+     @Autowired
+@@ -61,5 +65,36 @@
+     @Bean
+     public PasswordEncoder passwordEncoder() {
+         return new BCryptPasswordEncoder();
++=======
++    public final UserInterface personInterface;
++
++    @Autowired
++    public UserService(@Qualifier("PersonDatabase") UserInterface personInterface) {
++        this.personInterface = personInterface;
++    }
++
++    public int insertUser(User user) {
++        return personInterface.insertUser(user);
++    }
++
++    public Optional<User> getUserById(UUID id) {
++        return personInterface.getUserById(id);
++    }
++
++    public Optional<User> getUserByEmail(String email) {
++        return personInterface.getUserByEmail(email);
++    }
++
++    public List<User> getAllUsers() {
++        return personInterface.getAllUsers();
++    }
++
++    public int updateUser(User person, UUID id) {
++        return personInterface.updateUser(person, id);
++    }
++
++    public int deleteUser(UUID id) {
++        return personInterface.deleteUser(id);
++>>>>>>> refactor
+     }
+ }
