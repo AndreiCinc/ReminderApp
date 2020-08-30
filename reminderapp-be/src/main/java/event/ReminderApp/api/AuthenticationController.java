@@ -20,10 +20,10 @@ public class AuthenticationController {
     @CrossOrigin
     @PostMapping("authenticate/")
     public String authenticate(@RequestBody User user) {
-        try{
+        try {
             return authenticationService.Authenticate(user);
-        }catch (Exception e) {
-           throw new ApiRequestException("Failed to authenticate" + e.getMessage(), e.getCause());
+        } catch (Exception e) {
+            throw new ApiRequestException("Failed to authenticate" + e.getMessage(), e.getCause());
         }
     }
 }
