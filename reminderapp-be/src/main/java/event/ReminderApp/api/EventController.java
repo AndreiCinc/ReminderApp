@@ -2,6 +2,7 @@ package event.ReminderApp.api;
 
 import event.ReminderApp.model.Event;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.security.oauth2.resource.OAuth2ResourceServerProperties;
 import org.springframework.web.bind.annotation.*;
 import event.ReminderApp.service.EventService;
 
@@ -30,7 +31,7 @@ public class EventController {
 
     @CrossOrigin
     @GetMapping("selectByPerson/")
-    public List<Event> getAllEventsByPersonId(@RequestHeader("Person") String jwt) {
+    public List<Event> getAllEventsByPersonId(@RequestHeader("person") String jwt) {
         return eventService.getAllEventsByPersonId(jwt);
     }
 

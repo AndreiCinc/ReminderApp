@@ -9,7 +9,7 @@ import Cookie from './Service/CookiesService.js';
 import {Route, BrowserRouter as Router, Switch, Link} from 'react-router-dom';
 
 export default function App() {
-
+	
 	return (
 	    <div className="App">
 	    	<Router>

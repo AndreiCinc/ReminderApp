@@ -8,8 +8,8 @@ const Cookie = {
 		return cookies.set(name, value, opts);
 	},
 
-	getCookie(name){
-		return cookies.get(name);
+	getCookie(){
+		return cookies.get("person");
 	},
 
 	removeCookie(name) {

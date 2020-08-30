@@ -27,9 +27,9 @@ export default function MainPage(props) {
 				<h2>Insert your credentials, please!</h2>
 				</div>
 				<div style={{"margin-left": '50%'}}>
-				<Link to="/logIn">
-					<h3>LogIn</h3>
-				</Link>
+					<Link to="/logIn">
+						<h3>LogIn</h3>
+					</Link>
 				</div>
 			</div>
 		

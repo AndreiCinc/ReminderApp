@@ -11,10 +11,10 @@ import Modal from './Modal.js';
 export default function Card(props) {
 
 	const deleteReminder = (e, id) => {
-		EventService.deleteEvent(id)
+		EventService.deleteEvent(id);
 		e.preventDefault();
 	}
-
+	
 	return(
 		props.object.map((object) => { 
 			if(DateVerification(object.reminderDate)) {
