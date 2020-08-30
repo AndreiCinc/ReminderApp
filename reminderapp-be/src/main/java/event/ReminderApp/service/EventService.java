@@ -32,9 +32,11 @@ public class EventService {
         return eventInterface.selectEventById(id);
     }
 
-    public List<Event> getAllEventsByPersonId(UUID id) {
+    public List<Event> getAllEventsByPersonId(String jwt) {
+        UUID id = null;
         return eventInterface.selectEventsByPersonId(id);
     }
+
     public List<Event> getAllEvents() {
         return eventInterface.selectAllEvents();
     }

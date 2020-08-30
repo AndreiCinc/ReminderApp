@@ -29,9 +29,9 @@ public class EventController {
     }
 
     @CrossOrigin
-    @GetMapping("{id}/selectByPerson")
-    public List<Event> getAllEventsByPersonId(@PathVariable("id") UUID id) {
-        return eventService.getAllEventsByPersonId(id);
+    @GetMapping("selectByPerson/")
+    public List<Event> getAllEventsByPersonId(@RequestHeader("Person") String jwt) {
+        return eventService.getAllEventsByPersonId(jwt);
     }
 
     @GetMapping("{id}/select")
