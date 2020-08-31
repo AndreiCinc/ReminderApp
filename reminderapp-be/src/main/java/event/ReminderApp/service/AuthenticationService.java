@@ -19,12 +19,18 @@ import java.util.Date;
 public class AuthenticationService {
 
     public final UserInterface userInterface;
+    public final UserService userService;
 
-    private static final String SECRET_KEY = "oeRaYY7Wo24sDqKSX3IM9ASGmdGPmkTd9jo1QTy4b7P9Ze5_9hKolVX8xNrQDcNRfVEdTZNOuOyqEGhXEbdJI-ZQ19k_o9MI0y3eZN2lp9jow55FfXMiINEdt1XR85VipRLSOkT6kSpzs2x-jbLDiz9iFVzkd81YKxMgPA7VfZeQUm4n-mOmnWMaVX30zGFU4L3oPBctYKkl4dYfqYWqRNfrgPJVi5DGFjywgxx0ASEiJHtV72paI3fDR2XwlSkyhhmY-ICjCRmsJN4fX1pdoL8a18-aQrvyu4j0Os6dVPYIoPvvY0SAZtWYKHfM15g7A3HD4cVREf9cUsprCRK93w";
+    private static final String
+            SECRET_KEY = "oeRaYY7Wo24sDqKSX3IM9ASGmdGPmkTd9jo1QTy4b7P9Ze5_9hKolVX8xNrQDcNRfVEdTZNOuOyqEGhXEbdJI-ZQ19k_" +
+            "o9MI0y3eZN2lp9jow55FfXMiINEdt1XR85VipRLSOkT6kSpzs2x-jbLDiz9iFVzkd81YKxMgPA7VfZeQUm4n-mOmnWMaVX30zGFU4L3oPB" +
+            "ctYKkl4dYfqYWqRNfrgPJVi5DGFjywgxx0ASEiJHtV72paI3fDR2XwlSkyhhmY-ICjCRmsJN4fX1pdoL8a18-aQrvyu4j0Os6dVPYIoPvvY" +
+            "0SAZtWYKHfM15g7A3HD4cVREf9cUsprCRK93w";
 
     @Autowired
-    public AuthenticationService(@Qualifier("PersonDatabase") UserInterface userInterface) {
+    public AuthenticationService(@Qualifier("PersonDatabase") UserInterface userInterface, UserService userService) {
         this.userInterface = userInterface;
+        this.userService = userService;
     }
 
     public String Authenticate(User user) throws Exception {
@@ -32,6 +38,7 @@ public class AuthenticationService {
         User dbUser =  userInterface.getUserByEmail(user.getUserEmail()).get();
 
         if(user.getUserEmail().compareTo(dbUser.getUserEmail()) != 0 ||
+                !userService.passwordEncoder().matches(user.getUserPassword(), dbUser.getUserPassword())){
                 user.getUserPassword().compareTo(dbUser.getUserPassword()) != 0) {
             throw new Exception("Failed to authenticate");
         }
