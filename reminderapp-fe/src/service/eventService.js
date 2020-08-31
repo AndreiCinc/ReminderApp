@@ -2,31 +2,32 @@ import Cookie from '../Service/CookiesService.js';
 
 const eventService = {
 
-	postEvent(value){
+	postEvent(value) {
 
-		fetch("https://reminderapp5.herokuapp.com/event/ReminderApp/api/v1/event/" ,
+		let cookie = Cookie.getCookie();
+		fetch("http://localhost:8080/event/create/" ,
 		{
-			method: 'POST',
+			method: 'post',
 			headers: {
-	 		   "Content-Type" : "application/JSON" ,
+				"content-type": "application/json",
+	 		   	"person" : cookie
 	 		},
 	 		dataType: "json",
 			body: JSON.stringify(value),
 		})
 		.then(response => response.json())
-		.then(json => {console.log(json)
-		})
 		.catch(err => {
 	         console.log('Type send failed', err);
 		});
 	},
 
 	putEvent(value, id) {
+		let cookie = Cookie.getCookie();
 		fetch("https://reminderapp5.herokuapp.com/event/ReminderApp/api/v1/event/" ,
 		{
 			method: 'PUT',
 			headers: {
-	 		   "Content-Type" : "application/JSON" ,
+	 		   "Content-Type" : cookie ,
 	 		},
 	 		dataType: "json",
 			body: JSON.stringify(value),

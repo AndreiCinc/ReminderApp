@@ -11,7 +11,7 @@ class CreateEvent extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			name: "",
+			eventName: "",
 			startDate: new Date(),
 			endDate: new Date(),
 			details: "",
@@ -19,9 +19,8 @@ class CreateEvent extends React.Component {
 		}
 	}
 
-	handlerName = e =>{
-		console.log(e.target.value);
-		this.setState({name: e.target.value});
+	handlerName = e => {
+		this.setState({eventName: e.target.value});
 	}
 
 	handleStartDate = date => {
@@ -44,7 +43,7 @@ class CreateEvent extends React.Component {
 	}
 
 	handleSubmit = (e) => {
-		if (this.state.name === "" ) {
+		if (this.state.eventName === "" ) {
 			alert("The name field cannot be emty");
 		}else if (
 			this.state.startDate.getTime() >= this.state.endDate.getTime() ) {

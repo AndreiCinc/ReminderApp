@@ -23,8 +23,16 @@ public class EventService {
     }
 
 
-    public int addEvent(Event event) {
-        return eventInterface.insertEvent(event);
+    public int addEvent(Event event, String jwt) {
+        UUID id = UUID.fromString(authenticationService.decodeJWT(jwt).getId());
+        return eventInterface.insertEvent(new Event(
+                event.getId(),
+                event.getName(),
+                event.getStartDate(),
+                event.getEndDate(),
+                event.getReminderDate(),
+                event.getDetails(),
+                id));
     }
 
     public Optional<Event> getEventById(UUID id) {

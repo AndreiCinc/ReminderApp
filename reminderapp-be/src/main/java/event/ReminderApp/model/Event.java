@@ -31,7 +31,6 @@ public class Event {
         this.personId = personId;
     }
 
-
     public UUID getId(){
         return id;
     }
