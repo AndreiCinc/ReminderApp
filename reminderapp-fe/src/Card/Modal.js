@@ -26,7 +26,7 @@ class updateEvent extends React.Component{
   constructor(props) {
     super(props);
     this.state = {
-      name: props.name,
+      eventName: props.name,
       startDate: new Date(props.startDate),
       endDate: new Date(props.endDate),
       details: props.details,
@@ -40,7 +40,7 @@ class updateEvent extends React.Component{
     }
 
   handlerName = e =>{
-    this.setState({name: e.target.value});
+    this.setState({eventName: e.target.value});
   }
   handleStartDate = date => {
     this.setState({startDate: date});
@@ -79,7 +79,7 @@ class updateEvent extends React.Component{
           onRequestClose={this.handlerModal}
           style={updateModal}
         >
-          <Name name={this.state.name} handlerName={this.handlerName} />
+          <Name name={this.state.eventName} handlerName={this.handlerName} />
           
           <Calendar 
             type="submit" 

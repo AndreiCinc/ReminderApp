@@ -22,12 +22,12 @@ const eventService = {
 	},
 
 	putEvent(value, id) {
-		let cookie = Cookie.getCookie();
-		fetch("https://reminderapp5.herokuapp.com/event/ReminderApp/api/v1/event/" ,
+
+		fetch("http://localhost:8080/event/" + id + "/update" ,
 		{
 			method: 'PUT',
 			headers: {
-	 		   "Content-Type" : cookie ,
+	 		   'Content-Type': 'application/json' ,
 	 		},
 	 		dataType: "json",
 			body: JSON.stringify(value),
