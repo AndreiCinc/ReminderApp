@@ -64,7 +64,7 @@ const eventService = {
     }, 
 
     deleteEvent(id) {
-        fetch("https://reminderapp5.herokuapp.com/event/ReminderApp/api/v1/event/" + id,
+        fetch("http://localhost:8080/event/" + id + "/delete",
 		{
 			method: 'DELETE',
 		})
