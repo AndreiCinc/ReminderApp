@@ -3,7 +3,7 @@ import List from '../List/List.js';
 import '../LogIn/LogIn.css';
 import CreateEvent from '../CreateEvent/CreateEvent.js';
 import Cookie from '../Service/CookiesService.js';
-import Logo from './Logo.js';
+import Logout from './Logout.js';
 import {Route, BrowserRouter as Router, Switch, Link} from 'react-router-dom';
 
 
@@ -17,7 +17,7 @@ export default function MainPage(props) {
 				<div className="Title">
 	    			<h2>ReminderApp</h2>
 	    		</div>
-	    		<Logo />
+	    		<Logout />
 				<List props={props.id}/>
 				<CreateEvent />
 			</div>	: 
