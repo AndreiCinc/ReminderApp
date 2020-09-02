@@ -25,8 +25,9 @@ public class EventController {
 
     @CrossOrigin
     @PostMapping("create/")
-    public void addEvent(@RequestBody Event event) {
-        eventService.addEvent(event);
+    public void addEvent(@RequestBody Event event,
+                         @RequestHeader("person") String jwt) {
+        eventService.addEvent(event, jwt);
     }
 
     @CrossOrigin
