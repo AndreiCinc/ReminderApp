@@ -5,7 +5,7 @@ const cookies = new Cookies();
 const Cookie = {
 
 	setCookie(name, value, opts) {
-		return cookies.set(name, value, opts);
+		return cookies.set(name, value, true);
 	},
 
 	getCookie(){
