@@ -9,7 +9,7 @@ export default function List(props) {
 	const [data, setData] = useState([]);
 
 	const getData = async () => {
-		let reminders = await EventService.getEvents();
+		let reminders = await EventService.getEventsByPersonId();
 		setLoaded(true);
 		setData(reminders);	
 	}
