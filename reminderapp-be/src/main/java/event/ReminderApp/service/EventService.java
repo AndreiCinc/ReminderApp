@@ -17,7 +17,8 @@ public class EventService {
     public final AuthenticationService authenticationService;
 
     @Autowired
-    public EventService(@Qualifier("postgres") EventInterface eventInterface, AuthenticationService authenticationService) {
+    public EventService(@Qualifier("postgres") EventInterface eventInterface,
+                        AuthenticationService authenticationService) {
         this.eventInterface = eventInterface;
         this.authenticationService = authenticationService;
     }
@@ -48,16 +49,16 @@ public class EventService {
         return eventInterface.selectAllEvents();
     }
 
-    public int updateEvent(UUID id, Event event){
-        return eventInterface.updateEventById(id, event);
+    public void updateEvent(UUID id, Event event){
+        eventInterface.updateEventById(id, event);
     }
 
-    public int deleteEvent(UUID id) {
-        return eventInterface.deleteEventById(id);
+    public void deleteEvent(UUID id) {
+        eventInterface.deleteEventById(id);
     }
 
-    public int deleteEventsByPersonId(UUID id) {
-        return eventInterface.deleteEventByPersonId(id);
+    public void deleteEventsByPersonId(UUID id) {
+        eventInterface.deleteEventByPersonId(id);
     }
 
 }

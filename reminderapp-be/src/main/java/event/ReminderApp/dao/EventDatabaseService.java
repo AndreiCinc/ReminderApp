@@ -107,8 +107,7 @@ public class EventDatabaseService implements EventInterface {
                 "startdate = ?, " +
                 "enddate = ?, " +
                 "reminderDate = ?, " +
-                "details = ?, " +
-                "personId = ? " +
+                "details = ? " +
                 "WHERE id = ?";
         jdbcTemplate.update(
                 sql,
@@ -117,7 +116,6 @@ public class EventDatabaseService implements EventInterface {
                 event.getEndDate(),
                 event.getReminderDate(),
                 event.getDetails(),
-                event.getPersonId(),
                 id);
         return 0;
     }
