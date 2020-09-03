@@ -5,7 +5,7 @@ const api_url_authentication = "http://localHost:8080/authentication/authenticat
 const authentication = { 
 
 	authenticate(user) {
-    	console.log(user);
+		
        return axios.post(api_url_authentication, user)
 		.then(response => {return response.data})
 		.catch(error => alert('Email or password incorrect!'));

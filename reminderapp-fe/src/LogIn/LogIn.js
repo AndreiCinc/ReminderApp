@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import './LogIn.css';
 import { Formik } from 'formik';
 import * as Yup from 'yup';
-import bcrypt from 'bcryptjs';
 import Authentication from '../Service/AuthenticationService.js';
 import Cookies from '../Service/CookiesService.js';
 import {Route, BrowserRouter as Router, Switch, Link, Redirect, useHistory} from 'react-router-dom';
@@ -22,12 +21,12 @@ export default function LogIn(props) {
 	let history = useHistory();
 	
 	useEffect(() => {
-		if (person.email != "" ) {
+		if (person.email !== "" ) {
 			const response = Authentication.authenticate(person)
 			.then((response) => {
 				if (response) {
 					Cookies.setCookie("person", response);
-					history.push("/mainPage")
+					history.push("/")
 				}
 			})
 		}

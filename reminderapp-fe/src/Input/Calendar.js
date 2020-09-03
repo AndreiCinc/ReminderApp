@@ -8,7 +8,7 @@ import {
   KeyboardDatePicker,
 } from '@material-ui/pickers';
 
-export default function MaterialUIPickers(props) {
+function MaterialUIPickers(props) {
 
   const handleDateChange = (date) => {
     props.handlerDate(date);
@@ -44,3 +44,5 @@ export default function MaterialUIPickers(props) {
     </MuiPickersUtilsProvider>
   );
 }
+
+export default MaterialUIPickers;

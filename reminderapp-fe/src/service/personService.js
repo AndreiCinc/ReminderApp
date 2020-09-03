@@ -2,8 +2,6 @@ import axios from 'axios';
 
 const api_url_user = "http://localhost:8080/user/";
 
-const api_url_authentication = "http://localHost:8080/authentication/authenticate/";
-
 const personService = {
 
 	postPerson(person){
@@ -17,6 +15,7 @@ const personService = {
 	},
 
 	putPerson(value, id) {
+
 		return axios.put(api_url_user + id + "/update" ,
 		{
 			value
@@ -30,6 +29,7 @@ const personService = {
 	},
 
 	getPerson() {
+
        return axios.get(api_url_user + "all/")
 		.then((response) => response.json())
 		.then((response) => {
@@ -38,6 +38,7 @@ const personService = {
     },
 
     getPersonByEmail(email) {
+
        return axios.get(api_url_user + email + "/select")
 		.then(response => response.json())
 		.then(response => {
@@ -53,7 +54,8 @@ const personService = {
 
     
     deletePerson(value) {
-        fetch("http://localhost:8080/user/delete/" + value + "/delete" ,
+    	
+        fetch(api_url_user + value + "/delete" ,
 		{
 			method: 'DELETE',
 		})

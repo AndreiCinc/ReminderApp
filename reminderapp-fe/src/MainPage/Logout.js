@@ -4,18 +4,21 @@ import Cookies from '../Service/CookiesService.js';
 import {Route, BrowserRouter as Router, Switch, Link, Redirect, useHistory} from 'react-router-dom';
 
 
-export default function Logo() {
+function Logout() {
 
-	let history = useHistory();
 	const handleChange = (e) => {
-		history.push("/login")
 		Cookies.removeCookie("person");
 	}
+	
 	return(
-		<img 	className="Logout" 
-				src={logo} 
-				alt={"logo"} 
-				onClick={handleChange}
-				/>
+		<Link to="/login">
+			<img 	className="Logout" 
+					src={logo} 
+					alt={"logo"} 
+					onClick={handleChange}
+					/>
+		</Link>
 	)
 }
+
+export default Logout;

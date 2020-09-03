@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import './Card.css';
+import 'moment-timezone';
 import Popover, { ArrowContainer } from 'react-tiny-popover';
 import Moment from 'react-moment';
-import 'moment-timezone';
 
 export default function CustomComponent (props) {
 
