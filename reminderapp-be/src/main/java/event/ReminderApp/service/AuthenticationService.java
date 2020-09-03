@@ -73,23 +73,6 @@ public class AuthenticationService {
                 .setSigningKey(DatatypeConverter.parseBase64Binary(SECRET_KEY))
                 .parseClaimsJws(jwt).getBody();
     }
-    public boolean TokenValidate(String token){
-        if(getUserFromToken(token) != null &&  isExpired(token)) {
-            return true;
-        }
-        return false;
-    }
-
-    public String getUserFromToken(String token){
-        Claims claims = decodeJWT(token);
-        return claims.getSubject();
-    }
-
-    public boolean isExpired(String token){
-        Claims claims = decodeJWT(token);
-        System.out.println(claims.getExpiration());
-        return claims.getExpiration().after(new Date(System.currentTimeMillis()));
-    }
-
+    
 }
 
