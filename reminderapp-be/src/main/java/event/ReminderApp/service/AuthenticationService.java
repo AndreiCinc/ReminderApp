@@ -74,6 +74,6 @@ public class AuthenticationService {
                 .setSigningKey(DatatypeConverter.parseBase64Binary(SECRET_KEY))
                 .parseClaimsJws(jwt).getBody();
     }
-
+    
 }
 
