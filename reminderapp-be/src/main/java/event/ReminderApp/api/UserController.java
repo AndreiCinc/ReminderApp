@@ -2,6 +2,7 @@ package event.ReminderApp.api;
 
 import event.ReminderApp.Exceptions.ApiRequestException;
 import event.ReminderApp.model.User;
+import event.ReminderApp.service.AuthenticationService;
 import event.ReminderApp.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
@@ -19,15 +20,19 @@ import java.util.UUID;
 public class UserController {
 
     public final UserService userService;
+    public final AuthenticationService authenticationService;
 
     @Autowired
-    public UserController(UserService userService) {
+    public UserController(UserService userService,
+                          AuthenticationService authenticationService) {
         this.userService = userService;
+        this.authenticationService = authenticationService;
     }
 
     @CrossOrigin
     @PostMapping("create/")
-    public int insertUser(@RequestBody User user) {
+    public int insertUser(@RequestBody User user,
+                          @RequestHeader("person") String jwt) {
         try{
             return userService.insertUser(user);
         }catch (DataIntegrityViolationException e) {
@@ -39,13 +44,20 @@ public class UserController {
 
     @CrossOrigin
     @GetMapping("{id}/select")
-    public Optional<User> getUserById(@PathVariable("id") UUID id) {
+    public Optional<User> getUserById(@PathVariable("id") UUID id,
+                                      @RequestHeader("person") String jwt) {
+        try {
+            authenticationService.decodeJWT(jwt);
+        } catch (Exception e) {
+            throw new ApiRequestException("Invalid token", e.getCause());
+        }
         return userService.getUserById(id);
     }
 
     @CrossOrigin
     @GetMapping("{email}/select")
-    public Optional<User> getUserByEmail(@PathVariable("email")String email) {
+    public Optional<User> getUserByEmail(@PathVariable("email")String email,
+                                         @RequestHeader("person") String jwt) {
         try{
             return userService.getUserByEmail(email);
         }catch (EmptyResultDataAccessException e) {
@@ -55,19 +67,37 @@ public class UserController {
 
     @CrossOrigin
     @GetMapping("all/")
-    public List<User> getAllUsers() {
+    public List<User> getAllUsers(@RequestHeader("person") String jwt) {
+        try {
+            authenticationService.decodeJWT(jwt);
+        } catch (Exception e) {
+            throw new ApiRequestException("Invalid token", e.getCause());
+        }
         return userService.getAllUsers();
     }
 
     @CrossOrigin
-    @PutMapping("{id}/update")
-    public int updateUser(@NotNull @Valid @RequestBody User user, @PathVariable("id") UUID id) {
+    @PutMapping("{id}/update/")
+    public int updateUser(@NotNull @Valid @RequestBody User user,
+                          @PathVariable("id") UUID id,
+                          @RequestHeader("person") String jwt) {
+        try {
+            authenticationService.decodeJWT(jwt);
+        } catch (Exception e) {
+            throw new ApiRequestException("Invalid token", e.getCause());
+        }
         return userService.updateUser(user, id);
     }
 
     @CrossOrigin
     @DeleteMapping("{id}/delete")
-    public int deleteUser(@PathVariable("id") UUID id) {
+    public int deleteUser(@PathVariable("id") UUID id,
+                          @RequestHeader("person") String jwt) {
+        try {
+            authenticationService.decodeJWT(jwt);
+        } catch (Exception e) {
+            throw new ApiRequestException("Invalid token", e.getCause());
+        }
         return userService.deleteUser(id);
     }
 }
