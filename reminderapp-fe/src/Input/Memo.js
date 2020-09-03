@@ -7,7 +7,6 @@ export default function Memo(props) {
 	const handleValue = (event) => {
 		setTime(event.target.value);
 		props.memo(event);
-	
 	}
 
 	return (

@@ -2,6 +2,7 @@ import Cookie from '../Service/CookiesService.js';
 
 const eventService = {
 
+
 	postEvent(value) {
 
 		let cookie = Cookie.getCookie();
@@ -41,6 +42,7 @@ const eventService = {
 	},
 
 	getEvents() {
+
        return fetch("http://localhost:8080/event/all/")
 		.then((response) => response.json())
 		.then((response) => {
@@ -64,6 +66,7 @@ const eventService = {
     }, 
 
     deleteEvent(id) {
+
         fetch("http://localhost:8080/event/" + id + "/delete",
 		{
 			method: 'DELETE',

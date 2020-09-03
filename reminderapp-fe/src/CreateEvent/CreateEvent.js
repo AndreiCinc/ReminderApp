@@ -104,4 +104,5 @@ class CreateEvent extends React.Component {
 		);
 	}
 }
+
 export default CreateEvent;

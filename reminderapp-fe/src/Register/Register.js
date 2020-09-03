@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Register.css';
 import PersonService from '../Service/PersonService.js';
-import bcrypt from 'bcryptjs';
 import { Formik } from 'formik';
 import * as Yup from 'yup';
 import {Route, BrowserRouter as Router, Switch, Link, Redirect, useHistory} from 'react-router-dom';
@@ -30,12 +29,12 @@ export default function Register(props) {
 	}
 
 	useEffect(() => {
-		if (person.email != "") {
-			const response = PersonService.postPerson(person)
+		if (person.email !== "") {
+			PersonService.postPerson(person)
 			.then((response) => { 
-				if (response != undefined) {
-					alert("Registered succesfully!")
-					history.push("/logIn")
+				if (response !== undefined) {
+					alert("Registered succesfully!");
+					history.push("/logIn");
 				}
 			})
 		}
@@ -44,7 +43,7 @@ export default function Register(props) {
 
 	return(
 		<Formik
-			initialValues={{passwordConfirmation: "" }, { name: "", email: "", password: ""}}
+			initialValues={{passwordConfirmation: "" } ,{ name: "", email: "", password: ""}}
 			onSubmit={(values, {setSubmitting }) => handleSubmit(values, {setSubmitting})}
 			validationSchema={Yup.object().shape({
 				name: Yup.string()
@@ -65,7 +64,6 @@ export default function Register(props) {
 					values,
 					touched,
 					errors,
-					isSubmitting,
 					handleChange,
 					handleBlur,
 					handleSubmit

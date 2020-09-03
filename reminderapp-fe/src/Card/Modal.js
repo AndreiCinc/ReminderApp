@@ -36,36 +36,42 @@ class updateEvent extends React.Component{
   }
 
   onClose = (e) => {
-      this.props.onClose && this.props.onClose(e);
-    }
+    this.props.onClose && this.props.onClose(e);
+  }
 
   handlerName = e =>{
     this.setState({eventName: e.target.value});
   }
+
   handleStartDate = date => {
     this.setState({startDate: date});
   }
+
   handleEndDate = date => {
     this.setState({endDate: date});
   }
+
   handleDetails = value => {
     this.setState({details: value});
   }
+
   handleMemo = e => {
     let date = e.target.value;
     let memoDate = new Date(this.state.startDate.getTime()) - (date * 60000);
     let newDate = new Date(memoDate);
     this.setState({reminderDate: newDate});
   }
+
   handleSubmit = (e) => {
-    console.log(this.state);
     this.setState({openModal: !this.state.openModal});
     EventService.putEvent(this.state, this.props.id);
     e.preventDefault();
   }
+
   handlerModal = (e) => {
     this.setState({openModal: !this.state.openModal});
   }
+
   render() {
     return(
       <>
