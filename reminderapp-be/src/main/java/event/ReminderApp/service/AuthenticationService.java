@@ -39,7 +39,6 @@ public class AuthenticationService {
 
         if(user.getUserEmail().compareTo(dbUser.getUserEmail()) != 0 ||
                 !userService.passwordEncoder().matches(user.getUserPassword(), dbUser.getUserPassword())){
-                user.getUserPassword().compareTo(dbUser.getUserPassword()) != 0) {
             throw new Exception("Failed to authenticate");
         }
         return createJWT(String.valueOf(dbUser.getUserId()), dbUser.getUserName(), dbUser.getUserEmail(),86400000);

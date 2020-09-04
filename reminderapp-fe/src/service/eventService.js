@@ -1,11 +1,12 @@
 import Cookie from '../Service/CookiesService.js';
 
+const cookie = Cookie.getCookie();
+
 const eventService = {
 
 
 	postEvent(value) {
 
-		let cookie = Cookie.getCookie();
 		fetch("http://localhost:8080/event/create/" ,
 		{
 			method: 'post',
@@ -29,6 +30,7 @@ const eventService = {
 			method: 'PUT',
 			headers: {
 	 		   'Content-Type': 'application/json' ,
+	 		   "person" : cookie
 	 		},
 	 		dataType: "json",
 			body: JSON.stringify(value),
@@ -43,7 +45,13 @@ const eventService = {
 
 	getEvents() {
 
-       return fetch("http://localhost:8080/event/all/")
+       	return fetch("http://localhost:8080/event/all/", {
+       		method: 'GET',
+			headers: {
+	 		   'Content-Type': 'application/json' ,
+	 		   "person" : cookie
+	 		},
+       })
 		.then((response) => response.json())
 		.then((response) => {
 			return response;
@@ -52,12 +60,12 @@ const eventService = {
     
     getEventsByPersonId() {
 
-    	let cookie = Cookie.getCookie();
       	return fetch("http://localhost:8080/event/selectByPerson/", {
-	       	method: 'get',
-	       	headers: { 
-	       		'person' : cookie
-	       	},
+	       	method: 'GET',
+			headers: {
+	 		   'Content-Type': 'application/json' ,
+	 		   "person" : cookie
+	 		},
 	    })
        	.then((response) => response.json())
 		.then((response) => {
@@ -69,7 +77,11 @@ const eventService = {
 
         fetch("http://localhost:8080/event/" + id + "/delete",
 		{
-			method: 'DELETE',
+			method: "DELETE",
+			headers: {
+	 		   'Content-Type': 'application/json' ,
+	 		   "person" : cookie
+	 		},
 		})
 		.catch(err => {
 	         console.log('Type send failed', err);
