@@ -20,7 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd99027e-7b78-4fc4-9b0b-57237a006ef7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/event/ReminderApp/service/AuthenticationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/event/ReminderApp/service/AuthenticationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/event/ReminderApp/service/EventService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/event/ReminderApp/service/EventService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reminderapp-fe/src/service/eventService.js" beforeDir="false" afterPath="$PROJECT_DIR$/../reminderapp-fe/src/service/eventService.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
