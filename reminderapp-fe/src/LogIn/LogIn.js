@@ -37,7 +37,7 @@ export default function LogIn(props) {
 		<div className="Title">
     			<h2>ReminderApp</h2>
     		</div>
-			<Formik
+			<Formik className="form"
 				initialValues={{ email: "", password: ""}}
 				onSubmit={(values, {setSubmitting }) => handleSubmit(values, {setSubmitting})}
 				validationSchema={Yup.object().shape({

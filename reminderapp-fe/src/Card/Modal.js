@@ -1,4 +1,5 @@
 import React from 'react';
+import './Modal.css';
 import Name from '../Input/Name.js';
 import Calendar from '../Input/Calendar.js';
 import Details from '../Input/Details.js';
@@ -107,7 +108,7 @@ class updateEvent extends React.Component{
          
           <Memo memo={this.handleMemo}/>
 
-          <button onClick={(e) => {this.handleSubmit(e)}}>
+          <button className="updateButton" onClick={(e) => {this.handleSubmit(e)}}>
             Update
           </button>
               

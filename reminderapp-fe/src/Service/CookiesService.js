@@ -12,8 +12,8 @@ const Cookie = {
 		return cookies.get("person");
 	},
 
-	removeCookie(name) {
-		return cookies.remove(name );
+	removeCookie() {
+		return cookies.remove("person");
 	},
 
 	checkLogin() {

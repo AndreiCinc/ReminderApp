@@ -1,18 +1,19 @@
 import Cookie from '../Service/CookiesService.js';
 
-const cookie = Cookie.getCookie();
+const host = "http://localhost:8080/event/";
 
 const eventService = {
 
 
 	postEvent(value) {
 
-		fetch("http://localhost:8080/event/create/" ,
+		let cookie = Cookie.getCookie();
+		return fetch(host + "create/" ,
 		{
 			method: 'post',
 			headers: {
-				"content-type": "application/json",
-	 		   	"person" : cookie
+				'Content-Type': 'application/json' ,
+	 		   	'person' : cookie
 	 		},
 	 		dataType: "json",
 			body: JSON.stringify(value),
@@ -25,12 +26,13 @@ const eventService = {
 
 	putEvent(value, id) {
 
-		fetch("http://localhost:8080/event/" + id + "/update" ,
+		let cookie = Cookie.getCookie();
+		return fetch(host + id + "/update" ,
 		{
 			method: 'PUT',
 			headers: {
-	 		   'Content-Type': 'application/json' ,
-	 		   "person" : cookie
+				'Content-Type': 'application/json' ,
+	 		   	'person' : cookie
 	 		},
 	 		dataType: "json",
 			body: JSON.stringify(value),
@@ -45,11 +47,12 @@ const eventService = {
 
 	getEvents() {
 
-       	return fetch("http://localhost:8080/event/all/", {
+		let cookie = Cookie.getCookie();
+       	return fetch(host + "all/", {       		
        		method: 'GET',
 			headers: {
-	 		   'Content-Type': 'application/json' ,
-	 		   "person" : cookie
+				'Content-Type': 'application/json' ,
+	 		   	'person' : cookie
 	 		},
        })
 		.then((response) => response.json())
@@ -60,11 +63,12 @@ const eventService = {
     
     getEventsByPersonId() {
 
-      	return fetch("http://localhost:8080/event/selectByPerson/", {
+    	let cookie = Cookie.getCookie();
+      	return fetch(host + "selectByPerson/", {
 	       	method: 'GET',
 			headers: {
-	 		   'Content-Type': 'application/json' ,
-	 		   "person" : cookie
+				'Content-Type': 'application/json' ,
+	 		   	'person' : cookie
 	 		},
 	    })
        	.then((response) => response.json())
@@ -75,12 +79,13 @@ const eventService = {
 
     deleteEvent(id) {
 
-        fetch("http://localhost:8080/event/" + id + "/delete",
+    	let cookie = Cookie.getCookie();
+        fetch(host + id + "/delete",
 		{
 			method: "DELETE",
 			headers: {
-	 		   'Content-Type': 'application/json' ,
-	 		   "person" : cookie
+	 		   	'Content-Type': 'application/json' ,
+	 		   	"person" : cookie
 	 		},
 		})
 		.catch(err => {

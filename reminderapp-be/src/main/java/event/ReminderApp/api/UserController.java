@@ -31,8 +31,7 @@ public class UserController {
 
     @CrossOrigin
     @PostMapping("create/")
-    public int insertUser(@RequestBody User user,
-                          @RequestHeader("person") String jwt) {
+    public int insertUser(@RequestBody User user) {
         try{
             return userService.insertUser(user);
         }catch (DataIntegrityViolationException e) {

@@ -1,4 +1,4 @@
-.Login {
+.form {
   display: flex;
   flex-direction: column;
   font-family: sans-serif;
@@ -23,7 +23,7 @@ input {
 
 label {
   margin-bottom: 5px;
-  margin-top: 4px;
+  margin-top: 7px;
   height: 22px;
   font-size: 11px;
 }
@@ -86,7 +86,7 @@ button:hover {
 }
  .Register {
   margin-left: 17%;
-  font-size: 25px;
+  font-size: 30px;
  }
 
 @media screen and (max-width: 500px) {

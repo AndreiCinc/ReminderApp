@@ -1,4 +1,3 @@
-import axios from 'axios';
 
 const api_url_user = "http://localhost:8080/user/";
 
@@ -6,8 +5,15 @@ const personService = {
 
 	postPerson(person){
 		
-		return axios.post(api_url_user + "create/", person
-		)
+		return fetch(api_url_user + "create/", {
+			
+			method: 'post',
+			headers: {
+				'Content-Type': 'application/json' ,
+	 		},
+	 		dataType: "json",
+			body: JSON.stringify(person),
+		})
 		.then(response => { return response})
 		.catch(err => {
 	        alert("Email already exists!");
@@ -16,7 +22,7 @@ const personService = {
 
 	putPerson(value, id) {
 
-		return axios.put(api_url_user + id + "/update" ,
+		return fetch(api_url_user + id + "/update" ,
 		{
 			value
 		})
@@ -30,7 +36,7 @@ const personService = {
 
 	getPerson() {
 
-       return axios.get(api_url_user + "all/")
+       return fetch(api_url_user + "all/")
 		.then((response) => response.json())
 		.then((response) => {
 			return response;
@@ -39,7 +45,7 @@ const personService = {
 
     getPersonByEmail(email) {
 
-       return axios.get(api_url_user + email + "/select")
+       return fetch(api_url_user + email + "/select")
 		.then(response => response.json())
 		.then(response => {
 			console.log(response);
