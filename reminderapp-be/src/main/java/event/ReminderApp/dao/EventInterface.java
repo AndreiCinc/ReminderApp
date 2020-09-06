@@ -9,11 +9,11 @@ import java.util.UUID;
 
 public interface EventInterface {
 
-    int insertEvent(UUID id, Event Event);
+    int insertEvent(Event Event, UUID id);
 
     default int insertEvent(Event event) {
         UUID id = UUID.randomUUID();
-        return insertEvent(id, event);
+        return insertEvent(event, id);
     }
 
     List<Event> selectEventsByPersonId(UUID id);
