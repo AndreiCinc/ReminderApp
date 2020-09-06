@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './LogIn.css';
+import './Login.css';
 import { Formik } from 'formik';
 import * as Yup from 'yup';
 import Authentication from '../Service/AuthenticationService.js';
@@ -95,15 +95,14 @@ export default function LogIn(props) {
 								)
 							}
 
-							<button type="submit" submit="submit">
-									LogIn
+							<button className="Login" type="submit" submit="submit">
+									Login
 							</button>
-							
-							<div className="Register" type="submit">
-								<Link to="/register" type="submit">
-									<h5>Register</h5>
+							<button className="Register">
+								<Link to="/register">
+									Register
 								</Link>
-							</div>
+							</button>
 						</form>
 					);
 				}}

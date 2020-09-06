@@ -50,17 +50,6 @@ input.error {
   font-family: "Lucida Console", Courier, monospace;
 }
 
-button {
-  padding: 5px 10px;
-  margin-left: 15%;
-  background-color: #D3E7F7;
-  border: 1px solid #D3E7F7;
-  border-radius: 10px;
-  transition: ease-in-out background-color 250ms, ease-in-out color 250ms;
-  font-size: 15px;
-  font-family: "Lucida Console", Courier, monospace;
-}
-
 button:hover {
   cursor: pointer;
   background-color: #D3E7F7;
@@ -80,44 +69,66 @@ button:hover {
   border-top-right-radius: 5px;
  }
 
- .App .Logout {
+.App .Logout {
   margin-left: 90%;
   margin-top: -50px;
 }
- .Register {
-  margin-left: 17%;
-  font-size: 30px;
- }
+
+.App .Login {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 10px;
+  margin-left: 15%;
+  background-color: #D3E7F7;
+  border: 1px solid #D3E7F7;
+  border-radius: 10px;
+  transition: ease-in-out background-color 250ms, ease-in-out color 250ms;
+  font-size: 15px;
+  font-family: "Lucida Console", Courier, monospace;
+}
+
+.App .Register {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 10px;
+  margin-left: 12.5%;
+  margin-top: 20px;
+  background-color: #D3E7F7;
+  border: 1px solid #D3E7F7;
+  border-radius: 10px;
+  transition: ease-in-out background-color 250ms, ease-in-out color 250ms;
+  font-size: 15px;
+  font-family: "Lucida Console", Courier, monospace;
+}
 
 @media screen and (max-width: 500px) {
  
- .Title{
+  .App .Title{
   margin-left: 35%;
  }
 
- button {
-  margin-left: 11%;
- } 
+  .App .Register {
+  margin-left: 6%;
+  }
 
- .Register {
-  margin-left: 13%;
-  font-size: 25px;
- }
+  .App .Login {
+  margin-left: 10%;
+  }
 
 }
 
 @media screen and (max-width: 300px) {
  
- .Title{
+  .App .Title{
   margin-left: 25%;
- }
- button {
-  margin-left: 8%;
- } 
+  }
 
- .Register {
-  margin-left: 11%;
-  font-size: 25px;
- }
+  .App .Register {
+  margin-left: 4%;
+  }
+
+  .App .Login {
+  margin-left: 8.5%;
+  }
 
 }

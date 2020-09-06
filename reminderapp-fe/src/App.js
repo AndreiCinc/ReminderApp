@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import LogIn from './LogIn/LogIn.js';
+import Login from './Login/Login.js';
 import Register from './Register/Register.js';
 import MainPage from './MainPage/MainPage.js';
 import Cookie from './Service/CookiesService.js';
@@ -17,7 +17,7 @@ function App() {
 			    <Switch>
 				    <Route exact path='/' component={MainPage}/>
 				    <Route path='/register' component={Register}/>
-				    <Route path='/login' component={LogIn}/>
+				    <Route path='/login' component={Login}/>
 				</Switch>
 			</Router>
 	    </div>
