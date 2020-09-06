@@ -62,8 +62,8 @@ export default function LogIn(props) {
 					} = props;
 
 					return(
-						<form onSubmit={handleSubmit}>
-							<label htmlFor="email">Email</label>
+						<form className="form" onSubmit={handleSubmit}>
+							<label className="loginLable">Email</label>
 							<input
 								id="email"
 								name="email"
@@ -79,7 +79,7 @@ export default function LogIn(props) {
 								)
 							}
 
-							<label htmlFor="password">Password</label>
+							<label className="loginLable">Password</label>
 							<input 
 								id="password"
 								name="password"

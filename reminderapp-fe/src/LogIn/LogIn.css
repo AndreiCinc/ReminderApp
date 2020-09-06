@@ -1,53 +1,10 @@
-
-h1 {
-  text-align: center;
-}
-
-form {
-  max-width: 500px;
-  width: 50%;
-  margin-top: 11%;
-  margin-left: 26%;
-}
-
-label,
-input {
-  display: block;
-  width: 100%;
-}
-
-label {
-  margin-bottom: 5px;
-  margin-top: 7px;
-  height: 22px;
-  font-size: 11px;
-}
-
-input {
-  margin-bottom: 20px;
-  padding: 10px;
-  border-radius: 3px;
-  border: 1px solid #777;
-  font-size: 12px;
-}
-
-input.error {
-  border-color: red;
-}
-
-button:hover {
-  cursor: pointer;
-  background-color: #D3E7F7;
-  color: rgb(70, 153, 179);
-}
-
 .App .insert {
   margin-left: 25%;
   margin-top: 20vh;
 }
 
 .App .Title {
-  margin-top: 3%;
+  margin-top: 5%;
   margin-left: 38%;
   font-family: "Lucida Console", Courier, monospace;
   border-top-left-radius: 5px;
@@ -63,7 +20,8 @@ button:hover {
   display: flex;
   flex-direction: column;
   padding: 5px 10px;
-  margin-left: 15%;
+  margin-left: 30%;
+  width: 34%;
   background-color: #D3E7F7;
   border: 1px solid #D3E7F7;
   border-radius: 10px;
@@ -72,12 +30,18 @@ button:hover {
   font-family: "Lucida Console", Courier, monospace;
 }
 
+.loginLable {
+  transition: ease-in-out background-color 250ms, ease-in-out color 250ms;
+  font-size: 15px;
+}
+
 .App .Register {
   display: flex;
   flex-direction: column;
   padding: 5px 10px;
-  margin-left: 12.5%;
+  margin-left: 24%;
   margin-top: 20px;
+  width: 46%;
   background-color: #D3E7F7;
   border: 1px solid #D3E7F7;
   border-radius: 10px;
@@ -89,22 +53,28 @@ button:hover {
 .App .form {
   display: flex;
   flex-direction: column;
-  font-family: sans-serif;
-  margin-top: 20px;
+  max-width: 200px;
+  width: 100%;
+  margin-top: 10%;
+  margin-left: 28%;
 }
 
 @media screen and (max-width: 500px) {
  
   .App .Title{
-  margin-left: 35%;
- }
+    margin-left: 35%;
+  }
+
+ .App .form {
+    margin-left: 27%;
+  }
 
   .App .Register {
-  margin-left: 6%;
+    margin-left: 20%;
   }
 
   .App .Login {
-  margin-left: 10%;
+    margin-left: 27%;
   }
 
 }
@@ -112,15 +82,19 @@ button:hover {
 @media screen and (max-width: 300px) {
  
   .App .Title{
-  margin-left: 25%;
+    margin-left: 25%;
+  }
+
+  .App .form {
+    margin-left: 20%;
   }
 
   .App .Register {
-  margin-left: 4%;
+    margin-left: 18%;
   }
 
   .App .Login {
-  margin-left: 8.5%;
+    margin-left: 25%;
   }
 
 }

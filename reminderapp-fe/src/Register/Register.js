@@ -75,10 +75,11 @@ export default function Register(props) {
 				} = props;
 
 				return (
-					<form onSubmit={handleSubmit}>
+					<form className="registerForm" onSubmit={handleSubmit}>
 
-						<label htmlFor="name">Name</label>
-						<input
+						<label className="registerLabel">Name</label>
+						<input 
+							className="registerInput"
 							id="name"
 							name="name"
 							type="text"
@@ -93,7 +94,7 @@ export default function Register(props) {
 							)
 						}
 
-						<label htmlFor="email">Email</label>
+						<label className="registerLabel">Email</label>
 						<input
 							id="email"
 							name="email"
@@ -109,7 +110,7 @@ export default function Register(props) {
 							)
 						}
 
-						<label htmlFor="password">Password</label>
+						<label className="registerLabel">Password</label>
 						<input 
 							id="password"
 							name="password"
@@ -125,7 +126,7 @@ export default function Register(props) {
 							)
 						}
 
-						<label htmlFor="password">Password confirmation</label>
+						<label className="registerLabel">Password confirmation</label>
 						<input 
 							id="passwordConfirmation"
 							name="passwordConfirmation"
