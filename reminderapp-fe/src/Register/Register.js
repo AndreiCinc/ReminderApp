@@ -120,11 +120,12 @@ export default function Register(props) {
 							)
 						}
 
+						<label htmlFor="password">Password confirmation</label>
 						<input 
 							id="passwordConfirmation"
 							name="passwordConfirmation"
 							type="password"
-							placeholder="Enter your password"
+							placeholder="Confirm your password"
 							value={values.passwordConfirmation}
 							onChange={handleChange}
 							onBlur={handleBlur}
