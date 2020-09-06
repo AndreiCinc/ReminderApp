@@ -32,9 +32,14 @@ export default function Register(props) {
 		if (person.email !== "") {
 			PersonService.postPerson(person)
 			.then((response) => { 
-				if (response !== undefined) {
+				if (response.status === 200) {
 					alert("Registered succesfully!");
 					history.push("/logIn");
+				}else if (response.status === 400) {
+					console.log(response.status);
+					alert("The email adress already exists!");
+				}else {
+					alert("Something went wrong!");
 				}
 			})
 		}
