@@ -75,7 +75,7 @@ export default function LogIn(props) {
 								className={errors.email && touched.email & "errors"}
 							/>
 							{errors.email && touched.email && (
-								<div className="input-feedback">{errors.email}</div>
+								<div className="input-feedback">*{errors.email}</div>
 								)
 							}
 
@@ -91,7 +91,7 @@ export default function LogIn(props) {
 								className={errors.password && touched.password & "errors"}
 							/>
 							{errors.password && touched.password && (
-	  							<div className="input-feedback">{errors.password}</div>
+	  							<div className="input-feedback">*{errors.password}</div>
 								)
 							}
 

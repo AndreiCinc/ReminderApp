@@ -84,7 +84,7 @@ export default function Register(props) {
 							className={errors.name && touched.name & "errors"}
 						/>
 						{errors.name && touched.name && (
-							<div className="input-feedback">{errors.name}</div>
+							<div className="input-feedback">*{errors.name}</div>
 							)
 						}
 
@@ -100,7 +100,7 @@ export default function Register(props) {
 							className={errors.email && touched.email & "errors"}
 						/>
 						{errors.email && touched.email && (
-							<div className="input-feedback">{errors.email}</div>
+							<div className="input-feedback">*{errors.email}</div>
 							)
 						}
 
@@ -116,7 +116,7 @@ export default function Register(props) {
 							className={errors.password && touched.password & "errors"}
 						/>
 						{errors.password && touched.password && (
-  							<div className="input-feedback">{errors.password}</div>
+  							<div className="input-feedback">*{errors.password}</div>
 							)
 						}
 
@@ -131,7 +131,7 @@ export default function Register(props) {
 							className={errors.passwordConfirmation && touched.passwordConfirmation & "errors"}
 						/>
 						{errors.passwordConfirmation && touched.passwordConfirmation && (
-  							<div className="input-feedback">{errors.passwordConfirmation}</div>
+  							<div className="input-feedback">*{errors.passwordConfirmation}</div>
 							)
 						}
 
