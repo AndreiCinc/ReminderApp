@@ -1,5 +1,5 @@
 
-const api_url_user = "http://localhost:8080/user/";
+const api_url_user = "https://reminderapp2.herokuapp.com/";
 
 const personService = {
 

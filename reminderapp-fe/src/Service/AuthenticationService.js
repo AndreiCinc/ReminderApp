@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const api_url_authentication = "http://localhost:8080/authentication/authenticate/";
+const api_url_authentication = "https://reminderapp2.herokuapp.com/authentication/authenticate/";
 
 const authentication = { 
 

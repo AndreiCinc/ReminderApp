@@ -1,6 +1,6 @@
 import Cookie from '../Service/CookiesService.js';
 
-const host = "http://localhost:8080/event/";
+const host = "https://reminderapp2.herokuapp.com/event/";
 
 const eventService = {
 
