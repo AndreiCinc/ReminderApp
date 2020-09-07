@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './LogIn.css';
+import './Login.css';
 import { Formik } from 'formik';
 import * as Yup from 'yup';
 import Authentication from '../Service/AuthenticationService.js';
@@ -62,8 +62,8 @@ export default function LogIn(props) {
 					} = props;
 
 					return(
-						<form onSubmit={handleSubmit}>
-							<label htmlFor="email">Email</label>
+						<form className="form" onSubmit={handleSubmit}>
+							<label className="loginLable">Email</label>
 							<input
 								id="email"
 								name="email"
@@ -75,11 +75,11 @@ export default function LogIn(props) {
 								className={errors.email && touched.email & "errors"}
 							/>
 							{errors.email && touched.email && (
-								<div className="input-feedback">{errors.email}</div>
+								<div className="input-feedback">*{errors.email}</div>
 								)
 							}
 
-							<label htmlFor="password">Password</label>
+							<label className="loginLable">Password</label>
 							<input 
 								id="password"
 								name="password"
@@ -91,19 +91,18 @@ export default function LogIn(props) {
 								className={errors.password && touched.password & "errors"}
 							/>
 							{errors.password && touched.password && (
-	  							<div className="input-feedback">{errors.password}</div>
+	  							<div className="input-feedback">*{errors.password}</div>
 								)
 							}
 
-							<button type="submit" submit="submit">
-									LogIn
+							<button className="Login" type="submit" submit="submit">
+									Login
 							</button>
-							
-							<div className="Register" type="submit">
-								<Link to="/register" type="submit">
-									<h5>Register</h5>
+							<button className="Register">
+								<Link to="/register">
+									Register
 								</Link>
-							</div>
+							</button>
 						</form>
 					);
 				}}

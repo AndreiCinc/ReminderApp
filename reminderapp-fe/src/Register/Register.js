@@ -32,9 +32,14 @@ export default function Register(props) {
 		if (person.email !== "") {
 			PersonService.postPerson(person)
 			.then((response) => { 
-				if (response !== undefined) {
+				if (response.status === 200) {
 					alert("Registered succesfully!");
 					history.push("/logIn");
+				}else if (response.status === 400) {
+					console.log(response.status);
+					alert("The email adress already exists!");
+				}else {
+					alert("Something went wrong!");
 				}
 			})
 		}
@@ -70,10 +75,11 @@ export default function Register(props) {
 				} = props;
 
 				return (
-					<form onSubmit={handleSubmit}>
+					<form className="registerForm" onSubmit={handleSubmit}>
 
-						<label htmlFor="name">Name</label>
-						<input
+						<label className="registerLabel">Name</label>
+						<input 
+							className="registerInput"
 							id="name"
 							name="name"
 							type="text"
@@ -84,11 +90,11 @@ export default function Register(props) {
 							className={errors.name && touched.name & "errors"}
 						/>
 						{errors.name && touched.name && (
-							<div className="input-feedback">{errors.name}</div>
+							<div className="input-feedback">*{errors.name}</div>
 							)
 						}
 
-						<label htmlFor="email">Email</label>
+						<label className="registerLabel">Email</label>
 						<input
 							id="email"
 							name="email"
@@ -100,11 +106,11 @@ export default function Register(props) {
 							className={errors.email && touched.email & "errors"}
 						/>
 						{errors.email && touched.email && (
-							<div className="input-feedback">{errors.email}</div>
+							<div className="input-feedback">*{errors.email}</div>
 							)
 						}
 
-						<label htmlFor="password">Password</label>
+						<label className="registerLabel">Password</label>
 						<input 
 							id="password"
 							name="password"
@@ -116,22 +122,23 @@ export default function Register(props) {
 							className={errors.password && touched.password & "errors"}
 						/>
 						{errors.password && touched.password && (
-  							<div className="input-feedback">{errors.password}</div>
+  							<div className="input-feedback">*{errors.password}</div>
 							)
 						}
 
+						<label className="registerLabel">Password confirmation</label>
 						<input 
 							id="passwordConfirmation"
 							name="passwordConfirmation"
 							type="password"
-							placeholder="Enter your password"
+							placeholder="Confirm your password"
 							value={values.passwordConfirmation}
 							onChange={handleChange}
 							onBlur={handleBlur}
 							className={errors.passwordConfirmation && touched.passwordConfirmation & "errors"}
 						/>
 						{errors.passwordConfirmation && touched.passwordConfirmation && (
-  							<div className="input-feedback">{errors.passwordConfirmation}</div>
+  							<div className="input-feedback">*{errors.passwordConfirmation}</div>
 							)
 						}
 

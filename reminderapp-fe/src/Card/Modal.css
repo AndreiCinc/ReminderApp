@@ -1,19 +1,62 @@
+.MuiFormLabel-root {
+    color: rgba(0, 0, 0, 0.54);
+    padding: 0;
+    font-size: 15px;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.00938em;
+}
+
+.MuiSvgIcon-root {
+    fill: currentColor;
+    width: 19px;
+    height: 20px;
+    display: inline-block;
+    font-size: 1.5rem;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    flex-shrink: 0;
+    user-select: none;
+}
+
+.MuiIconButton-root {
+    padding: 2px;
+}
+
+.MuiInputBase-input {
+    font: inherit;
+    color: currentColor;
+    width: 100%;
+    border: 0;
+    height: 15px;
+    font-size: 12px;
+    margin: 0;
+    display: block;
+    padding: 6px 0 2px;
+    min-width: 0;
+    background: none;
+    box-sizing: content-box;
+    animation-name: mui-auto-fill-cancel;
+    letter-spacing: inherit;
+    animation-duration: 10ms;
+    -webkit-tap-highlight-color: transparent;
+}
 
 .updateButton {
-  margin-left: 75%;
-  margin-top: 10px;
-  height: 10%;
-  padding: 4px;
-  background-color:  #CAD1D7;
-  border: 0px;
-  text-align: center;
-  font-size: 14px;
-  -webkit-box-shadow: 0 1px 2px #D3E7F7;
-  -moz-box-shadow: 0 1px 2px #D3E7F7;
-  box-shadow: 0 1px 2px #D3E7F7;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
+    margin-left: 75%;
+    margin-top: 10px;
+    height: 10%;
+    padding: 4px;
+    background-color:  #CAD1D7;
+    border: 0px;
+    text-align: center;
+    font-size: 14px;
+    -webkit-box-shadow: 0 1px 2px #D3E7F7;
+    -moz-box-shadow: 0 1px 2px #D3E7F7;
+    box-shadow: 0 1px 2px #D3E7F7;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 

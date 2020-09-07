@@ -23,7 +23,7 @@ public class EventDatabaseService implements EventInterface {
     }
 
     @Override
-    public int insertEvent(UUID id, Event event) {
+    public int insertEvent(Event event, UUID id) {
         final String sql = "" +
                 "INSERT INTO event (id, eventName, startdate, enddate, reminderDate, details, personId) " +
                 "VALUES ( ?, ?, ?, ?, ?, ?, ?)";

@@ -1,58 +1,27 @@
-.form {
+.App .insert {
+  margin-left: 25%;
+  margin-top: 20vh;
+}
+
+.App .Title {
+  margin-top: 5%;
+  margin-left: 38%;
+  font-family: "Lucida Console", Courier, monospace;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+ }
+
+.App .Logout {
+  margin-left: 90%;
+  margin-top: -50px;
+}
+
+.App .Login {
   display: flex;
   flex-direction: column;
-  font-family: sans-serif;
-}
-
-h1 {
-  text-align: center;
-}
-
-form {
-  max-width: 500px;
-  width: 50%;
-  margin-top: 11%;
-  margin-left: 26%;
-}
-
-label,
-input {
-  display: block;
-  width: 100%;
-}
-
-label {
-  margin-bottom: 5px;
-  margin-top: 7px;
-  height: 22px;
-  font-size: 11px;
-}
-
-input {
-  margin-bottom: 20px;
-  padding: 10px;
-  border-radius: 3px;
-  border: 1px solid #777;
-  font-size: 12px;
-}
-
-input.error {
-  border-color: red;
-}
-
-.input-feedback {
-  color: rgb(235, 54, 54);
-  margin-top: -15px;
-  font-size: 14px;
-  margin-bottom: 20px;
-  color: #F5FFFA;
-  opacity: 0.9;
-  font-family: "Lucida Console", Courier, monospace;
-}
-
-button {
   padding: 5px 10px;
-  margin-left: 15%;
+  margin-left: 30%;
+  width: 34%;
   background-color: #D3E7F7;
   border: 1px solid #D3E7F7;
   border-radius: 10px;
@@ -61,63 +30,71 @@ button {
   font-family: "Lucida Console", Courier, monospace;
 }
 
-button:hover {
-  cursor: pointer;
+.loginLable {
+  transition: ease-in-out background-color 250ms, ease-in-out color 250ms;
+  font-size: 15px;
+}
+
+.App .Register {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 10px;
+  margin-left: 24%;
+  margin-top: 20px;
+  width: 46%;
   background-color: #D3E7F7;
-  color: rgb(70, 153, 179);
-}
-
-.App .insert {
-  margin-left: 25%;
-  margin-top: 20vh;
-}
-
-.App .Title {
-  margin-top: 3%;
-  margin-left: 38%;
+  border: 1px solid #D3E7F7;
+  border-radius: 10px;
+  transition: ease-in-out background-color 250ms, ease-in-out color 250ms;
+  font-size: 15px;
   font-family: "Lucida Console", Courier, monospace;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
- }
-
- .App .Logout {
-  margin-left: 90%;
-  margin-top: -50px;
 }
- .Register {
-  margin-left: 17%;
-  font-size: 30px;
- }
+
+.App .form {
+  display: flex;
+  flex-direction: column;
+  max-width: 200px;
+  width: 100%;
+  margin-top: 10%;
+  margin-left: 28%;
+}
 
 @media screen and (max-width: 500px) {
  
- .Title{
-  margin-left: 35%;
- }
+  .App .Title{
+    margin-left: 35%;
+  }
 
- button {
-  margin-left: 11%;
- } 
+ .App .form {
+    margin-left: 27%;
+  }
 
- .Register {
-  margin-left: 13%;
-  font-size: 25px;
- }
+  .App .Register {
+    margin-left: 20%;
+  }
+
+  .App .Login {
+    margin-left: 27%;
+  }
 
 }
 
 @media screen and (max-width: 300px) {
  
- .Title{
-  margin-left: 25%;
- }
- button {
-  margin-left: 8%;
- } 
+  .App .Title{
+    margin-left: 25%;
+  }
 
- .Register {
-  margin-left: 11%;
-  font-size: 25px;
- }
+  .App .form {
+    margin-left: 20%;
+  }
+
+  .App .Register {
+    margin-left: 18%;
+  }
+
+  .App .Login {
+    margin-left: 25%;
+  }
 
 }
